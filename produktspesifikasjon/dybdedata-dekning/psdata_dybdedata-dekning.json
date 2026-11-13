@@ -117,7 +117,7 @@
     },
     {
       "specificationScope": {
-        "scopeIdentification": "Ny datakilde",
+        "scopeIdentification": "hhhhh",
         "level": "dataset"
       }
     }
@@ -259,7 +259,7 @@
     "om_produktet": 276,
     "formaal": 13,
     "bruksomraade": 85,
-    "omfang": 25,
+    "omfang": 24,
     "datainnhold_og_struktur": 0,
     "referansesystem": 0,
     "datakvalitet": 42,
@@ -269,7 +269,7 @@
     "leveranse": 35,
     "metadata": 15,
     "tilleggsinformasjon": 4,
-    "datamodell": 5705
+    "datamodell": 13402
   },
   "specificationContact": "Kartverket, [kundesenter@kartverket.no](mailto:kundesenter@kartverket.no)"
 }
