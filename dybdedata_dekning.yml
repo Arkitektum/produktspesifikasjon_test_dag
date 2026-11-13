@@ -2,8 +2,3 @@ metadataId: 7fd4a1f7-be17-4dcb-8a16-df891dd0be9c
 output_directory: produktspesifikasjon
 product_slug: dybdedata_dekning
 updated: '2026-10-22'
-scopes:
-- name: Ny datakilde
-  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/FKB.xml
-  generator: xmi
-  description: ''
