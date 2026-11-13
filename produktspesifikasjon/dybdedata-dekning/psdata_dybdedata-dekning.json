@@ -117,7 +117,7 @@
     },
     {
       "specificationScope": {
-        "scopeIdentification": "UML",
+        "scopeIdentification": "Ny datakilde",
         "level": "dataset"
       }
     }
@@ -259,7 +259,7 @@
     "om_produktet": 276,
     "formaal": 13,
     "bruksomraade": 85,
-    "omfang": 24,
+    "omfang": 25,
     "datainnhold_og_struktur": 0,
     "referansesystem": 0,
     "datakvalitet": 42,
