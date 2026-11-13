@@ -3,7 +3,7 @@ output_directory: produktspesifikasjon
 product_slug: dybdedata_dekning
 updated: '2026-10-22'
 scopes:
-- name: Ny datakilde
-  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/FKB/Havnedata.xml
+- name: Ny datakilde2
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Statens%20kartverk/N50Kartdata20230401.xml
   generator: xmi
   description: ''
