@@ -1,0 +1,380 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - UML - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class FiktivDelelinje <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Slipp <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Datakvalitetgrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Utstikker <<featureType>> {
+    + senterlinje [1] : Kurve
+  }
+
+  class Flytedokk <<featureType>> {
+    + område [1] : Flate
+  }
+
+  abstract class FellesegenskaperFiktivDelelinje <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + førsteDatafangstdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+    + datauttaksdato [1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  class "Tørrdokk" as T_rrdokk <<featureType>> {
+    + område [1] : Flate
+  }
+
+  class Datakvalitet <<featureType>> {
+    + område [1] : Flate
+    + catzoc [1] : Catzoc
+  }
+
+  class "Tørrfall" as T_rrfall <<featureType>> {
+    + område [1] : Flate
+  }
+
+  class Dybdepunkt <<featureType>> {
+    + posisjon [1] : Punkt
+    + dybde [1] : Real
+    + dybdetype [0..1] : Dybdetype
+  }
+
+  class Rampe <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "Fareområde" as Fareomr_de <<featureType>> {
+    + område [1] : Flate
+  }
+
+  class FlytedokkKant <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Spuntvegger <<featureType>> {
+    + senterlinje [1] : Kurve
+  }
+
+  class "MudretOmråde" as MudretOmr_de <<featureType>> {
+    + område [1] : Flate
+    + minimumsdybde [1] : Real
+    + maksimumsdybde [1] : Real
+  }
+
+  class "Skjær" as Skj_r <<featureType>> {
+    + posisjon [1] : Punkt
+  }
+
+  class "IkkeKartlagtSjømåltGrense" as IkkeKartlagtSj_m_ltGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class BygningsmessigAnleggVann <<featureType>> {
+    + senterlinje [1] : Kurve
+  }
+
+  class "Bølgebryter" as B_lgebryter <<featureType>> {
+    + senterlinje [1] : Kurve
+  }
+
+  class "IkkeKartlagtSjømåltOmr" as IkkeKartlagtSj_m_ltOmr <<featureType>> {
+    + område [1] : Flate
+  }
+
+  class Dybdeareal <<featureType>> {
+    + område [1] : Flate
+    + minimumsdybde [1] : Real
+    + maksimumsdybde [1] : Real
+  }
+
+  class Landareal <<featureType>> {
+    + område [1] : Flate
+  }
+
+  class HavElvSperre <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "Tørrfallsgrense" as T_rrfallsgrense <<featureType>> {
+    + grense [1] : Kurve
+    + dybde [1] : Dybde
+  }
+
+  class "Fareområdegrense" as Fareomr_degrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "TørrdokkKant" as T_rrdokkKant <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Molo <<featureType>> {
+    + senterlinje [1] : Kurve
+  }
+
+  class Pir <<featureType>> {
+    + område [1] : Flate
+  }
+
+  class KaiBrygge <<featureType>> {
+    + senterlinje [1] : Kurve
+  }
+
+  class Grunne <<featureType>> {
+    + posisjon [1] : Punkt
+    + dybde [1] : Real
+  }
+
+  class "MudretOmrådegrense" as MudretOmr_degrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Dataavgrensning <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "Strømbryter" as Str_mbryter <<featureType>> {
+    + senterlinje [1] : Kurve
+  }
+
+  class Dybdekurve <<featureType>> {
+    + grense [1] : Kurve
+    + dybde [1] : Integer
+  }
+
+  class Kystkontur <<featureType>> {
+    + grense [1] : Kurve
+    + kysttype [0..1] : Kysttype
+  }
+
+  class Dike <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  abstract class FellesegenskaperDybdedata <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + førsteDatafangstdato [0..1] : Date
+    + oppdateringsdato [1] : Date
+    + datauttaksdato [1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  class PirKant <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [1] : CharacterString
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [1] : Målemetode
+    + nøyaktighet [0..1] : Integer
+  }
+}
+
+  FellesegenskaperFiktivDelelinje <|-- FiktivDelelinje
+  FellesegenskaperDybdedata <|-- Slipp
+  FellesegenskaperFiktivDelelinje <|-- Datakvalitetgrense
+  FellesegenskaperDybdedata <|-- Utstikker
+  FellesegenskaperDybdedata <|-- Flytedokk
+  Flytedokk --> FiktivDelelinje : avgrensning [0..*]
+  Flytedokk --> Dataavgrensning : avgrensning [0..*]
+  Flytedokk --> HavElvSperre : avgrensning [0..*]
+  Flytedokk --> FlytedokkKant : avgrensning [0..*]
+  Flytedokk --> Kystkontur : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- T_rrdokk
+  T_rrdokk --> FiktivDelelinje : avgrensning [0..*]
+  T_rrdokk --> HavElvSperre : avgrensning [0..*]
+  T_rrdokk --> Kystkontur : avgrensning [0..*]
+  T_rrdokk --> Dataavgrensning : avgrensning [0..*]
+  T_rrdokk --> T_rrdokkKant : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- Datakvalitet
+  Datakvalitet --> Datakvalitetgrense : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- T_rrfall
+  T_rrfall --> FiktivDelelinje : avgrensning [0..*]
+  T_rrfall --> Slipp : avgrensning [0..*]
+  T_rrfall --> Utstikker : avgrensning [0..*]
+  T_rrfall --> BygningsmessigAnleggVann : avgrensning [0..*]
+  T_rrfall --> T_rrfallsgrense : avgrensning [1..*]
+  T_rrfall --> KaiBrygge : avgrensning [0..*]
+  T_rrfall --> HavElvSperre : avgrensning [0..*]
+  T_rrfall --> Molo : avgrensning [0..*]
+  T_rrfall --> Dataavgrensning : avgrensning [0..*]
+  T_rrfall --> Str_mbryter : avgrensning [0..*]
+  T_rrfall --> Kystkontur : avgrensning [0..*]
+  T_rrfall --> Dike : avgrensning [0..*]
+  T_rrfall --> Rampe : avgrensning [0..*]
+  T_rrfall --> B_lgebryter : avgrensning [0..*]
+  T_rrfall --> Spuntvegger : avgrensning [0..*]
+  T_rrfall --> T_rrdokkKant : avgrensning [0..*]
+  T_rrfall --> Fareomr_degrense : avgrensning [0..*]
+  T_rrfall --> PirKant : avgrensning [0..*]
+  T_rrfall --> MudretOmr_degrense : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- Dybdepunkt
+  FellesegenskaperDybdedata <|-- Rampe
+  FellesegenskaperDybdedata <|-- Fareomr_de
+  Fareomr_de --> FiktivDelelinje : avgrensning [0..*]
+  Fareomr_de --> Utstikker : avgrensning [0..*]
+  Fareomr_de --> Rampe : avgrensning [0..*]
+  Fareomr_de --> KaiBrygge : avgrensning [0..*]
+  Fareomr_de --> Dybdekurve : avgrensning [0..*]
+  Fareomr_de --> PirKant : avgrensning [0..*]
+  Fareomr_de --> HavElvSperre : avgrensning [0..*]
+  Fareomr_de --> Kystkontur : avgrensning [0..*]
+  Fareomr_de --> Fareomr_degrense : avgrensning [0..*]
+  Fareomr_de --> Str_mbryter : avgrensning [0..*]
+  Fareomr_de --> Molo : avgrensning [0..*]
+  Fareomr_de --> Dataavgrensning : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- FlytedokkKant
+  FellesegenskaperDybdedata <|-- Spuntvegger
+  FellesegenskaperDybdedata <|-- MudretOmr_de
+  MudretOmr_de --> FiktivDelelinje : avgrensning [0..*]
+  MudretOmr_de --> Slipp : avgrensning [0..*]
+  MudretOmr_de --> Utstikker : avgrensning [0..*]
+  MudretOmr_de --> Rampe : avgrensning [0..*]
+  MudretOmr_de --> Spuntvegger : avgrensning [0..*]
+  MudretOmr_de --> BygningsmessigAnleggVann : avgrensning [0..*]
+  MudretOmr_de --> Fareomr_degrense : avgrensning [0..*]
+  MudretOmr_de --> PirKant : avgrensning [0..*]
+  MudretOmr_de --> MudretOmr_degrense : avgrensning [0..*]
+  MudretOmr_de --> Kystkontur : avgrensning [0..*]
+  MudretOmr_de --> B_lgebryter : avgrensning [0..*]
+  MudretOmr_de --> T_rrfallsgrense : avgrensning [0..*]
+  MudretOmr_de --> HavElvSperre : avgrensning [0..*]
+  MudretOmr_de --> T_rrdokkKant : avgrensning [0..*]
+  MudretOmr_de --> Str_mbryter : avgrensning [0..*]
+  MudretOmr_de --> IkkeKartlagtSj_m_ltGrense : avgrensning [0..*]
+  MudretOmr_de --> KaiBrygge : avgrensning [0..*]
+  MudretOmr_de --> Dataavgrensning : avgrensning [0..*]
+  MudretOmr_de --> Dike : avgrensning [0..*]
+  MudretOmr_de --> Molo : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- Skj_r
+  FellesegenskaperDybdedata <|-- IkkeKartlagtSj_m_ltGrense
+  FellesegenskaperDybdedata <|-- BygningsmessigAnleggVann
+  FellesegenskaperDybdedata <|-- B_lgebryter
+  FellesegenskaperDybdedata <|-- IkkeKartlagtSj_m_ltOmr
+  IkkeKartlagtSj_m_ltOmr --> FiktivDelelinje : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Slipp : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Utstikker : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Rampe : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> FlytedokkKant : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Spuntvegger : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> IkkeKartlagtSj_m_ltGrense : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> BygningsmessigAnleggVann : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> B_lgebryter : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> MudretOmr_degrense : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Str_mbryter : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Kystkontur : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> KaiBrygge : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Dataavgrensning : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> T_rrfallsgrense : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Dybdekurve : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Dike : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> HavElvSperre : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> PirKant : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Molo : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> T_rrdokkKant : avgrensning [0..*]
+  IkkeKartlagtSj_m_ltOmr --> Fareomr_degrense : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- Dybdeareal
+  Dybdeareal --> FiktivDelelinje : avgrensning [0..*]
+  Dybdeareal --> Slipp : avgrensning [0..*]
+  Dybdeareal --> Utstikker : avgrensning [0..*]
+  Dybdeareal --> Rampe : avgrensning [0..*]
+  Dybdeareal --> FlytedokkKant : avgrensning [0..*]
+  Dybdeareal --> Spuntvegger : avgrensning [0..*]
+  Dybdeareal --> IkkeKartlagtSj_m_ltGrense : avgrensning [0..*]
+  Dybdeareal --> BygningsmessigAnleggVann : avgrensning [0..*]
+  Dybdeareal --> B_lgebryter : avgrensning [0..*]
+  Dybdeareal --> Dataavgrensning : avgrensning [0..*]
+  Dybdeareal --> PirKant : avgrensning [0..*]
+  Dybdeareal --> Str_mbryter : avgrensning [0..*]
+  Dybdeareal --> MudretOmr_degrense : avgrensning [0..*]
+  Dybdeareal --> Fareomr_degrense : avgrensning [0..*]
+  Dybdeareal --> T_rrdokkKant : avgrensning [0..*]
+  Dybdeareal --> Molo : avgrensning [0..*]
+  Dybdeareal --> Dybdekurve : avgrensning [0..*]
+  Dybdeareal --> Kystkontur : avgrensning [0..*]
+  Dybdeareal --> T_rrfallsgrense : avgrensning [0..*]
+  Dybdeareal --> HavElvSperre : avgrensning [0..*]
+  Dybdeareal --> KaiBrygge : avgrensning [0..*]
+  Dybdeareal --> Dike : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- Landareal
+  Landareal --> FiktivDelelinje : avgrensning [0..*]
+  Landareal --> Slipp : avgrensning [0..*]
+  Landareal --> Utstikker : avgrensning [0..*]
+  Landareal --> Rampe : avgrensning [0..*]
+  Landareal --> Spuntvegger : avgrensning [0..*]
+  Landareal --> IkkeKartlagtSj_m_ltGrense : avgrensning [0..*]
+  Landareal --> BygningsmessigAnleggVann : avgrensning [0..*]
+  Landareal --> B_lgebryter : avgrensning [0..*]
+  Landareal --> Fareomr_degrense : avgrensning [0..*]
+  Landareal --> Dike : avgrensning [0..*]
+  Landareal --> Molo : avgrensning [0..*]
+  Landareal --> MudretOmr_degrense : avgrensning [0..*]
+  Landareal --> Kystkontur : avgrensning [0..*]
+  Landareal --> T_rrdokkKant : avgrensning [0..*]
+  Landareal --> KaiBrygge : avgrensning [0..*]
+  Landareal --> T_rrfallsgrense : avgrensning [0..*]
+  Landareal --> Dataavgrensning : avgrensning [0..*]
+  Landareal --> Str_mbryter : avgrensning [0..*]
+  Landareal --> PirKant : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- HavElvSperre
+  FellesegenskaperDybdedata <|-- T_rrfallsgrense
+  FellesegenskaperDybdedata <|-- Fareomr_degrense
+  FellesegenskaperDybdedata <|-- T_rrdokkKant
+  FellesegenskaperDybdedata <|-- Molo
+  FellesegenskaperDybdedata <|-- Pir
+  Pir --> HavElvSperre : avgrensning [0..*]
+  Pir --> Kystkontur : avgrensning [0..*]
+  FellesegenskaperDybdedata <|-- KaiBrygge
+  FellesegenskaperDybdedata <|-- Grunne
+  FellesegenskaperDybdedata <|-- MudretOmr_degrense
+  FellesegenskaperDybdedata <|-- Dataavgrensning
+  FellesegenskaperDybdedata <|-- Str_mbryter
+  FellesegenskaperDybdedata <|-- Dybdekurve
+  FellesegenskaperDybdedata <|-- Kystkontur
+  FellesegenskaperDybdedata <|-- Dike
+  FellesegenskaperDybdedata <|-- PirKant
+
+@enduml
