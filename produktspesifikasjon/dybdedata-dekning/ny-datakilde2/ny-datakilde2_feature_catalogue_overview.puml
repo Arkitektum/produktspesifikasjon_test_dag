@@ -28,234 +28,147 @@ skinparam stereotypeCBackgroundColor #EAD9CE
 skinparam stereotypeCBorderColor #9C8578
 skinparam stereotypeCFontColor #2D201A
 
-package "Alignment_GML" {
-  class Alignment <<featureType>> {
+package "Fellesegenskaper og abstrakte objekttyper" {
+  abstract class HavneanleggId <<featureType>> {
+  }
+  abstract class FellesegenskaperOpsjonell <<featureType>> {
+  }
+  abstract class "FellesegenskaperPåkrevd" as FellesegenskaperP_krevd <<featureType>> {
+  }
+  abstract class HavnId <<featureType>> {
+  }
+  abstract class KaiId <<featureType>> {
+  }
+  abstract class ObjektId <<featureType>> {
   }
 }
 
-package "Facility_GML" {
-  class PhysicalElement <<featureType>> {
+package "Havnedata 2.0" {
+  class Kran <<featureType>> {
   }
-  class Facility <<featureType>> {
+  class HavneanleggGrense <<featureType>> {
   }
-  class FacilityPart <<featureType>> {
+  class VAuttak <<featureType>> {
   }
-}
-
-package "GenerelleEgenskaper" {
-  class GenerelleEgenskaper <<featureType>> {
+  class Havneanlegg <<featureType>> {
   }
-}
-
-package "InfraGML_Part3_Alignment" {
-  class Referanselinje <<featureType>> {
+  class Flytedokk <<featureType>> {
   }
-}
-
-package "InfraGML_Part4_Road" {
-  abstract class VegElement <<featureType>> {
+  class Toalett <<featureType>> {
   }
-  class Veg <<featureType>> {
+  class FlytedokkGrense <<featureType>> {
   }
-  abstract class RoadElementN <<featureType>> {
+  class Fender <<featureType>> {
   }
-}
-
-package "Part0_Core" {
-  class Feature <<featureType>> {
+  class "LastbegrensningsområdeGrense" as Lastbegrensningsomr_deGrense <<featureType>> {
   }
-}
-
-package "Part1_LandFeature" {
-  class LandSurface <<featureType>> {
+  class Avfallspunkt <<featureType>> {
   }
-}
-
-package "Part3_Alignment" {
-  class Alignment <<featureType>> {
+  class "Kaiområde" as Kaiomr_de <<featureType>> {
   }
-}
-
-package "Part4_Road" {
-  class Road <<featureType>> {
+  class "Fortøyningsinnretning" as Fort_yningsinnretning <<featureType>> {
   }
-  class RoadElement <<featureType>> {
+  class Havnegjerde <<featureType>> {
   }
-}
-
-package "Part_GML" {
-  class AbstractFeature <<featureType>> {
+  class "Tørrdokk" as T_rrdokk <<featureType>> {
   }
-}
-
-package "StringLine" {
-  class StringLineN_Planum <<featureType>> {
+  class "KaiområdeGrense" as Kaiomr_deGrense <<featureType>> {
   }
-  class StringLineN_Referanselinje <<featureType>> {
+  class HavnegjerdeInngang <<featureType>> {
   }
-  class StringLineN_Underbygning <<featureType>> {
+  class "ForvaltningsområdeGrense" as Forvaltningsomr_deGrense <<featureType>> {
   }
-  class StringLineN <<featureType>> {
+  class SlippGrense <<featureType>> {
   }
-  class "StringLineN_Sideområde" as StringLineN_Sideomr_de <<featureType>> {
+  class "TørrdokkGrense" as T_rrdokkGrense <<featureType>> {
   }
-  class StringLineN_Overbygning <<featureType>> {
+  class "HavneområdeGrense" as Havneomr_deGrense <<featureType>> {
+  }
+  class "Havneområde" as Havneomr_de <<featureType>> {
+  }
+  class "Forvaltningsområde" as Forvaltningsomr_de <<featureType>> {
+  }
+  class Beredskapspunkt <<featureType>> {
+  }
+  class Kaifront <<featureType>> {
+  }
+  class Havnesensor <<featureType>> {
+  }
+  class Slipp <<featureType>> {
+  }
+  class "Lastbegrensningsområde" as Lastbegrensningsomr_de <<featureType>> {
+  }
+  class Kamera <<featureType>> {
+  }
+  class Drivstofftilkobling <<featureType>> {
+  }
+  class "Tømmestasjon" as T_mmestasjon <<featureType>> {
+  }
+  class ELkobling <<featureType>> {
   }
 }
 
-package "Terrengoverflate" {
-  class Terrengflate <<featureType>> {
+package "Reguleringer" {
+  class "Forbudsområde" as Forbudsomr_de <<featureType>> {
+  }
+  class Fartsrestriksjoner <<featureType>> {
+  }
+  class "ForbudsområdeGrense" as Forbudsomr_deGrense <<featureType>> {
+  }
+  class FartsrestriksjonerGrense <<featureType>> {
   }
 }
 
-package "Utvalgte_GML_deler" {
-  class AnyFeature <<featureType>> {
-  }
-}
 
-package "Veg" {
-  class Vegkropp <<featureType>> {
-  }
-  class Veg_Prosjektreferanse <<featureType>> {
-  }
-}
-
-package "Vegdesign" {
-  class Overbygningselement_for_Vegdesign <<featureType>> {
-  }
-  class VegdesignElement <<featureType>> {
-  }
-  class VegdesignElement_for_Vegkropp <<featureType>> {
-  }
-}
-
-package "Vegelement" {
-  class Planum <<featureType>> {
-  }
-  abstract class VegKroppElement <<featureType>> {
-  }
-  class Underbygning <<featureType>> {
-  }
-  class Overbygning <<featureType>> {
-  }
-  class "Sideområde" as Sideomr_de <<featureType>> {
-  }
-}
-
-package "Vegkropp" {
-  class Planum <<featureType>> {
-  }
-  class Overbygning <<featureType>> {
-  }
-  abstract class VegkroppElement <<featureType>> {
-  }
-  class Underbygning <<featureType>> {
-  }
-  class "Sideområde" as Sideomr_de <<featureType>> {
-  }
-}
-
-class AlignmentSet <<featureType>> {
-}
-class CrossSection <<featureType>> {
-}
-class Element <<featureType>> {
-}
-class Property <<featureType>> {
-}
-class PropertySet <<featureType>> {
-}
-class Railway <<featureType>> {
-}
-class RoadElementSet <<featureType>> {
-}
-class StringLineSet <<featureType>> {
-}
-class SuperelevationEvent <<featureType>> {
-}
-class TemplateLocation <<featureType>> {
-}
-
-AnyFeature <|-- Feature
-Feature --> PropertySet : propertySet [0..*]
-Feature --> PropertySet : propertySet [0..*]
-Feature --> Property : property [0..*]
-Feature --> Property : property [0..*]
-Feature <|-- PhysicalElement
-PhysicalElement --> PhysicalElement : part [0..*]
-PhysicalElement --> PhysicalElement : partOf [0..1]
-Feature <|-- Facility
-Feature <|-- FacilityPart
-FacilityPart --> Facility
-FacilityPart --> FacilityPartRelationship : relationship [0..*]
-Feature <|-- Alignment
-FacilityPart <|-- Road
-Road --> Alignment : alignment [0..*]
-Road --> RoadElementSet : roadElementSet [0..*]
-Road --> StringLine : stringLine [0..*]
-Road --> StringLineSet : stringLineSet [0..*]
-Road --> CrossSection : crossSection [0..*]
-Road --> RoadElement : element [0..*]
-PhysicalElement <|-- RoadElement
-RoadElement --> LinearElement : locatedAlong [0..1]
-RoadElement --> RoadElementSet
-Feature <|-- AbstractFeature
-AbstractFeature --> AbstractFeature : part [0..*]
-AbstractFeature --> AbstractFeature : partOf [0..1]
-Alignment --> AlignmentCurve : geometry [0..1]
-Alignment <|-- Referanselinje
-RoadElementN <|-- VegElement
-Road <|-- Veg
-Veg --> Referanselinje : referanselinje [0..*]
-Veg --> VegElement : element [0..*]
-PhysicalElement <|-- RoadElementN
-VegElement <|-- VegdesignElement
-VegdesignElement --> Overbygningselement_for_Vegdesign : overbygning [0..*]
-VegdesignElement --> Underbygning : underbygning [0..*]
-VegdesignElement --> Planum : planum [0..*]
-VegkroppElement <|-- Planum
-Planum --> YtreFlatekant : venstreSide [0..1]
-Planum --> YtreFlatekant : høyreSide [0..1]
-VegkroppElement <|-- Overbygning
-Overbygning --> VegdesignElement : vegdesignElement [0..1]
-VegElement <|-- VegkroppElement
-VegkroppElement --> Volumobjekt : volum [0..1]
-VegkroppElement --> ToppOverflate : toppOverflate [0..1]
-VegkroppElement --> YtreFlatekant : ytterkant [0..1]
-VegkroppElement <|-- Underbygning
-VegkroppElement <|-- Sideomr_de
-Sideomr_de --> VegdesignElement : vegdesignElement [0..1]
-GenerelleEgenskaper <|-- Vegkropp
-Vegkropp --> VegKroppElement : vegkroppElement [0..*]
-GenerelleEgenskaper <|-- Veg_Prosjektreferanse
-Veg_Prosjektreferanse --> Vegkropp : vegelementsamling [0..*]
-Veg_Prosjektreferanse --> VegKroppElement : element [0..*]
-Veg_Prosjektreferanse --> StringLineN : stringLine [0..*]
-StringLineN <|-- StringLineN_Planum
-StringLineN <|-- StringLineN_Referanselinje
-StringLineN <|-- StringLineN_Underbygning
-GenerelleEgenskaper <|-- StringLineN
-StringLineN <|-- StringLineN_Sideomr_de
-StringLineN <|-- StringLineN_Overbygning
-GenerelleEgenskaper <|-- VegdesignElement_for_Vegkropp
-VegKroppElement <|-- Planum
-Planum --> YtreFlatekant : høyreSide [0..1]
-Planum --> YtreFlatekant : venstreSide [0..1]
-GenerelleEgenskaper <|-- VegKroppElement
-VegKroppElement --> ToppOverflate : toppOverflate [0..1]
-VegKroppElement --> YtreFlatekant : ytterkant [0..1]
-VegKroppElement --> Volumobjekt : volum [0..1]
-VegKroppElement <|-- Underbygning
-VegKroppElement <|-- Overbygning
-Overbygning --> VegdesignElement_for_Vegkropp : vegdesignElement [0..1]
-VegKroppElement <|-- Sideomr_de
-Sideomr_de --> VegdesignElement_for_Vegkropp : vegdesignElement [0..1]
-GenerelleEgenskaper <|-- Terrengflate
-AlignmentSet --> Alignment : alignment [1..*]
-AlignmentSet --> Alignment : alignment [1..*]
-Element --> FacilityPart
-Railway --> Alignment : alignment [0..*]
-SuperelevationEvent --> Alignment : locatedAlong [1]
-TemplateLocation --> Alignment : locatedAlong [1]
+ObjektId <|-- Kran
+FellesegenskaperP_krevd <|-- HavneanleggGrense
+ObjektId <|-- VAuttak
+HavneanleggId <|-- Havneanlegg
+Havneanlegg --> HavneanleggGrense : avgrensning [0..*]
+HavneanleggId <|-- Flytedokk
+Flytedokk --> FlytedokkGrense : avgrensning [0..*]
+ObjektId <|-- Toalett
+FellesegenskaperP_krevd <|-- FlytedokkGrense
+ObjektId <|-- Fender
+FellesegenskaperP_krevd <|-- Lastbegrensningsomr_deGrense
+ObjektId <|-- Avfallspunkt
+KaiId <|-- Kaiomr_de
+Kaiomr_de --> Kaiomr_deGrense : avgrensning [0..*]
+ObjektId <|-- Fort_yningsinnretning
+HavneanleggId <|-- Havnegjerde
+HavneanleggId <|-- T_rrdokk
+T_rrdokk --> T_rrdokkGrense : avgrensning [0..*]
+FellesegenskaperP_krevd <|-- Kaiomr_deGrense
+HavneanleggId <|-- HavnegjerdeInngang
+FellesegenskaperP_krevd <|-- Forvaltningsomr_deGrense
+FellesegenskaperP_krevd <|-- SlippGrense
+FellesegenskaperP_krevd <|-- T_rrdokkGrense
+FellesegenskaperP_krevd <|-- Havneomr_deGrense
+HavnId <|-- Havneomr_de
+Havneomr_de --> Havneomr_deGrense : avgrensning [0..*]
+HavnId <|-- Forvaltningsomr_de
+Forvaltningsomr_de --> Forvaltningsomr_deGrense : avgrensning [0..*]
+ObjektId <|-- Beredskapspunkt
+ObjektId <|-- Kaifront
+HavnId <|-- Havnesensor
+KaiId <|-- Slipp
+Slipp --> SlippGrense : avgrensning [0..*]
+KaiId <|-- Lastbegrensningsomr_de
+Lastbegrensningsomr_de --> Lastbegrensningsomr_deGrense : avgrensning [0..*]
+HavnId <|-- Kamera
+ObjektId <|-- Drivstofftilkobling
+ObjektId <|-- T_mmestasjon
+ObjektId <|-- ELkobling
+HavnId <|-- HavneanleggId
+FellesegenskaperP_krevd <|-- FellesegenskaperOpsjonell
+FellesegenskaperOpsjonell <|-- HavnId
+HavneanleggId <|-- KaiId
+KaiId <|-- ObjektId
+FellesegenskaperOpsjonell <|-- Forbudsomr_de
+Forbudsomr_de --> Forbudsomr_deGrense : avgrensning [0..*]
+FellesegenskaperOpsjonell <|-- Fartsrestriksjoner
+Fartsrestriksjoner --> FartsrestriksjonerGrense : avgrensning [0..*]
+FellesegenskaperP_krevd <|-- Forbudsomr_deGrense
+FellesegenskaperP_krevd <|-- FartsrestriksjonerGrense
 
 @enduml

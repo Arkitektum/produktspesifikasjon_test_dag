@@ -1,58 +1,6 @@
-#### Feature
+#### Kran
 
-Kun plassholder for original klasse. Fjernes fra XSD.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-AnyFeature
-
-**Assosiasjoner**
-PropertySet – rolle: propertySet – kardinalitet: 0..*
-PropertySet – rolle: propertySet – kardinalitet: 0..*
-Property – rolle: property – kardinalitet: 0..*
-Property – rolle: property – kardinalitet: 0..*
-
-#### LandSurface
+Innretning for å løfte eller flytte tunge gjenstander, og hører til på kaien/havnen.
 
 Egenskaper
 
@@ -67,62 +15,220 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>TIN</td>
+      <td>energikilde</td>
+      <td>Kodeliste for å spesifisere energikilden til kranen.</td>
+      <td><a href="#kodeliste-energikilde">Energikilde</a><br />(kodeliste)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>material</td>
-      <td></td>
+      <td>kranspesifikasjon</td>
+      <td>Spesifikasjon for kranen.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
-  </tbody>
-</table>
-
-#### PhysicalElement
-
-Kun plassholder for original klasse. Fjernes fra XSD.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
     <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
+      <td>krantype</td>
+      <td>Krantype.</td>
+      <td><a href="#kodeliste-krantype">Krantype</a><br />(kodeliste)</td>
+      <td>1</td>
     </tr>
-  </thead>
-  <tbody>
+    <tr>
+      <td>maksbelastning</td>
+      <td>Maks løfteevne for krana angitt i tonn (ved liten arm).</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maksbelastning<wbr />Rekkevidde</td>
+      <td>Maks løfteevne for krana ved maksimal arm/rekkevidde angitt i antall tonn.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>mobilitet</td>
+      <td>Egenskap for å angi om en krane er fastmontert eller flyttbar (mobil).<br />Fastmontert krane står i et fast punkt på kaia, mens mobile kraner kan flyttes. Skinnegående kraner eller andre semi-mobile kraner angis som mobile.<br />For mobile kraner registreres punktet som en skjønnsmessig representativ koordinat for krana.</td>
+      <td>Boolean</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>rekkevidde</td>
+      <td>Rekkevidden til kranen, ut fra kaifronten, i antall meter.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td></td>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
@@ -130,15 +236,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-Feature
+ObjektId
 
-**Assosiasjoner**
-PhysicalElement – rolle: part – kardinalitet: 0..*
-PhysicalElement – rolle: partOf – kardinalitet: 0..1
+#### HavneanleggGrense
 
-#### Facility
-
-Facilities include buildings and civil engineering works and their associated siteworks.  Civil engineering works, or infrastructure facilities, are construction works comprising a structure, such as a dam, bridge, road, railway, runway, utilities, pipeline, or sewerage system, or are the result of operations such as dredging, earthwork, and geotechnical processes.<br />A facility has a life cycle, including planning, design, construction, maintenance, operation, and removal phases  The design and construction phases are typically performed as part of a project.  There may be multiple such projects during the life cycle of the facility to enable phased construction and incremental improvement.
+Avgrensning av havneanlegg.
 
 Egenskaper
 
@@ -153,55 +255,307 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>facility<wbr />ID</td>
-      <td></td>
-      <td>ID</td>
+      <td>grense</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>type</td>
-      <td></td>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
       <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperPåkrevd
+
+#### VAuttak
+
+Tilkoblingspunkt for vann på kaia.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kapasitet</td>
+      <td>Kapasitet til fylling av vann angitt i antall m3/time.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kumnummer</td>
+      <td>ID-merking av kummer. Kan tas fra havnas eget merkesystem eller kommunens SID-nr.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
       <td>1</td>
     </tr>
     <tr>
       <td>status</td>
-      <td></td>
-      <td>Status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>tilgangstype</td>
+      <td>Kodeliste for å spesifisere hvem som har mulighet til å benytte uttaket.</td>
+      <td><a href="#kodeliste-tilgangstype">Tilgangstype</a><br />(kodeliste)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>tilkoblingsdimensjon</td>
+      <td>Størrelse/dimensjon på rørene som skal kobles sammen.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>VAuttakstype</td>
+      <td>Beskrivelse av hva slags uttakstype som kan gjøres.</td>
+      <td><a href="#kodeliste-vauttakstype">VAuttakstype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>footprint</td>
-      <td></td>
-      <td>geometry-any</td>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td></td>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
     </tr>
     <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
@@ -209,11 +563,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-Feature
+ObjektId
 
-#### FacilityPart
+#### Havneanlegg
 
-Land and Infrastructure facility, such as a road or bridge.  A facility has a life cycle, including planning, design, construction, maintenance, operation, and removal phases  The design and construction phases are typically performed as part of a project.  There may be multiple such projects during the life cycle of the facility to enable phased construction and incremental improvement.
+Med havneanlegg menes arealer, bygninger, innretninger og annen infrastruktur som brukes i havnevirksomhet eller havneformål. Herunder: kaier, terminalbygninger, laste-, losse- og omlastningsinnretninger og lager- og administrasjonsbygninger.
 
 Egenskaper
 
@@ -228,61 +582,604 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>facility<wbr />Part<wbr />ID</td>
-      <td></td>
-      <td>ID</td>
+      <td>eier</td>
+      <td>Eier av havneanlegget.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>eierskap</td>
+      <td>Felt for å angi type eierskap.</td>
+      <td><a href="#kodeliste-eierskap">Eierskap</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>forvaltes<wbr />Av</td>
+      <td>Felt for å angi hvem havneanlegget forvaltes av.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPSHavneanlegg</td>
+      <td>Egenskaper spesifikke for ISPSHavneanlegg.</td>
+      <td>ISPSHavneanlegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- kontaktinformasjon<wbr />PFSO</td>
+      <td>Kontaktinformasjon til PFSP eller assisterende PFSO på det aktuelle ISPS-området.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- port<wbr />Facility<wbr />Nr<wbr />IMO</td>
+      <td>Lokasjonskode for ISPS-området. Består av UNLOCODE, samt en 4-siffret tallkode.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- sikkerhetsbarriere</td>
+      <td>Attributt for å spesifisere om et havnesikkerhetsområde ikke har inngjerding eller annen form for sikkerhetsbarriere.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- sikringstype</td>
+      <td>Beskriver sikring/tilgang til havnesikkerhetsområdet.</td>
+      <td><a href="#kodeliste-sikringstype">Sikringstype</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- status<wbr />Godkjenning</td>
+      <td>Felt for å angi status på ISPS godkjenning.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Polygon som viser geografisk utstrekning.</td>
+      <td>Flate</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>type</td>
-      <td></td>
-      <td><a href="#kodeliste-facilityparttype">Facility<wbr />Part<wbr />Type</a><br />(kodeliste)</td>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+HavneanleggId
+
+**Assosiasjoner**
+HavneanleggGrense – rolle: avgrensning – kardinalitet: 0..*
+
+#### Flytedokk
+
+En flytedokk eller våtdokk er en flytende plattform for å heve skip opp av sjøen når det skal gjøres vedlikehold eller reperasjoner av skip.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>løftekapasitet</td>
+      <td>Maksimal løftekapasitet, angitt i tonn.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Fartøy<wbr />Bredde</td>
+      <td>Maksimal bredde på fartøyet som dokken kan romme. Angis i meter.</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Fartøy<wbr />Dyptgående</td>
+      <td>Maksimal dyptgående på fartøyet som dokken kan romme. Angis i meter.</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Fartøy<wbr />Lengde</td>
+      <td>Maksimal lengde på fartøyet som dokken kan romme. Angis i meter.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Navn på flytedokken.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Polygon som viser geografisk utstrekning.</td>
+      <td>Flate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+HavneanleggId
+
+**Assosiasjoner**
+FlytedokkGrense – rolle: avgrensning – kardinalitet: 0..*
+
+#### Toalett
+
+Offentlig toalett.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
       <td>1</td>
     </tr>
     <tr>
       <td>status</td>
-      <td></td>
-      <td>Status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>footprint</td>
-      <td></td>
-      <td>geometry-any</td>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>alternative</td>
-      <td></td>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td></td>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
     </tr>
     <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
@@ -290,15 +1187,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-Feature
+ObjektId
 
-**Assosiasjoner**
-Facility
-FacilityPartRelationship – rolle: relationship – kardinalitet: 0..*
+#### FlytedokkGrense
 
-#### Alignment
-
-PositioningElement which provides a Linear Referencing System for locating PhysicalElements.<br />An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.<br /><br />Kun plassholder for original klasse. Fjernes fra XSD.
+Avgrensning av Flytedokk.
 
 Egenskaper
 
@@ -313,61 +1206,79 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>alignment<wbr />ID</td>
-      <td></td>
-      <td>ID</td>
+      <td>grense</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
       <td>1</td>
-    </tr>
-    <tr>
-      <td>design<wbr />Alternative</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>purpose</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>linestring2<wbr />DRepresentation</td>
-      <td></td>
-      <td>Line<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>linestring3<wbr />DRepresentation</td>
-      <td></td>
-      <td>Line<wbr />String</td>
-      <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
@@ -375,11 +1286,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-Feature
+FellesegenskaperPåkrevd
 
-#### Road
+#### Fender
 
-that part of a Project that relates to a single alternative for a single Road part of a project for a single Road part of a Facility.  Each alternative is a separate Road ProjectPart.  An alternative may be a design alternative or a separate phase of construction.<br /><br />Kun plassholder for original klasse. Fjernes fra XSD.
+Beskytter/demper for bevegelse mellom båt og kai. Monteres ofte fast på kaikanten.
 
 Egenskaper
 
@@ -394,598 +1305,541 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>approximate<wbr />Width</td>
-      <td></td>
-      <td>Length</td>
+      <td>antall</td>
+      <td>Oppgi antall fendere. Benyttes ved gruppering av fendere.</td>
+      <td>Integer</td>
       <td>0..1</td>
     </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra FacilityPart</th>
+    <tr>
+      <td>fendergruppering</td>
+      <td>Kurve geometri som brukes ved gruppering av fendere.<br />Geometrien skal følge kaifront der hvor det er mange like fendere. Antall fendere oppgis i antall-felt, og avstand spesifiseres i informasjonsfeltet.</td>
+      <td>Kurve</td>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>facility<wbr />Part<wbr />ID</td>
-      <td></td>
-      <td>ID</td>
+      <td>fenderorientering</td>
+      <td>Retning/orientering på fenderen.</td>
+      <td><a href="#kodeliste-fenderorientering">Fenderorientering</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>type</td>
-      <td></td>
-      <td><a href="#kodeliste-facilityparttype">Facility<wbr />Part<wbr />Type</a><br />(kodeliste)</td>
+      <td>fenderspesifikasjon</td>
+      <td>Egenskap for å spesifisere fender. Fenderen kan beskrives med mål, for eksempel bredde, høyde, diameter etc.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>fendertype</td>
+      <td>Fendertype</td>
+      <td><a href="#kodeliste-fendertype">Fendertype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>høyde<wbr />Sjøkartnull</td>
+      <td>Angitt høyde i meter over vannet. Egenskapen høyde angis i forhold til sjøkartnull (dvs. høyder over lokal LAT-verdi) dersom ikke annet er angitt.</td>
+      <td>Real</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+ObjektId
+
+#### LastbegrensningsområdeGrense
+
+Avgrensning av lastbegrensningsområde.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>grense</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperPåkrevd
+
+#### Avfallspunkt
+
+punkt for å kaste avfall
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>avfallsplan</td>
+      <td>Henvisning til avfallsplan som gjør rede for planlagt håndtering av avfall.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>avfallstype</td>
+      <td>Avfallstype</td>
+      <td><a href="#kodeliste-avfallstype">Avfallstype</a><br />(kodeliste)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>beholdertype</td>
+      <td>Beholdertype</td>
+      <td><a href="#kodeliste-beholdertype">Beholdertype</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>mobilitet</td>
+      <td>Egenskap for å anngi om avfallspunktet er fast montert eller flyttbart ( i form av en bil eller lignende).<br /><br />For mobile tilkoblingspunkt er det vanskelig/meningsløst å stedfeste punktet nøyaktig. Punktet plasseres da på et passelig representativt punkt og gis en kvalitetskode som angir stor usikkerhet i innmåling.</td>
+      <td>Boolean</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
       <td>1</td>
     </tr>
     <tr>
       <td>status</td>
-      <td></td>
-      <td>Status</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>footprint</td>
-      <td></td>
-      <td>geometry-any</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>alternative</td>
-      <td></td>
+      <td>tilgangstype</td>
+      <td>Kodeliste for å spesifisere hvem som har mulighet til å benytte avfallspunktet.</td>
+      <td><a href="#kodeliste-tilgangstype">Tilgangstype</a><br />(kodeliste)</td>
+      <td>0..*</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td></td>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-FacilityPart
-
-**Assosiasjoner**
-Alignment – rolle: alignment – kardinalitet: 0..*
-RoadElementSet – rolle: roadElementSet – kardinalitet: 0..*
-StringLine – rolle: stringLine – kardinalitet: 0..*
-StringLineSet – rolle: stringLineSet – kardinalitet: 0..*
-CrossSection – rolle: crossSection – kardinalitet: 0..*
-RoadElement – rolle: element – kardinalitet: 0..*
-
-#### RoadElement
-
-Kun plassholder for original klasse. Fjernes fra XSD.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td></td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>road<wbr />Element<wbr />Type</td>
-      <td></td>
-      <td><a href="#kodeliste-roadelementtype">Road<wbr />Element<wbr />Type</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td></td>
-      <td>Character<wbr />String</td>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-PhysicalElement
-
-**Assosiasjoner**
-LinearElement – rolle: locatedAlong – kardinalitet: 0..1
-RoadElementSet
-
-#### AnyFeature
-
-Også kalla AbstractFeature i LandInfra
-
-Egenskaper
-
-(ingen)
-
-#### AbstractFeature
-
-Kun plassholder for original klasse. Fjernes fra XSD.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-Feature
-
-**Assosiasjoner**
-AbstractFeature – rolle: part – kardinalitet: 0..*
-AbstractFeature – rolle: partOf – kardinalitet: 0..1
-
-#### Alignment
-
-PositioningElement which provides a Linear Referencing System for locating PhysicalElements.<br />An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>alignment<wbr />ID</td>
-      <td></td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>purpose</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>design<wbr />Altenrative</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>linestring2<wbr />DRepresentation</td>
-      <td></td>
-      <td>Line<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>linestring3<wbr />DRepresentation</td>
-      <td></td>
-      <td>Line<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Assosiasjoner**
-AlignmentCurve – rolle: geometry – kardinalitet: 0..1
-
-#### Referanselinje
-
-Referanselinje er en linje som brukes som referanse for flater. Kan være senterlinje eller andre flate avgrensninger.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte linja til "norsk vegbygging".<br />Norske tillegg er begreper tilpasset norsk vegbygging.</td>
-      <td>Referanse<wbr />Linje<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
       <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
       <td>1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Alignment</th>
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
     </tr>
     <tr>
-      <td>alignment<wbr />ID</td>
-      <td></td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>design<wbr />Alternative</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>purpose</td>
-      <td></td>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>linestring2<wbr />DRepresentation</td>
-      <td></td>
-      <td>Line<wbr />String</td>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>linestring3<wbr />DRepresentation</td>
-      <td></td>
-      <td>Line<wbr />String</td>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-Alignment
-
-#### VegElement (abstrakt)
-
-fornorsking av RoadElement, for å kunne knytte til norsk vegbyggings-terminologi.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fra<wbr />Profil</td>
-      <td>startprofil for dette vegelementet</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>til<wbr />Profil</td>
-      <td>sluttprofil for dette vegelementet</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
       <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
-    </tr>
     <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td>ID for vegelementet</td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td>angivelse av material for vegelementet, fritekst.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td></td>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
@@ -993,11 +1847,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-RoadElementN
+ObjektId
 
-#### Veg
+#### Kaiområde
 
-fornorsking av landInfra/Road, for å kunne knytte til norske tillegg.
+Kaiområde er området direkte innenfor kaifronten som tilhører den samme kaien.<br />Kaiområde avgrenses av KaiområdeGrense. Kaifront brukes ikke som avgrensning til kaiområde, men ligger som et eget objekt.
 
 Egenskaper
 
@@ -1012,357 +1866,616 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegen til "norsk vegbygging-teori".</td>
-      <td>Veg<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>kaidekketype</td>
+      <td>Beskrivelse av materialbruk på dekke av kaia (betong, asfalt, tre e.l.)</td>
+      <td><a href="#kodeliste-kaidekketype">Kaidekketype</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>kaitype</td>
+      <td>Angivelse av kaitype.</td>
+      <td><a href="#kodeliste-kaitype">Kaitype</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
+      <td>område</td>
+      <td>Område</td>
+      <td>Flate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
-      <td>1</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
     </tr>
     <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
     <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
       <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- komponent<wbr />Referanse</td>
-      <td>Henviser til mer informasjon om en komponent gitt i kodeliste Komponentreferanse.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+KaiId
+
+**Assosiasjoner**
+KaiområdeGrense – rolle: avgrensning – kardinalitet: 0..*
+
+#### Fortøyningsinnretning
+
+Fortøyningsinnretning som tilhører kaia.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fortøyningstype</td>
+      <td>Fortøyningstype</td>
+      <td><a href="#kodeliste-fortøyningstype">Fortøyningstype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>høyde<wbr />Sjøkartnull</td>
+      <td>Angitt høyde i meter over vannet. Egenskapen høyde angis i forhold til sjøkartnull (dvs. høyder over lokal LAT-verdi) dersom ikke annet er angitt.</td>
+      <td>Real</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>maksbelastning</td>
+      <td>Beskrivelse av maks belastning for pullerten i antall tonn</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>sertifiseringsdato</td>
+      <td>Dato for forrige sertifisering.</td>
+      <td>Date</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spesifikasjon</td>
+      <td>Egenskap for å spesifisere fortøyningsinnretning.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>tillatt<wbr />Fortøyningsvinkel<wbr />Grunnriss</td>
+      <td>Tillatt område for fortøyning sett i grunnriss. Eksempel: +/-90°.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>tillatt<wbr />Fortøyningsvinkel<wbr />Oppriss</td>
+      <td>Tillatt område for fortøyning sett i oppriss. Eksempel: +75°/-15°.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+ObjektId
+
+#### Havnegjerde
+
+Gjerde eller annen barriere. Følger ofte Havnesikkerhetsområde, men brukes ikke som avgrensning. Havnesikkerhetsområde avgrenses av HavnesikkerhetsområdeGrense.<br />Havnegjerde vil også ofte være kartlagt i FKB-BygnAnlegg som AnnetGjerde, mur e.l. I så fall bør disse objektene ha sammenfallende geometri.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>periode</td>
+      <td>Periode havnegjerdet er satt opp. Brukes i tilfeller der havnegjerde er kun satt opp i visse tidsrom eller deler av året.  Attributt trengs ikke benyttes ved permanent gjerde.</td>
+      <td>Periode<br />(datatype)</td>
       <td>0..*</td>
     </tr>
     <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>- mnd<wbr />Fra</td>
+      <td>Måned fra.</td>
+      <td><a href="#kodeliste-måned">Måned</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
+      <td>- mnd<wbr />Til</td>
+      <td>Måned til.</td>
+      <td><a href="#kodeliste-måned">Måned</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- dimensjonerende<wbr />Parametre</td>
-      <td>samlingen av dimensjonerende verdier for vegen gitt i kodeliste DimensjonerendeParametere_Veg.</td>
-      <td>Dimensjonerende<wbr />Verdier_<wbr />Veg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - standardklasse<wbr />Vegstandard</td>
-      <td>Standard vegklasse</td>
-      <td><a href="#kodeliste-dimensjoneringsklasse">Dimensjoneringsklasse</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - hastighet</td>
-      <td>Dimensjonerende hastighet for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendehastighet">Dimensjonerende<wbr />Hastighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - vegbredde</td>
-      <td>Dimensjonerende vegbredde for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendevegbredde">Dimensjonerende<wbr />Vegbredde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - motorkjøretøy</td>
-      <td>Dimensjonerende motorkjøretøytype for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendemotorkjøretøy">Dimensjonerende<wbr />Motorkjøretøy</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - trafikkmengde<wbr />ÅDT</td>
-      <td>Dimensjonerende trafikkmengde målt i ÅDT for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendetrafikkmengdeådt">Dimensjonerende<wbr />Trafikkmengde<wbr />ÅDT</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kjøremåte</td>
-      <td>Dimensjonerende kjøremåte for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendekjøremåte">Dimensjonerende<wbr />Kjøremåte</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - max<wbr />Overhøyde<wbr />Prosent</td>
-      <td>Max tverrfall i prosent</td>
-      <td><a href="#kodeliste-maxoverhøydeprosent">Max<wbr />Overhøyde<wbr />Prosent</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - trafikk</td>
-      <td>Dimensjonerende trafikk målt i aksel-last for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendetrafikkgruppe">Dimensjonerende<wbr />Trafikkgruppe</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- total<wbr />Overbygningstykkelse</td>
-      <td>totaltykkelsen på overbygningen, angitt i meter</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Road</th>
-    </tr>
-    <tr>
-      <td>approximate<wbr />Width</td>
-      <td></td>
-      <td>Length</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra FacilityPart</th>
-    </tr>
-    <tr>
-      <td>facility<wbr />Part<wbr />ID</td>
-      <td></td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>type</td>
-      <td></td>
-      <td><a href="#kodeliste-facilityparttype">Facility<wbr />Part<wbr />Type</a><br />(kodeliste)</td>
+      <td>senterlinje</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
       <td>1</td>
     </tr>
     <tr>
       <td>status</td>
-      <td></td>
-      <td>Status</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>footprint</td>
-      <td></td>
-      <td>geometry-any</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>alternative</td>
-      <td></td>
-      <td>Character<wbr />String</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td></td>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-Road
-
-**Assosiasjoner**
-Referanselinje – rolle: referanselinje – kardinalitet: 0..*
-VegElement – rolle: element – kardinalitet: 0..*
-
-#### RoadElementN (abstrakt)
-
-Hensikt: Ta bort kodeliste RoadElementType fra RoadElement
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td>ID for vegelementet</td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td>angivelse av material for vegelementet, fritekst.</td>
-      <td>Character<wbr />String</td>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
     </tr>
     <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-PhysicalElement
-
-#### Overbygningselement_for_Vegdesign
-
-Overbygningselement_for_Vegdesign skal ha betegnelse i henhold til kodeliste OverbygningLagtype, og i henhold til lag i overbygningen beskrevet i N200.<br />Link til N200 + eventuelt figur.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>name</td>
-      <td>navn på elementet, fritekst</td>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>lagtype</td>
-      <td>lagtypen på laget, gitt ved kodelisteverdi</td>
-      <td><a href="#kodeliste-overbygninglagtype">Overbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>lagnummer</td>
-      <td>nummer på laget, nummerert fra toppen og nedover</td>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
       <td>Integer</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>tykkelse</td>
-      <td>tykkelsen på laget, gitt i meter</td>
-      <td>Real</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>indre<wbr />Fyllingshelling</td>
-      <td>brukes til å angi at laget ikke kun ligger under vegdesignelementet, men at fylingen skrår utover. Angis som desimaltall</td>
-      <td>Real</td>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
   </tbody>
 </table>
 
-#### VegdesignElement
+Relasjoner
 
-VegdesignElement er flateelementer topp vegkonstruksjon inkludert både kjøreflater og alle andre overflater til og med fylling/skjæring. Flatebetegnelsene framkommer i union av flere kodelister. Unionen av kodelister er VegdesignElementType. Noen flater har regelverk knyttet til seg, for eksempel kjøreflater.<br />Andre benyttes for å sette av plass til for eksempel rekkverk, busslomme, overvannshåndtering eller landskapsforming.
+**Arv**
+HavneanleggId
+
+#### Tørrdokk
+
+Et basseng stort nok til at skip kan seile ut og inn. Bunnen ligger lavere enn havnivået og innløpet kan lukkes med porter. Vann kan pumpes ut, slik skip kan stå tørt, for vedlikehold og reperasjon.
 
 Egenskaper
 
@@ -1377,187 +2490,184 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>veg<wbr />Design</td>
-      <td>flatetypen dette vegdesignelementet tilhører</td>
-      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- flatetype</td>
-      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
-      <td>Vegdesign<wbr />Element<wbr />Type</td>
+      <td>løftekapasitet</td>
+      <td>Maksimal løftekapasitet, angitt i tonn.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Fartøy<wbr />Bredde</td>
+      <td>Maksimal bredde på fartøyet som dokken kan romme. Angis i meter.</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Fartøy<wbr />Dyptgående</td>
+      <td>Maksimal dyptgående på fartøyet som dokken kan romme. Angis i meter.</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Fartøy<wbr />Lengde</td>
+      <td>Maksimal lengde på fartøyet som dokken kan romme. Angis i meter.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Navn på tørrdokken.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Polygon som viser geografisk utstrekning.</td>
+      <td>Flate</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- flaterekkefølge</td>
-      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
       <td>Integer</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- vegside</td>
-      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
-      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>ytterkant</td>
-      <td>ytterkant på elementet</td>
-      <td>Ytterkant</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
-    </tr>
-    <tr>
-      <td>fra<wbr />Profil</td>
-      <td>startprofil for dette vegelementet</td>
-      <td>Real</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>til<wbr />Profil</td>
-      <td>sluttprofil for dette vegelementet</td>
-      <td>Real</td>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
       <td>0..1</td>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
-    </tr>
-    <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td>ID for vegelementet</td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td>angivelse av material for vegelementet, fritekst.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -1565,197 +2675,14 @@ Egenskaper
 Relasjoner
 
 **Arv**
-VegElement
+HavneanleggId
 
 **Assosiasjoner**
-Overbygningselement_for_Vegdesign – rolle: overbygning – kardinalitet: 0..*
-Underbygning – rolle: underbygning – kardinalitet: 0..*
-Planum – rolle: planum – kardinalitet: 0..*
+TørrdokkGrense – rolle: avgrensning – kardinalitet: 0..*
 
-#### Planum
+#### KaiområdeGrense
 
-Planum kalles også traubunn, og er overflaten av underbygningen.<br />Traubunn er graveflate som graves ut, eller toppflate bearbeidet undergrunn som gjøres før oppbygging av overbygning. ved bygging av veg,
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
-    </tr>
-    <tr>
-      <td>fra<wbr />Profil</td>
-      <td>startprofil for dette vegelementet</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>til<wbr />Profil</td>
-      <td>sluttprofil for dette vegelementet</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
-    </tr>
-    <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td>ID for vegelementet</td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td>angivelse av material for vegelementet, fritekst.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-VegkroppElement
-
-**Assosiasjoner**
-YtreFlatekant – rolle: venstreSide – kardinalitet: 0..1
-YtreFlatekant – rolle: høyreSide – kardinalitet: 0..1
-
-#### Overbygning
-
-Den del av vegkroppen som er over traubunn/planum.<br />Overbygningen kan bestå av frostsikringslag, filterlag (ev. fiberduk), forsterkningslag, bærelag og dekke (bindlag/bindelag og slitelag).
+Avgrensning av kaiområde.
 
 Egenskaper
 
@@ -1770,175 +2697,79 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>lagtype</td>
-      <td>Betegnelse på fysisk lag i overbygningen  i henhold til kodeliste OverbygningLagtype.</td>
-      <td><a href="#kodeliste-overbygninglagtype">Overbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>grense</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>lagnummer</td>
-      <td>Lagene nummereres fra toppen, dvs ofte  VegdekkeSlitelag som nr 1</td>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
       <td>Integer</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>tykkelse</td>
-      <td>tykkelse på laget, enhet meter</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
-    </tr>
-    <tr>
-      <td>fra<wbr />Profil</td>
-      <td>startprofil for dette vegelementet</td>
-      <td>Real</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>til<wbr />Profil</td>
-      <td>sluttprofil for dette vegelementet</td>
-      <td>Real</td>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
       <td>0..1</td>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
-    </tr>
-    <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td>ID for vegelementet</td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td>angivelse av material for vegelementet, fritekst.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -1946,196 +2777,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-VegkroppElement
+FellesegenskaperPåkrevd
 
-**Assosiasjoner**
-VegdesignElement – rolle: vegdesignElement – kardinalitet: 0..1
+#### HavnegjerdeInngang
 
-#### VegkroppElement (abstrakt)
-
-Fysisk del av Overbygning, Underbygning. eller Planum.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
-    </tr>
-    <tr>
-      <td>fra<wbr />Profil</td>
-      <td>startprofil for dette vegelementet</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>til<wbr />Profil</td>
-      <td>sluttprofil for dette vegelementet</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
-    </tr>
-    <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td>ID for vegelementet</td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td>angivelse av material for vegelementet, fritekst.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-VegElement
-
-**Assosiasjoner**
-Volumobjekt – rolle: volum – kardinalitet: 0..1
-ToppOverflate – rolle: toppOverflate – kardinalitet: 0..1
-YtreFlatekant – rolle: ytterkant – kardinalitet: 0..1
-
-#### Underbygning
-
-Den del av vegkroppen som er under traubunn/planum.<br />Underbygningen kan bestå av fylling, undergrunn og undergrunn, forbedret.
+Inngang, åpning eller innkjørsel til området som er avsperret av Havnegjerde.
 
 Egenskaper
 
@@ -2150,175 +2796,178 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>lagtype</td>
-      <td>Betegnelse på fysisk lag i underbygningen  i henhold til kodeliste UnderbygningLagtype.</td>
-      <td><a href="#kodeliste-underbygninglagtype">Underbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>avsperringstype</td>
+      <td>Kodeliste for å angi type avsperring for inngangen.</td>
+      <td><a href="#kodeliste-avsperringstype">Avsperringstype</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>lagnummer</td>
-      <td>lagnummer, nummerert i stigende rekkefølge fra planum = 0  og nedover.</td>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>periode</td>
+      <td>Periode havnegjerdet og/eller havnegjerdeInngang er satt opp. Brukes i tilfeller der havnegjerde er kun satt opp i visse tidsrom eller deler av året.  Attributt trengs ikke benyttes ved permanent gjerde.</td>
+      <td>Periode<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- mnd<wbr />Fra</td>
+      <td>Måned fra.</td>
+      <td><a href="#kodeliste-måned">Måned</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- mnd<wbr />Til</td>
+      <td>Måned til.</td>
+      <td><a href="#kodeliste-måned">Måned</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>senterlinje</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>åpningstype</td>
+      <td>Kodeliste for å spesifisere åpningsmekanisme av port, bom eller annet som avsperrer havnesikkerhetsområde.</td>
+      <td><a href="#kodeliste-åpningstype">Åpningstype</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
       <td>Integer</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>tykkelse</td>
-      <td>tykkelse på laget, enhet meter.</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
-    </tr>
-    <tr>
-      <td>fra<wbr />Profil</td>
-      <td>startprofil for dette vegelementet</td>
-      <td>Real</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>til<wbr />Profil</td>
-      <td>sluttprofil for dette vegelementet</td>
-      <td>Real</td>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
       <td>0..1</td>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
-    </tr>
-    <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td>ID for vegelementet</td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td>angivelse av material for vegelementet, fritekst.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -2326,11 +2975,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-VegkroppElement
+HavneanleggId
 
-#### Sideområde
+#### ForvaltningsområdeGrense
 
-Den delen av vegoverflata som ligger på sida av vegkroppen og som ikke er knytta til noen overbygning
+Avgrensning av forvaltningsområde.
 
 Egenskaper
 
@@ -2344,775 +2993,79 @@ Egenskaper
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>grense</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
     </tr>
     <tr>
-      <td>fra<wbr />Profil</td>
-      <td>startprofil for dette vegelementet</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>til<wbr />Profil</td>
-      <td>sluttprofil for dette vegelementet</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
       <td>Date</td>
       <td>1</td>
     </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
-    </tr>
-    <tr>
-      <td>road<wbr />Element<wbr />ID</td>
-      <td>ID for vegelementet</td>
-      <td>ID</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>material</td>
-      <td>angivelse av material for vegelementet, fritekst.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
-    </tr>
-    <tr>
-      <td>name</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td></td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>spatial<wbr />Representation</td>
-      <td></td>
-      <td>Spatial<wbr />Representation</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>linearly<wbr />Referenced<wbr />Location</td>
-      <td></td>
-      <td>Linearly<wbr />Referenced<wbr />Location</td>
-      <td>0..*</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-VegkroppElement
-
-**Assosiasjoner**
-VegdesignElement – rolle: vegdesignElement – kardinalitet: 0..1
-
-#### GenerelleEgenskaper
-
-Abstrakt supertype med generelle egenskaper fra SOSI Del 1 og LandInfra
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
     <tr>
       <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Unik identifikasjon av objektet.</td>
       <td>Identifikasjon<br />(datatype)</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>navnerom i form av en URI</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-#### Vegkropp
-
-Vegens overbygning og underbygning, samt planum.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-GenerelleEgenskaper
-
-**Assosiasjoner**
-VegKroppElement – rolle: vegkroppElement – kardinalitet: 0..*
-
-#### Veg_Prosjektreferanse
-
-fornorsking av landInfra/Road, for å kunne knytte til norske tillegg.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegen til "norsk vegbygging-teori".</td>
-      <td>Veg<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponent<wbr />Referanse</td>
-      <td>Henviser til mer informasjon om en komponent gitt i kodeliste Komponentreferanse.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- dimensjonerende<wbr />Parametre</td>
-      <td>samlingen av dimensjonerende verdier for vegen gitt i kodeliste DimensjonerendeParametere_Veg.</td>
-      <td>Dimensjonerende<wbr />Verdier_<wbr />Veg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - standardklasse<wbr />Vegstandard</td>
-      <td>Standard vegklasse</td>
-      <td><a href="#kodeliste-dimensjoneringsklasse">Dimensjoneringsklasse</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - hastighet</td>
-      <td>Dimensjonerende hastighet for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendehastighet">Dimensjonerende<wbr />Hastighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - vegbredde</td>
-      <td>Dimensjonerende vegbredde for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendevegbredde">Dimensjonerende<wbr />Vegbredde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - motorkjøretøy</td>
-      <td>Dimensjonerende motorkjøretøytype for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendemotorkjøretøy">Dimensjonerende<wbr />Motorkjøretøy</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - trafikkmengde<wbr />ÅDT</td>
-      <td>Dimensjonerende trafikkmengde målt i ÅDT for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendetrafikkmengdeådt">Dimensjonerende<wbr />Trafikkmengde<wbr />ÅDT</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kjøremåte</td>
-      <td>Dimensjonerende kjøremåte for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendekjøremåte">Dimensjonerende<wbr />Kjøremåte</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - max<wbr />Overhøyde<wbr />Prosent</td>
-      <td>Max tverrfall i prosent</td>
-      <td><a href="#kodeliste-maxoverhøydeprosent">Max<wbr />Overhøyde<wbr />Prosent</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - trafikk</td>
-      <td>Dimensjonerende trafikk målt i aksel-last for vegen</td>
-      <td><a href="#kodeliste-dimensjonerendetrafikkgruppe">Dimensjonerende<wbr />Trafikkgruppe</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- total<wbr />Overbygningstykkelse</td>
-      <td>totaltykkelsen på overbygningen, angitt i meter</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-GenerelleEgenskaper
-
-**Assosiasjoner**
-Vegkropp – rolle: vegelementsamling – kardinalitet: 0..*
-VegKroppElement – rolle: element – kardinalitet: 0..*
-StringLineN – rolle: stringLine – kardinalitet: 0..*
-
-#### StringLineN_Planum
-
-Linje som beskriver planum/traubunn.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>vegdesign<wbr />Ref</td>
-      <td>referanse til vegdesinget som linja er avledet fra</td>
-      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- flatetype</td>
-      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
-      <td>Vegdesign<wbr />Element<wbr />Type</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- flaterekkefølge</td>
-      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
       <td>Integer</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- vegside</td>
-      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
-      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
-    </tr>
-    <tr>
-      <td>geometri</td>
-      <td>linjas geometri</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-StringLineN
-
-#### StringLineN_Referanselinje
-
-Spesifikk linje som vegelement(er) refererer seg til
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
-    </tr>
-    <tr>
-      <td>geometri</td>
-      <td>linjas geometri</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-StringLineN
-
-#### StringLineN_Underbygning
-
-Linjer som beskriver lag/flate i underbygning.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>lagtype</td>
-      <td>navn på underbygninglaget som linja representerer</td>
-      <td><a href="#kodeliste-underbygninglagtype">Underbygning<wbr />Lagtype</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>vegdesign<wbr />Ref</td>
-      <td>referanse til vegdesinget som linja er avledet fra</td>
-      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- flatetype</td>
-      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
-      <td>Vegdesign<wbr />Element<wbr />Type</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- flaterekkefølge</td>
-      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
       <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- vegside</td>
-      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
-      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
-    </tr>
-    <tr>
-      <td>geometri</td>
-      <td>linjas geometri</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
   </tbody>
@@ -3121,11 +3074,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-StringLineN
+FellesegenskaperPåkrevd
 
-#### StringLineN
+#### SlippGrense
 
-linjer som går langs  vegen.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
+Avgrensning av Slipp.
 
 Egenskaper
 
@@ -3140,1023 +3093,1656 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>geometri</td>
-      <td>linjas geometri</td>
-      <td>GM_<wbr />Curve</td>
+      <td>grense</td>
+      <td>forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
       <td>1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
     </tr>
     <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-GenerelleEgenskaper
-
-#### StringLineN_Sideområde
-
-Linjer som beskriver sideområde av veg.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>vegdesign<wbr />Ref</td>
-      <td>referanse til vegdesinget som linja er avledet fra</td>
-      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- flatetype</td>
-      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
-      <td>Vegdesign<wbr />Element<wbr />Type</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- flaterekkefølge</td>
-      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- vegside</td>
-      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
-      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
-    </tr>
-    <tr>
-      <td>geometri</td>
-      <td>linjas geometri</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-StringLineN
-
-#### StringLineN_Overbygning
-
-Linjer som beskriver overbygningslag.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>lagtype</td>
-      <td>navn på overbygninglaget som linja representerer</td>
-      <td><a href="#kodeliste-overbygninglagtype">Overbygning<wbr />Lagtype</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>vegdesign<wbr />Ref</td>
-      <td>referanse til vegdesinget som linja er avledet fra</td>
-      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- flatetype</td>
-      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
-      <td>Vegdesign<wbr />Element<wbr />Type</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- flaterekkefølge</td>
-      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- vegside</td>
-      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
-      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
-    </tr>
-    <tr>
-      <td>geometri</td>
-      <td>linjas geometri</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-StringLineN
-
-#### VegdesignElement_for_Vegkropp
-
-VegdesignElement er flateelementer topp vegkonstruksjon inkludert både kjøreflater og alle andre overflater til og med fylling/skjæring. Flatebetegnelsene framkommer i union av flere kodelister. Unionen av kodelister er VegdesignElementType. Noen flater har regelverk knyttet til seg, for eksempel kjøreflater.<br />Andre benyttes for å sette av plass til for eksempel rekkverk, busslomme, overvannshåndtering eller landskapsforming.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>veg<wbr />Design</td>
-      <td>flatetypen dette vegdesignelementet tilhører</td>
-      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- flatetype</td>
-      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
-      <td>Vegdesign<wbr />Element<wbr />Type</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- flaterekkefølge</td>
-      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- vegside</td>
-      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
-      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-GenerelleEgenskaper
-
-#### Planum
-
-Planum kalles også traubunn, og er overflaten av underebygningen.<br />Traubunn er graveflate som graves ut, eller toppflate bearbeidet undergrunn som gjøres før oppbygging av overbygning. ved bygging av veg,
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegKroppElement</th>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
       <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
       <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Unik identifikasjon av objektet.</td>
       <td>Identifikasjon<br />(datatype)</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>navnerom i form av en URI</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-VegKroppElement
-
-**Assosiasjoner**
-YtreFlatekant – rolle: høyreSide – kardinalitet: 0..1
-YtreFlatekant – rolle: venstreSide – kardinalitet: 0..1
-
-#### VegKroppElement (abstrakt)
-
-fornorsking av RoadElement, for å kunne knytte til norsk vegbyggings-teori
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-GenerelleEgenskaper
-
-**Assosiasjoner**
-ToppOverflate – rolle: toppOverflate – kardinalitet: 0..1
-YtreFlatekant – rolle: ytterkant – kardinalitet: 0..1
-Volumobjekt – rolle: volum – kardinalitet: 0..1
-
-#### Underbygning
-
-En fellesbetegnelse for undergrunn, forbedret og fylling opp til planum.<br />Den del av vegkroppen som er under traubunn/planum.<br />Underbygningen kan bestå av fylling, undergrunn og undergrunn, forbedret.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>lagtype</td>
-      <td>Betegnelse på fysisk lag i underbygningen  i henhold til kodeliste UnderbygningLagtype.</td>
-      <td><a href="#kodeliste-underbygninglagtype">Underbygning<wbr />Lagtype</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>lagnummer</td>
-      <td>lagnummer, nummerert i stigende rekkefølge fra planum = 0  og nedover.</td>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
       <td>Integer</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>tykkelse</td>
-      <td>tykkelse på laget, enhet meter</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperPåkrevd
+
+#### TørrdokkGrense
+
+Avgrensning av Tørrdokk.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>grense</td>
+      <td>forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperPåkrevd
+
+#### HavneområdeGrense
+
+Avgrensning av havneområde.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>grense</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperPåkrevd
+
+#### Havneområde
+
+Havn er et avgrenset område som inneholder kai/kaier tilknyttet land- og sjøarealer som er tilrettelagt for overføring av gods, personer eller lignende mellom land og sjø.<br />Havneområde kjennetegnes ved at de har en UNLOCODE tilknyttet seg, og innenfor området må det være minst én kai og én kaifront.<br />Havneområdet kan inneholde mange havneanlegg, mange kaier og andre objekter.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>forvaltes<wbr />Av</td>
+      <td>Felt for å angi hvem som forvalter eller administrerer havneområdet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Polygon som viser geografisk utstrekning</td>
+      <td>Flate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+HavnId
+
+**Assosiasjoner**
+HavneområdeGrense – rolle: avgrensning – kardinalitet: 0..*
+
+#### Forvaltningsområde
+
+Areal som viser utstrekningen på det område en kommune eller en kommunal/interkommunal havneadministrasjonen har ansvaret for. Dette området er ofte sammenfallende med kommunens sjøområde, som er det område hvor kommunen har planmyndighet etter plan- og bygningsloven med unntak av hoved- og biled (Hoved- og biled forvaltes av Kystverket).
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>forvaltes<wbr />Av</td>
+      <td>Felt for å angi hvem som forvalter området. Vanligvis kommune, IKS eller havneadministrasjon på vegne av kommune.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Polygon som viser geografisk utstrekning.</td>
+      <td>Flate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+HavnId
+
+**Assosiasjoner**
+ForvaltningsområdeGrense – rolle: avgrensning – kardinalitet: 0..*
+
+#### Beredskapspunkt
+
+Punkt på kaia der det er plassert utstyr for beredskap/sikkerhet.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>beredskapstype</td>
+      <td>Beredskapstype</td>
+      <td><a href="#kodeliste-beredskapstype">Beredskapstype</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>spesifikasjon</td>
+      <td>Egenskap for å spesifisere beredskapstype.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+ObjektId
+
+#### Kaifront
+
+Kaifront er den ytterste delen av kaien, som avgrenser sjøen fra land, hvor fartøy kan ligge fortøyd langs.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>høyde<wbr />Sjøkartnull</td>
+      <td>Angitt høyde på kaien i meter over vannet. Egenskapen høyde angis i forhold til sjøkartnull (dvs. høyder over lokal LAT-verdi) dersom ikke annet er angitt.</td>
+      <td>Real</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kaifronttype</td>
+      <td>Beskriver type konstruksjon kaifronten har mot sjøen.</td>
+      <td><a href="#kodeliste-kaifronttype">Kaifronttype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kaitype</td>
+      <td>Type kai</td>
+      <td><a href="#kodeliste-kaitype">Kaitype</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>lengde</td>
+      <td>Angitt lengde på kaifronten i antall meter. Kailengden måles opp på den delen av kaifronten som egner seg for anløp av skip. Lengde kan også beregnes ut fra lengden på geometrien.</td>
+      <td>Real</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>senterlinje</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+ObjektId
+
+#### Havnesensor
+
+Sensor som måler, samler inn data eller registrerer annet i tilknytning til havnen.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unik identisfisering av det enkelte objekt på kaia i form av URL, nummer, navn eller annet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>sensortype</td>
+      <td>Type sensor.</td>
+      <td><a href="#kodeliste-sensortype">Sensortype</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+HavnId
+
+#### Slipp
+
+Skinnegående bane eller et forseggjort opptrekk som fartøy kan hales opp ved landsetting, fra flytende posisjon og opp på tørt land. Skråplanet går vanligvis ut og ned i vannet.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>høyde<wbr />Sjøkartnull</td>
+      <td>Angitt høyde på høyeste del av slippen, i meter over vannet. Egenskapen høyde angis i forhold til sjøkartnull (dvs. høyder over lokal LAT-verdi) dersom ikke annet er angitt.</td>
+      <td>Real</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kaidekketype</td>
+      <td>Beskrivelse av materialebruk på dekket av slippen.</td>
+      <td><a href="#kodeliste-kaidekketype">Kaidekketype</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kran<wbr />Kapasitet</td>
+      <td>Kapasitet til kran tilknyttet slipp, angitt i tonn.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Bredde<wbr />Fartøy</td>
+      <td>Maksimal bredde på fartøyet som slippen kan ta. Angis i meter.</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Dyptgående<wbr />Fartøy</td>
+      <td>Maksimal dyptgående på fartøyet som slippen kan ta. Angis i meter.</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>maks<wbr />Lengde<wbr />Fartøy</td>
+      <td>Maksimal lengde på fartøy som slippen kan ta. Angis i meter.</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Navn på slippen.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Polygon som viser geografisk utstrekning.</td>
+      <td>Flate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>slipp<wbr />Kapasitet</td>
+      <td>Løftekapasitet til slippen, angitt i tonn.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spesifikasjon</td>
+      <td>Attributt for å spesifisere opptrekksmekanisme (vinsj, skinner el.) eller annen relevant informasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>tilgangstype</td>
+      <td>Kodeliste for å spesifisere hvem som har mulighet til å benytte slippen.</td>
+      <td><a href="#kodeliste-tilgangstype">Tilgangstype</a><br />(kodeliste)</td>
+      <td>0..*</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+KaiId
+
+**Assosiasjoner**
+SlippGrense – rolle: avgrensning – kardinalitet: 0..*
+
+#### Lastbegrensningsområde
+
+Område i havnen eller på kai som har begrensinger for hva det tåler av belastning.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>akseltrykk</td>
+      <td>Det trykk som må bæres av én aksel på en vogn eller kjøretøy.<br />Øvre grense for akseltrykk. Måles i tonn (t).</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>bruksklassetype</td>
+      <td>Bruksklasse</td>
+      <td><a href="#kodeliste-bruksklassetype">Bruksklassetype</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kaidekketype</td>
+      <td>Kaidekke</td>
+      <td><a href="#kodeliste-kaidekketype">Kaidekketype</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>last<wbr />Id</td>
+      <td>Tall eller tekst havnen bruker for å identifisere et lastbegrensningsområde.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>lastreferanse</td>
+      <td>Referanse til originaldokument, tegning e.l. som inneholder informasjon om lastebegrensing.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>minste<wbr />Avstand<wbr />Punktlast</td>
+      <td>Hvor tett to punktlaster kan stå for å ikke overbelaste kaien. Henger sammen med egenskapen punktlast. Måles i meter (m).</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Område</td>
+      <td>Flate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>punktlast</td>
+      <td>Vekten av last fordelt i et punkt. Øvre grense for maksimal vekt av en punktlast. Måles i tonn (t).</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>vektbegrensning</td>
+      <td>Vekten av jevnt fordelt last over et område. Øvre grense for jevnt fordelt last. Måles i antall tonn pr. kvadratmeter (t/m2).</td>
       <td>Real</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegKroppElement</th>
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
     </tr>
     <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
-      <td>1</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
     </tr>
     <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
       <td>0..1</td>
     </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
     </tr>
     <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
     </tr>
     <tr>
       <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Unik identifikasjon av objektet.</td>
       <td>Identifikasjon<br />(datatype)</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>navnerom i form av en URI</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-VegKroppElement
-
-#### Overbygning
-
-Den del av vegkroppen som er over traubunn/planum.<br />Overbygningen kan bestå av frostsikringslag, filterlag (ev. fiberduk), forsterkningslag, bærelag og dekke (bindlag/bindelag og slitelag).
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>lagtype</td>
-      <td>Betegnelse på fysisk lag i overbygningen  i henhold til kodeliste OverbygningLagtype.</td>
-      <td><a href="#kodeliste-overbygninglagtype">Overbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>lagnummer</td>
-      <td>Lagene nummereres fra toppen, dvs ofte  VegdekkeSlitelag som nr 1</td>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
       <td>Integer</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>tykkelse</td>
-      <td>tykkelse på laget, enhet meter</td>
-      <td>Real</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegKroppElement</th>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
   </tbody>
@@ -4165,179 +4751,14 @@ Egenskaper
 Relasjoner
 
 **Arv**
-VegKroppElement
+KaiId
 
 **Assosiasjoner**
-VegdesignElement_for_Vegkropp – rolle: vegdesignElement – kardinalitet: 0..1
+LastbegrensningsområdeGrense – rolle: avgrensning – kardinalitet: 0..*
 
-#### Sideområde
+#### Kamera
 
-Den delen av vegoverflata som ligger på sida av vegkroppen og som ikke er knytta til noen overbygning
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra VegKroppElement</th>
-    </tr>
-    <tr>
-      <td>norske<wbr />Tillegg</td>
-      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
-      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- tilhører<wbr />Prosjekt</td>
-      <td>identifikasjon av prosjektet leveransen tilhører</td>
-      <td>Prosjektreferanse<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgiver<wbr />Navn</td>
-      <td>navn på oppdragsgiver</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
-      <td>oppdragsgivers organisasjonsnummer</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektnavn</td>
-      <td>Oppdragsgivers prosjektnavn</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />ID</td>
-      <td>Oppdragsgivers prosjektID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjektfase</td>
-      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - fasestatus</td>
-      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
-      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - utarbeidet<wbr />Av</td>
-      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - prosjekt<wbr />URL</td>
-      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - leveransedato</td>
-      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- komponentreferanse</td>
-      <td>referanse til ekstern database, der mer om objektet finnes.</td>
-      <td>Komponentreferanse<br />(datatype)</td>
-      <td>0..*</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodesystem</td>
-      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
-      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - kodesystemversjon</td>
-      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - komponentkodeverdi</td>
-      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
-    </tr>
-    <tr>
-      <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
-      <td>Identifikasjon<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-VegKroppElement
-
-**Assosiasjoner**
-VegdesignElement_for_Vegkropp – rolle: vegdesignElement – kardinalitet: 0..1
-
-#### Terrengflate
-
-Tatt med LandSurface for å kunne levere med terrengoverflata. Da slipper vegkroppen å ligge i løse lufta.<br /><br />LandSurface er tatt fra LandInfra/Land Feature, men er forenklet kraftig.
+Kamera tilknyttet havnen.
 
 Egenskaper
 
@@ -4352,48 +4773,132 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>geometri</td>
-      <td>terrengoverlate i form av en TIN</td>
-      <td>GM_<wbr />Tin</td>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unik identisfisering av det enkelte objekt på kaia i form av URL, nummer, navn eller annet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
     </tr>
     <tr>
       <td>identifikasjon</td>
-      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Unik identifikasjon av objektet.</td>
       <td>Identifikasjon<br />(datatype)</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- lokal<wbr />Id</td>
-      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- navnerom</td>
-      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>navnerom i form av en URI</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
       <td>- versjon<wbr />Id</td>
-      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>navn</td>
-      <td>Tilsvarer LandInfra/AbstractData/name</td>
-      <td>Character<wbr />String</td>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>beskrivelse</td>
-      <td>Tilsvarer LandInfra/AbstractData/description</td>
-      <td>Character<wbr />String</td>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
   </tbody>
@@ -4402,11 +4907,2105 @@ Egenskaper
 Relasjoner
 
 **Arv**
-GenerelleEgenskaper
+HavnId
+
+#### Drivstofftilkobling
+
+Tilkoblingspunkt for drivstoff på kaia.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>drivstofftype</td>
+      <td>Type drivstoff.</td>
+      <td><a href="#kodeliste-drivstofftype">Drivstofftype</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kapasitet</td>
+      <td>Kapasitet til fylling av drivstoff angitt i antall m3/time.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>mobilitet</td>
+      <td>Egenskap for å anngi om drivstoffpunktet er fast montert eller flyttbart (mobilt drivstoffpunkt i form av en tankbil eller lignende).<br /><br />For mobile tilkoblingspunkt er det vanskelig/meningsløst å stedfeste punktet nøyaktig. Punktet plasseres da på et passelig representativt punkt og gis en kvalitetskode som angir stor usikkerhet i innmåling.</td>
+      <td>Boolean</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>tilgangstype</td>
+      <td>Kodeliste for å spesifisere hvem som har mulighet til å benytte punktet.</td>
+      <td><a href="#kodeliste-tilgangstype">Tilgangstype</a><br />(kodeliste)</td>
+      <td>0..*</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+ObjektId
+
+#### Tømmestasjon
+
+Tømmestasjon eller punkt for tømming av væske (avløpsvann, septik eller tilsvarende).
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>avløpstype</td>
+      <td>Beskrivelse av hva slags tømming/avløpstype som er tilgjengelig.</td>
+      <td><a href="#kodeliste-avløpstype">Avløpstype</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kapasitet</td>
+      <td>Kapasitet til tømming, angitt i antall m3/time.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kumnummer</td>
+      <td>ID-merking av kummer. Kan tas fra havnas eget merkesystem eller kommunens SID-nr.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>mobilitet</td>
+      <td>Egenskap for å anngi om tømmestasjonen er fast montert eller flyttbart (i form av en tankbil eller lignende).<br /><br />For mobile tilkoblingspunkt er det vanskelig/meningsløst å stedfeste punktet nøyaktig. Punktet plasseres da på et passelig representativt punkt og gis en kvalitetskode som angir stor usikkerhet i innmåling.</td>
+      <td>Boolean</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>tilgangstype</td>
+      <td>Kodeliste for å spesifisere hvem som har mulighet til å benytte tømmestasjonen.</td>
+      <td><a href="#kodeliste-tilgangstype">Tilgangstype</a><br />(kodeliste)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>tilkoblingsdimensjon</td>
+      <td>Størrelse/dimensjon på rørene som skal kobles sammen.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+ObjektId
+
+#### ELkobling
+
+Tilkoblingspunkt for strøm på kaia.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ELanleggstype</td>
+      <td>Beskrivelse av hva slags type strømtilkobling som kan gjøres.</td>
+      <td><a href="#kodeliste-elanleggstype">ELanleggstype</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>ELkoblinger</td>
+      <td>Spesifikasjon av de ulike kombinasjonene EL-koblingspunkt som finnes.</td>
+      <td>ELkobling<wbr />Egenskaper<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- effekt</td>
+      <td>Watt. Arbeid pr. sekund.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- faser</td>
+      <td>Betegnelse på de enkelte polene eller lederne i et vekselstrømsystem.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- frekvens</td>
+      <td>Hvor mange ganger en elektrisk spenning veksler i løpet av ett sekund. Måles i Hz.</td>
+      <td><a href="#kodeliste-frekvens">Frekvens</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- kontakt<wbr />Id</td>
+      <td>Id-nummer eller annen beskrivelse som spesifiserer hvilken type kontakt.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- sikringstørrelse</td>
+      <td>Strømstyrke, oppgis i ampere, SI-enheten for elektrisk strøm. Strømstyrke er lik ladning som passerer et tverrsnitt av en leder pr. sekund.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- spenning</td>
+      <td>Volt. Elektrisk spenning.</td>
+      <td><a href="#kodeliste-spenning">Spenning</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>høydereferanse</td>
+      <td>Høydereferanse til kartobjektet.</td>
+      <td><a href="#kodeliste-høydereferanse">Høydereferanse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Posisjon</td>
+      <td>Punkt</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>rekkevidde<wbr />Ladeanlegg</td>
+      <td>Attributt som benyttes ved ladeannlegg, for å spesifisere lengde på kabeltrommel som er tilgjengelig. Oppgis i meter.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Beskriver status til et objekt.</td>
+      <td><a href="#kodeliste-status">Status</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>tilgangstype</td>
+      <td>Kodeliste for å spesifisere hvem som har mulighet til å benytte punktet.</td>
+      <td><a href="#kodeliste-tilgangstype">Tilgangstype</a><br />(kodeliste)</td>
+      <td>0..*</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra ObjektId</th>
+    </tr>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+ObjektId
+
+#### HavneanleggId (abstrakt)
+
+Abstrakt objekt som holder egenskaper for unik identifisering av et havneanlegg. Egenskapene arves ned til øvrige objektklasser i Havnedata.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+HavnId
+
+#### FellesegenskaperOpsjonell (abstrakt)
+
+abstrakt objekt som bærer en felles egenskaper som brukes på alle objekttyper i FKB.<br />Opsjonelle egenskaper.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperPåkrevd
+
+#### FellesegenskaperPåkrevd (abstrakt)
+
+abstrakt objekt som bærer en felles egenskaper som brukes på alle objekttyper i FKB.<br />Påkrevde egenskaper.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+#### HavnId (abstrakt)
+
+Abstrakt objekt som holder egenskaper for unik identifisering av en havn. Egenskapene arves ned til øvrige objektklasser i Havnedata.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperOpsjonell
+
+#### KaiId (abstrakt)
+
+Abstrakt objekt som holder egenskaper for unik identifisering av en kai. Egenskapene arves ned til øvrige objektklasser i Havnedata.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+HavneanleggId
+
+#### ObjektId (abstrakt)
+
+Abstrakt objekt som holder egenskaper for unik identifisering av objekt på kaien.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>objekt<wbr />Løpenummer</td>
+      <td>Unikt løpenummer for identifisering av det enkelte objekt på kaien, i form av nummer/tekst.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra KaiId</th>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id</td>
+      <td>Unik identifisering av den enkelte kai.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>kai<wbr />Id<wbr />Intern</td>
+      <td>Havnens interne egendefinerte nummering av kaier.<br />Nummerering varierer fra havn til havn, noen bruker utelukkende tall eller bokstaver, mens andre bruker en kombinasjon.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kainavn</td>
+      <td>Navn på kaien. Det samme kainavnet brukes på alle kaifronter og kaiområder som regnes å tilhøre samme kai. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavneanleggId</th>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Id</td>
+      <td>Unik identifisering av det enkelte havneanlegg.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>havneanlegg<wbr />Navn</td>
+      <td>Navn på havneanlegg. Navn bør stemme overens med SafeSeaNet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>ISPS</td>
+      <td>Boolsk verdi (JA/NEI) om angir om havneanlegget er et ISPS Havneanlegg.</td>
+      <td>Boolean</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra HavnId</th>
+    </tr>
+    <tr>
+      <td>havn</td>
+      <td>Stedsnavn på havnen som har blitt tildelt en UNLOCODE. Navnet må samsvare med UNLOCODE.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>UNLOCODE</td>
+      <td>Lokaliseringskode fra UNLOCODE-systemet som identifiserer et havneområde. Koden består av 5 bokstaver: de to første bokstavene angir landskode, mens de tre siste identifiserer havnen. Eks: NOSVG (Stavanger).<br />Se liste med lovlige kodeverdier her: <a href="https://service.unece.org/trade/locode/no.htm">https://service.unece.org/trade/locode/no.htm</a></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+KaiId
+
+#### Forbudsområde
+
+Område som er omfattet av forbud, som f.eks. ferdselsforbud for vannscooter.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fastsatt<wbr />Av</td>
+      <td>Angir hvem forskriften er fastsatt av.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>forbudstype</td>
+      <td>Angir hvilket type forbud som gjelder for området.</td>
+      <td><a href="#kodeliste-forbudstype">Forbudstype</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>forskrift<wbr />Lenke</td>
+      <td>Lenke til forskiften på lovdata.no.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>forskrift<wbr />Navn</td>
+      <td>Navnet på forskrift som regulerer forbudsområdet. Ved langt navn kan korttittel benyttes.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>gjelder<wbr />For</td>
+      <td>Geografisk område som forskriften gjelder for. Står spesifisert i lovteksten, kan være en kommune eller et havneområde.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>gjelder<wbr />For<wbr />Fartøytype</td>
+      <td>Kodeliste som spesifiserer hvilken type fartøy som er omfattet av forbudet.</td>
+      <td><a href="#kodeliste-fartøytype">Fartøytype</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>lovhjemmel</td>
+      <td>Lov som forbudet eller forskriften har hjemmel i.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Polygon som viser geografisk utstrekning.</td>
+      <td>Flate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>periode<wbr />Gyldig<wbr />Fra</td>
+      <td>Periode gyldig fra. Oppgis for forbudsområder som har tidsavgrensning eller gjelder deler av året (f.eks. bare i sommermånedene). Årstall er ikke nødvendig. Dersom årstall ikke oppgis regnes datoen å gjelde hvert år.</td>
+      <td>Date</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>periode<wbr />Gyldig<wbr />Til</td>
+      <td>Periode gyldig til. Oppgis for forbudsområder som har tidsavgrensning eller gjelder deler av året (f.eks. bare i sommermånedene). Årstall er ikke nødvendig. Dersom årstall ikke oppgis regnes datoen å gjelde hvert år.</td>
+      <td>Date</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperOpsjonell
+
+**Assosiasjoner**
+ForbudsområdeGrense – rolle: avgrensning – kardinalitet: 0..*
+
+#### Fartsrestriksjoner
+
+Område som har restriksjoner knyttet til ferdsel og fart for fartøyer som ferdes på sjøen.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fastsatt<wbr />Av</td>
+      <td>Angir hvem forskriften er fastsatt av.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>forskrift<wbr />Lenke</td>
+      <td>Lenke til forskriften på lovdata.no.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>forskrift<wbr />Navn</td>
+      <td>Navnet på forskriften. Ved langt navn korttittel benyttes.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>gjelder<wbr />For</td>
+      <td>Geografisk område som forskriften gjelder for. Står spesifisert i lovteksten, og er vanligvis en kommune eller havneområde,</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>gjelder<wbr />For<wbr />Fartøytype</td>
+      <td>Kodeliste som spesifiserer hvilken type fartøy som er omfattet av forskriften.</td>
+      <td><a href="#kodeliste-fartøytype">Fartøytype</a><br />(kodeliste)</td>
+      <td>1..*</td>
+    </tr>
+    <tr>
+      <td>hastighet</td>
+      <td>Maksimal tillatte hastighet, angitt i knop.</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>lovhjemmel</td>
+      <td>Lov som forskriften har hjemmel i.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>område</td>
+      <td>Polygon som viser geografisk utstrekning.</td>
+      <td>Flate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>periode<wbr />Gyldig<wbr />Fra</td>
+      <td>Periode gyldig fra. Oppgis for fartsrestriksjoner som har tidsavgrensning eller gjelder deler av året (f.eks. bare i sommermånedene). Årstall er ikke nødvendig. Dersom årstall ikke oppgis regnes datoen å gjelde hvert år.</td>
+      <td>Date</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>periode<wbr />Gyldig<wbr />Til</td>
+      <td>Periode gyldig til. Oppgis for fartsrestriksjoner som har tidsavgrensning eller gjelder deler av året (f.eks. bare i sommermånedene). Årstall er ikke nødvendig. Dersom årstall ikke oppgis regnes datoen å gjelde hvert år.</td>
+      <td>Date</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>posisjon</td>
+      <td>Opsjonelt representasjonspunkt for området.</td>
+      <td>Punkt</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperOpsjonell</th>
+    </tr>
+    <tr>
+      <td>informasjon</td>
+      <td>generell opplysning</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>Link i form av URL eller annet til mer informasjon om objektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>oppdateringsdato</td>
+      <td>dato for siste endring på objektetdataene.</td>
+      <td>Date<wbr />Time</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperOpsjonell
+
+**Assosiasjoner**
+FartsrestriksjonerGrense – rolle: avgrensning – kardinalitet: 0..*
+
+#### ForbudsområdeGrense
+
+Avgrensning av forbudsområde.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>grense</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperPåkrevd
+
+#### FartsrestriksjonerGrense
+
+Avgrensning av Fartsrestriksjoner.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>grense</td>
+      <td>Forløp som følger overgang mellom ulike fenomener.</td>
+      <td>Kurve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FellesegenskaperPåkrevd</th>
+    </tr>
+    <tr>
+      <td>datafangstdato</td>
+      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Unik identifikasjon av objektet.</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>Unik identifikator innenfor navnerommet. For FKB benyttes UUID.</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom i form av en URI</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. Benyttes normalt ikke i FKB.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>kvalitet</td>
+      <td>Stedfestingskvalitet</td>
+      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode</td>
+      <td>Metode for datafangst.<br />Egenskapen beskriver datafangstmetode for grunnrisskoordinater (x,y), eller for både grunnriss og høyde (x,y,z) dersom det ikke er oppgitt noen verdi for datafangstmetodeHøyde.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- datafangstmetode<wbr />Høyde</td>
+      <td>Metode brukt for høyderegistrering av posisjon.<br />Det er bare nødvending å angi en verdi for egenskapen dersom datafangstmetode for høyde avviker fra datafangstmetode for grunnriss.</td>
+      <td><a href="#kodeliste-datafangstmetode">Datafangstmetode</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet</td>
+      <td>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer.<br /><br />Merknad:<br />Oppgitt i cm</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- nøyaktighet<wbr />Høyde</td>
+      <td>Nøyaktighet for høyden i cm.</td>
+      <td>Integer</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- synbarhet</td>
+      <td>Hvor godt den kartlagte detalj var synbar ved kartleggingen.</td>
+      <td><a href="#kodeliste-synbarhet">Synbarhet</a><br />(kodeliste)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FellesegenskaperPåkrevd
 
 ### Kodelister
 
-#### <a id="kodeliste-facilityparttype"></a>«CodeList» FacilityPartType
+#### <a id="kodeliste-energikilde"></a>«CodeList» Energikilde
+
+**Definisjon:** Kodeliste for å spesifisere energikilden til et objekt, f.eks. kran.
 
 Profilparametre i tagged values
 
@@ -4418,81 +7017,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/energikilde">https://register.geonorge.no/sosi-kodelister/havnedata/energikilde</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-høydereferanse"></a>«CodeList» Høydereferanse
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>bridge</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>building</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>drainage</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>environmental</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>railway</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>road</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>site</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>tunnel</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>wastewater</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>waterDistribution</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>other</td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-roadelementtype"></a>«CodeList» RoadElementType
+**Definisjon:** Angivelse av hvor på objektet koordinatregistreringen er utført.
 
 Profilparametre i tagged values
 
@@ -4504,178 +7040,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/hoydereferanse">https://register.geonorge.no/sosi-kodelister/havnedata/hoydereferanse</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-krantype"></a>«CodeList» Krantype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>pavement</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>pavementSurfaceCourse</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>pavementIntermediateCourse</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>pavementBaseCourse</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>pavementSubbase</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>shoulder</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>hardShoulder</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>softShoulder</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>barrier</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>guardRail</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>curb</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>verticalCurb</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>mountablelCurb</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>curbAndGutter</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>gutter</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>crossPan</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>median</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>greenAreaMedian</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>pavedMedian</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>raisedMedian</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>fencedMedian</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>medianGuardRail</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>medianConcreteBarrier</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>verge</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>sidewalk</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>bikePath</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>drainageDitch</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>cutSlope</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>fillSlope</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>codeList</td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-komponentkodesystem"></a>«CodeList» Komponentkodesystem
-
-**Definisjon:** Kodeliste med navn på aktuelle kodesystemer. Lista kan utvides ved behov.
+**Definisjon:** Angir hvilken type kran.
 
 Profilparametre i tagged values
 
@@ -4687,49 +7063,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/krantype">https://register.geonorge.no/sosi-kodelister/havnedata/krantype</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-status"></a>«CodeList» Status
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HBR761Prosesskode</td>
-      <td>Se R761, Prosesskode</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>EPD-ID</td>
-      <td>Link (URL) til EPD Norge (eller annen EPD) for oppslag av EPD for aktuell byggevare.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>NS3420</td>
-      <td>NS3420-kode angis tilsvarende denne, som NS-kode med link/URL.:</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>MMI</td>
-      <td>Se RIFs Modell Modenhets Indeks for samferdsel</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-dimensjoneringsklasse"></a>«CodeList» Dimensjoneringsklasse
-
-**Definisjon:** Dimensjoneringsklasser for nasjonale hovedveger
-Kilde: N100 (versjon mai 2019)
+**Definisjon:** Angir status til havneobjekt.
 
 Profilparametre i tagged values
 
@@ -4741,63 +7086,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/status">https://register.geonorge.no/sosi-kodelister/havnedata/status</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-tilgangstype"></a>«CodeList» Tilgangstype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>H1</td>
-      <td>H1 Nasjonal hovedveg, ÅDT &lt; 6000, fartsgrense 80 km/t</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>H3</td>
-      <td>H3 Nasjonal hovedveg, ÅDT &gt; 12000, fartsgrense 110 km/t</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>H5</td>
-      <td>H5 Nasjonal hovedveg, ÅDT 6000 -12000, fartsgrense 90 km/t</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Hø1</td>
-      <td>Hø1- Øvrige hovedveger, ÅDT &lt; 4000, fartsgrense 80 km/t</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Hø2</td>
-      <td>Hø2 - Øvrige hovedveger, ÅDT &lt; 120000, fartsgrense 60 km/t</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>L1</td>
-      <td>L1 Lokale veger, ÅDT &lt; 1500, fartsgrense 60 km/t eller 80 km/t</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>L2</td>
-      <td>L2 Øvrige lokale veger,  ÅDT &lt; 300, lav fartsgrense</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-dimensjonerendehastighet"></a>«CodeList» DimensjonerendeHastighet
-
-**Definisjon:** Dimensjonerende hastighet målt i km/t
+**Definisjon:** Angir tilgang til havneobjekt.
 
 Profilparametre i tagged values
 
@@ -4809,65 +7109,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/tilgangstype">https://register.geonorge.no/sosi-kodelister/havnedata/tilgangstype</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-vauttakstype"></a>«CodeList» VAuttakstype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td></td>
-      <td>30 km/t</td>
-      <td>30</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>40 km/t</td>
-      <td>40</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>50 km/t</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>60 km/t</td>
-      <td>60</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>80 km/t</td>
-      <td>80</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>90 km/t</td>
-      <td>90</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>110 km/t</td>
-      <td>110</td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-dimensjonerendevegbredde"></a>«CodeList» DimensjonerendeVegbredde
-
-**Definisjon:** Dimensjonerende vegbredde på rettstrekning, dvs. uten hensyn til breddeutvidelse i kurver.
-Kilde: N100 (versjon mai 2019)
-Kodene er navngitt med m og evt. cm for å unngå at de inneholder kommategn
+**Definisjon:** Type vanntilkobling som kan gjøres.
 
 Profilparametre i tagged values
 
@@ -4879,63 +7132,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/vauttakstype">https://register.geonorge.no/sosi-kodelister/havnedata/vauttakstype</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-eierskap"></a>«CodeList» Eierskap
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>23m</td>
-      <td>23 m</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>12m50cm</td>
-      <td>12,5 m</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>9m</td>
-      <td>9 m</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>7m50cm</td>
-      <td>7,5 m</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>6m</td>
-      <td>6 m</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>4m</td>
-      <td>4 m</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>3m50cm</td>
-      <td>3,5 m</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-dimensjonerendemotorkjøretøy"></a>«CodeList» DimensjonerendeMotorkjøretøy
-
-**Definisjon:** Dimensjonerende motorkjøretøy velges ut fra veg-og gatenettets funksjon, trafikkmengde og muligheterfor omkjøring.
+**Definisjon:** Angir type eierskap.
 
 Profilparametre i tagged values
 
@@ -4947,61 +7155,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/eierskap">https://register.geonorge.no/sosi-kodelister/havnedata/eierskap</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-sikringstype"></a>«CodeList» Sikringstype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>P</td>
-      <td>Personbiler, varebiler, kombibiler (P)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>LL</td>
-      <td>Liten lastebil (LL)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>L</td>
-      <td>Lastebiler (inkl. brannbiler med stige) (L)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>Boggibusser (B)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>VT</td>
-      <td>Vogntog (VT)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>MVT</td>
-      <td>Modulvogntog (MVT)</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-dimensjonerendetrafikkmengdeådt"></a>«CodeList» DimensjonerendeTrafikkmengdeÅDT
-
-**Definisjon:** Dimensjonerende antall kjøretøy i snitt pr døgn, ÅDT
-
-Kilde: N100 (versjon mai 2019)
-<a href="https://www.vegvesen.no/siteassets/content/vedlegg/handboker/n100-veg-og-gateutforming-041219.pdf">https://www.vegvesen.no/siteassets/content/vedlegg/handboker/n100-veg-og-gateutforming-041219.pdf</a>
+**Definisjon:** Angir sikring til havneobjekt.
 
 Profilparametre i tagged values
 
@@ -5013,63 +7178,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/sikringstype">https://register.geonorge.no/sosi-kodelister/havnedata/sikringstype</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-fenderorientering"></a>«CodeList» Fenderorientering
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>under6000</td>
-      <td>&lt;6000 kjøretøy i snitt pr døgn</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>mellom6000og12000</td>
-      <td>6000-12000  kjøretøy i snitt pr døgn</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>over12000</td>
-      <td>&gt;12000 kjøretøy i snitt pr døgn</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>under4000</td>
-      <td>&lt;4000 kjøretøy i snitt pr døgn</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>under12000</td>
-      <td>&lt;12000 kjøretøy i snitt pr døgn</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>under1500</td>
-      <td>&lt;1500 kjøretøy i snitt pr døgn</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>under300</td>
-      <td>&lt;300 kjøretøy i snitt pr døgn</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-dimensjonerendekjøremåte"></a>«CodeList» DimensjonerendeKjøremåte
-
-**Definisjon:** Beskriver den frihet et kjøretøy trenger i veg-/kjørearealet ved trafikkering av vegnettet. Se kjøremåte A, B og C.
+**Definisjon:** Angir orientering til fender.
 
 Profilparametre i tagged values
 
@@ -5081,68 +7201,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/fenderorientering">https://register.geonorge.no/sosi-kodelister/havnedata/fenderorientering</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-fendertype"></a>«CodeList» Fendertype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>A</td>
-      <td>Kjøremåte A:
-Ved kjøremåte A forutsettes følgende nårdet gjelder dimensjonerende kjøretøy:
-&lt;ul&gt;
-&lt;li&gt;kjøretøyet skal kunne trafikkere veg-/gateanlegget kun ved bruk av eget kjørefelt. Dette betyr athele kjøretøyet, inklusiv overheng, skal kunne bevege seg innenfor sitt eget kjørefelt&lt;/li&gt;
-&lt;li&gt;på veger og gater utenom kryss skal disse strekningene kunne trafikkeres med en fart tilsvarendefartsgrensen&lt;/li&gt;
-&lt;li&gt;i kryss skal kjøretøyet kunne kjøre gjennom krysset med en fart på 15 km/t&lt;/li&gt;
-&lt;li&gt;i slyng skal kjøretøyet kunne kjøre med en fart på 15 km/t&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;kjøretøyet skal ikke behøve å rygge på snuplasser&lt;/li&gt;
-&lt;/ul&gt;</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>Kjøremåte B:
-Ved kjøremåte B forutsettes følgende når det gjelder dimensjonerende kjøretøy:
-&lt;ul&gt;
-&lt;li&gt;i kryss forutsettes kjøretøyet å kunne bruke deler av motgående kjørefelt i den veg/gate kjøretøyetsvinger inn i&lt;/li&gt;
-&lt;li&gt;på veger og gater utenfor kryss antas at valgt kjøretøy på enkelte partier trafikkerer disse med enlavere fart enn fartsgrensen&lt;/li&gt;
-&lt;li&gt;i kryss forutsettes valgt kjøretøy å kunne kjøre gjennom krysset med en lavere fart enn 15 km/t&lt;/li&gt;
-&lt;li&gt;i slyng skal kjøretøyet kunne kjøre med en fart på 15 km/t&lt;/li&gt;
-&lt;li&gt;kjøretøyet vil i noen tilfeller måtte regne med å rygge på snuplasser&lt;/li&gt;
-&lt;/ul&gt;</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>Kjøremåte C:
-Kjøremåte C vil primært være knyttet til kryss. Ved kjøremåte C forutsettes følgende når det gjelder dimensjonerende kjøretøy:
-&lt;ul&gt;
-&lt;li&gt;kjøretøyet forutsettes å kunne bruke hele kjørebanebredden både i den veg/gate kjøretøyet svinger av fra og i den veg/gate kjøretøyet svinger inn i&lt;/li&gt;
-&lt;li&gt;valgt kjøretøy forutsettes å kjøre gjennom krysset med en lavere fart enn 15 km/t&lt;/li&gt;
-&lt;li&gt;kjøretøyet vil i noen tilfeller måtte regne med å rygge på snuplasser&lt;/li&gt;
-&lt;/ul&gt;</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-maxoverhøydeprosent"></a>«CodeList» MaxOverhøydeProsent
-
-**Definisjon:** Max tverrfall/overhøyde målt i prosent
-Kilde N100 (versjon mai 2019)
+**Definisjon:** Angivelse av ulike fendertyper.
 
 Profilparametre i tagged values
 
@@ -5154,42 +7224,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/fendertype">https://register.geonorge.no/sosi-kodelister/havnedata/fendertype</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-avfallstype"></a>«CodeList» Avfallstype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td></td>
-      <td>8 %</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>5 %</td>
-      <td>5</td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-dimensjonerendetrafikkgruppe"></a>«CodeList» DimensjonerendeTrafikkgruppe
-
-**Definisjon:** Trafikkgruppe målt i ekvivalente 10 tonns aksler (N):
-Dimensjonerende aksellast: 10 tonn
-Dimensjoneringsperiode: 20 år
-Dimensjonerende trafikkbelastning: Ekvivalente 10 tonns aksler per felt i dimensjoneringsperioden.
-Kilde: N200 (2018)
+**Definisjon:** Angir type avfall.
 
 Profilparametre i tagged values
 
@@ -5201,58 +7247,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/avfallstype">https://register.geonorge.no/sosi-kodelister/havnedata/avfallstype</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-beholdertype"></a>«CodeList» Beholdertype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>A</td>
-      <td>&lt;500 000 = Trafikkgruppe A</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>500 000 - 1 000 000 = Trafikkgruppe B</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>1 000 000 – 2 000 000 = Trafikkgruppe C</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>D</td>
-      <td>2 000 000 – 3 500 000 = Trafikkgruppe D</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>E</td>
-      <td>3 500 000 – 10 000 000 = Trafikkgruppe E</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>&gt; 10 000 000 = Trafikkgruppe F</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-overbygninglagtype"></a>«CodeList» OverbygningLagtype
-
-**Definisjon:** Kodeliste som betegner fysisk lag i overbygningen
+**Definisjon:** Angir type avfallsbeholder.
 
 Profilparametre i tagged values
 
@@ -5264,106 +7270,18 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/beholdertype">https://register.geonorge.no/sosi-kodelister/havnedata/beholdertype</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-kaidekketype"></a>«CodeList» Kaidekketype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>slitelag</td>
-      <td>Det øverste laget i et vegdekke. Settes sammen/beregnes for å kunne oppta trafikk- og klimapåkjenninger.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>bindelag</td>
-      <td>Nedre del av asfaltdekket når dette består av mer enn ett lag, dvs. lag mellom slitelag og bærelag.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>bærelag</td>
-      <td>Bærelag. Dersom det brukes flere bærelag, skilles de med lagnummer.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>forsterkningslag</td>
-      <td>Lag i vegens overbygning, under bærelag. Hovedfunksjonen er å fordele trafikkbelastningen slik at undergrunnen ikke overbelastes.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>frostsikringslag</td>
-      <td>Lag under forsterkningslaget, eller bygget sammen med forsterkningslaget, for å hindre frosten i å trenge ned i tele- farlig undergrunn eller underbygning.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>filterlag</td>
-      <td>Lag av filtermateriale, normalt nederste lag i overbygningen mellom planum og forsterkningslaget. Er i dag normalt erstattet av en fiberduk.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>fiberduk</td>
-      <td>Kan være fiberduk. Fiberduk kan legges under armeringslaget for å unngå at materialer fra grunnen trenger inn i overbygningen.</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-side"></a>«Enumeration» Side
-
-**Definisjon:** kodeliste for angivelse av vegside
-
-Koder
-
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>left</td>
-      <td>venstre side</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>right</td>
-      <td>høyre side</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>both</td>
-      <td>begge sider</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>neither</td>
-      <td>ingen av sidene</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>unspecified</td>
-      <td>uspesifisert side</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-underbygninglagtype"></a>«CodeList» UnderbygningLagtype
-
-**Definisjon:** Kodeliste som betegner fysisk lag i underbygningen
+**Definisjon:** Angivelse av ulike typer dekke på kai.
 
 Profilparametre i tagged values
 
@@ -5375,41 +7293,425 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/kaidekketype">https://register.geonorge.no/sosi-kodelister/havnedata/kaidekketype</a></td>
     </tr>
   </tbody>
 </table>
 
-Koder
+#### <a id="kodeliste-kaitype"></a>«CodeList» Kaitype
 
-<table class="code-list-table">
-  <thead>
-    <tr>
-      <th>Kodenavn:</th>
-      <th>Definisjon:</th>
-      <th>Kodeverdi:</th>
-    </tr>
-  </thead>
+**Definisjon:** Angivelse av ulik bruk av kai.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
   <tbody>
     <tr>
-      <td>undergrunn</td>
-      <td>Eksisterende masser i grunnen, som gjennom bearbeiding, evt. ved tilsetning av materialer, får en forbedret styrke i forhold til opprinnelig styrke. Eksempler på tiltak kan være komprimering, senking av grunnvannstanden. Formålet er å oppnå en redusert tykkelse på nødvendig overbygning. Se også grunnforsterkning med lokale materialer.</td>
-      <td></td>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
     </tr>
     <tr>
-      <td>dypsprengning</td>
-      <td>Løssprengning av fjell til et visst nivå under teoretisk traubunn.</td>
-      <td></td>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/kaitype">https://register.geonorge.no/sosi-kodelister/havnedata/kaitype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-fortøyningstype"></a>«CodeList» Fortøyningstype
+
+**Definisjon:** Type fortøyningsinnretning.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
     </tr>
     <tr>
-      <td>undergrunnForbedret</td>
-      <td>Eksisterende masser i grunnen som er forbedret eller stabilisert</td>
-      <td></td>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/fortoyningstype">https://register.geonorge.no/sosi-kodelister/havnedata/fortoyningstype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-måned"></a>«CodeList» Måned
+
+**Definisjon:** Kodeliste over årets måneder.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
     </tr>
     <tr>
-      <td>fylling</td>
-      <td>Fylling som del av underbyggning</td>
-      <td></td>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/maned">https://register.geonorge.no/sosi-kodelister/havnedata/maned</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-avsperringstype"></a>«CodeList» Avsperringstype
+
+**Definisjon:** Type avsperring for HavnegjerdeInngang.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/avsperringstype">https://register.geonorge.no/sosi-kodelister/havnedata/avsperringstype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-åpningstype"></a>«CodeList» Åpningstype
+
+**Definisjon:** Beskriver åpningsmekanisme av port, bom eller annen avsperringstype for HavnegjerdeInngang.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/apningstype">https://register.geonorge.no/sosi-kodelister/havnedata/apningstype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-beredskapstype"></a>«CodeList» Beredskapstype
+
+**Definisjon:** Angir type beredskap eller beredskapsutstyr.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/beredskapstype">https://register.geonorge.no/sosi-kodelister/havnedata/beredskapstype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-kaifronttype"></a>«CodeList» Kaifronttype
+
+**Definisjon:** Ulike typer kaifronter. Beskriver kaifronten sin konstruksjon mot sjøen.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/kaifronttype">https://register.geonorge.no/sosi-kodelister/havnedata/kaifronttype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-sensortype"></a>«CodeList» Sensortype
+
+**Definisjon:** Type sensor.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/sensortype">https://register.geonorge.no/sosi-kodelister/havnedata/sensortype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-bruksklassetype"></a>«CodeList» Bruksklassetype
+
+**Definisjon:** Kodelisten angir bruksklasse på kai. Bruksklassetype er kodeliste for egenskap bruksklasse på objekttype Lastbegrensningsområde. Bruksklassen forkortes Bk og etterfølges av et tall. Den angir største tillatte aksellast, last fra akselkombinasjoner og totalvekt avhengig av avstanden mellom akslene. Som beskrevet i "Forskrift om bruk av kjøretøy" og Statens vegvesen sin håndbok R412.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/bruksklassetype">https://register.geonorge.no/sosi-kodelister/havnedata/bruksklassetype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-drivstofftype"></a>«CodeList» Drivstofftype
+
+**Definisjon:** Angir hvilke typer drivstoff som kan fylles.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/drivstofftype">https://register.geonorge.no/sosi-kodelister/havnedata/drivstofftype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-avløpstype"></a>«CodeList» Avløpstype
+
+**Definisjon:** Angir hvilken type væske som kan tømmes.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/avlopstype">https://register.geonorge.no/sosi-kodelister/havnedata/avlopstype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-elanleggstype"></a>«CodeList» ELanleggstype
+
+**Definisjon:** Type EL-anlegg/strømanlegg.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/elanleggstype">https://register.geonorge.no/sosi-kodelister/havnedata/elanleggstype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-frekvens"></a>«CodeList» Frekvens
+
+**Definisjon:** Angir frekvensen for EL-koblingen, som er hvor mange ganger en elektrisk spenning veksler i løpet av ett sekund. Måles i Hz.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/frekvens">https://register.geonorge.no/sosi-kodelister/havnedata/frekvens</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-spenning"></a>«CodeList» Spenning
+
+**Definisjon:** Kodeliste for å angi den eletriske spenningen. Måleenhet i volt.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/spenning">https://register.geonorge.no/sosi-kodelister/havnedata/spenning</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-datafangstmetode"></a>«CodeList» Datafangstmetode
+
+**Definisjon:** Metode for datafangst. Datafangstmetoden beskriver hvordan selve vektordataene er posisjonert fra et datagrunnlag (observasjoner med landmålingsutstyr, fotogrammetrisk stereomodell, digital terrengmodell etc.) og ikke prosessen med å innhente det bakenforliggende datagrunnlaget.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/datafangstmetode">https://register.geonorge.no/sosi-kodelister/havnedata/datafangstmetode</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-synbarhet"></a>«CodeList» Synbarhet
+
+**Definisjon:** hvor godt den kartlagte detalj var synbar ved kartleggingen
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/synbarhet">https://register.geonorge.no/sosi-kodelister/havnedata/synbarhet</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-forbudstype"></a>«CodeList» Forbudstype
+
+**Definisjon:** Kodeliste for å angi forbudstype for forbudsområde.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/forbudstype">https://register.geonorge.no/sosi-kodelister/havnedata/forbudstype</a></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-fartøytype"></a>«CodeList» Fartøytype
+
+**Definisjon:** Kodeliste for å spesifisere hvilket type fartøy en regulering eller restriksjon omfatter.
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>true</td>
+    </tr>
+    <tr>
+      <th scope="row">codeList</th>
+      <td><a href="https://register.geonorge.no/sosi-kodelister/havnedata/fartoytype">https://register.geonorge.no/sosi-kodelister/havnedata/fartoytype</a></td>
     </tr>
   </tbody>
 </table>
