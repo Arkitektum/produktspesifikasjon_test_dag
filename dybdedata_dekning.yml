@@ -4,6 +4,6 @@ product_slug: dybdedata_dekning
 updated: '2026-10-22'
 scopes:
 - name: Ny datakilde2
-  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Reguleringsplaner%2020120416.xml
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/FKB/Havnedata.xml
   generator: xmi
   description: ''
