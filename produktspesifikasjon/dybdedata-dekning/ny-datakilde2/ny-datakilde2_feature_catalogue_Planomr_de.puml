@@ -1,0 +1,134 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - Ny datakilde2 - Planområde
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Planområde" {
+
+  class RpGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpOmråde" as RpOmr_de <<featureType>> {
+    + område [1] : Flate
+    + arealplanId [1] : NasjonalArealplanId
+    + plantype [1] : RpPlantype
+    + planstatus [1] : Planstatus
+    + plannavn [1] : CharacterString
+    + planbestemmelse [1] : Planbestemmelse
+    + ikrafttredelsesdato [0..1] : Date
+    + vertikalnivå [1] : Vertikalnivå
+    + lovreferanse [1] : LovreferanseType
+    + lovreferanseBeskrivelse [0..1] : CharacterString
+    + gjennomføringsfrist [0..1] : Date
+    + forslagsstillerType [0..1] : ForslagsstillerType
+    + vedtakEndeligPlanDato [0..1] : Date
+    + kunngjøringsdato [0..1] : Date
+    + opprinneligplanid [0..1] : CharacterString
+    + opprinneligadministrativenhet [0..1] : CharacterString
+  }
+
+  class NasjonalArealplanId <<dataType>> {
+    + administrativEnhet [1] : AdministrativEnhetskode
+    + planidentifikasjon [1] : CharacterString
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class "RbBevaringOmråde" as RbBevaringOmr_de <<Bestemmelser/hensyn>> {
+  }
+  class "RbFareOmråde" as RbFareOmr_de <<Bestemmelser/hensyn>> {
+  }
+  class "RbFormålOmråde" as RbForm_lOmr_de <<Arealformål>> {
+  }
+  class "RbFornyelseOmråde" as RbFornyelseOmr_de <<Bestemmelser/hensyn>> {
+  }
+  class "RbRekkefølgeOmråde" as RbRekkef_lgeOmr_de <<Bestemmelser/hensyn>> {
+  }
+  class "RbRestriksjonOmråde" as RbRestriksjonOmr_de <<Bestemmelser/hensyn>> {
+  }
+  class RpAngittHensynSone <<Bestemmelser/hensyn>> {
+  }
+  class "RpArealformålOmråde" as RpArealform_lOmr_de <<Arealformål>> {
+  }
+  class "RpBestemmelseOmråde" as RpBestemmelseOmr_de <<Bestemmelser/hensyn>> {
+  }
+  class "RpBåndleggingSone" as RpB_ndleggingSone <<Bestemmelser/hensyn>> {
+  }
+  class RpDetaljeringSone <<Bestemmelser/hensyn>> {
+  }
+  class RpFareSone <<Bestemmelser/hensyn>> {
+  }
+  class "RpGjennomføringSone" as RpGjennomf_ringSone <<Bestemmelser/hensyn>> {
+  }
+  class RpInfrastrukturSone <<Bestemmelser/hensyn>> {
+  }
+  class RpJuridiskLinje <<Juridiske punt/linjer og påskrift>> {
+  }
+  class RpJuridiskPunkt <<Juridiske punt/linjer og påskrift>> {
+  }
+  class "RpPåskrift" as RpP_skrift <<Juridiske punt/linjer og påskrift>> {
+  }
+  class "RpRegulertHøyde" as RpRegulertH_yde <<Juridiske punt/linjer og påskrift>> {
+  }
+  class RpSikringSone <<Bestemmelser/hensyn>> {
+  }
+  class "RpStøySone" as RpSt_ySone <<Bestemmelser/hensyn>> {
+  }
+  class SOSI_Objekt_Planlinjer_Rp <<SOSI_Objekt_Rp>> {
+  }
+  class "SOSI_Objekt_Planområde_Rp" as SOSI_Objekt_Planomr_de_Rp <<SOSI_Objekt_Rp>> {
+  }
+}
+
+SOSI_Objekt_Planlinjer_Rp <|-- RpGrense
+RpGrense --> RpOmr_de : [1..2]
+SOSI_Objekt_Planomr_de_Rp <|-- RpOmr_de
+RpOmr_de --> RpGrense : planavgrensning [0..*]
+RpOmr_de --> RpGjennomf_ringSone : gjennomføring [0..*]
+RpOmr_de --> RpDetaljeringSone : detaljering [0..*]
+RpOmr_de --> RbForm_lOmr_de : reguleringsformål [1..*]
+RpOmr_de --> RpBestemmelseOmr_de : bestemmelse [0..*]
+RpOmr_de --> RpRegulertH_yde : regulertHøyde [0..*]
+RpOmr_de --> RpFareSone : fare [0..*]
+RpOmr_de --> RbFornyelseOmr_de : fornyelse [0..*]
+RpOmr_de --> RpSikringSone : sikring [0..*]
+RpOmr_de --> RpJuridiskPunkt : juridiskPunkt [0..*]
+RpOmr_de --> RbFareOmr_de : fare [0..*]
+RpOmr_de --> RpP_skrift : påskrift [0..*]
+RpOmr_de --> RpJuridiskLinje : juridiskLinje [0..*]
+RpOmr_de --> RbRestriksjonOmr_de : restriksjon [0..*]
+RpOmr_de --> RbBevaringOmr_de : bevaring [0..*]
+RpOmr_de --> RpB_ndleggingSone : båndlegging [0..*]
+RpOmr_de --> RbRekkef_lgeOmr_de : rekkefølge [0..*]
+RpOmr_de --> RpAngittHensynSone : angittHensyn [0..*]
+RpOmr_de --> RpSt_ySone : støy [0..*]
+RpOmr_de --> RpArealform_lOmr_de : formålsområde [1..*]
+RpOmr_de --> RpInfrastrukturSone : infrastruktur [0..*]
+
+@enduml
