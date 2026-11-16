@@ -1,50 +1,86 @@
 ### Datamodell
 
-**Kilde:** [SOSI UML XMI-fil](https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Statens%20kartverk/N50Kartdata20230401.xml)
+**Kilde:** [SOSI UML XMI-fil](https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/BA-nettverk/Leveranse_SOSI_Vegkropp_2021.xml)
 
 #### Oversikt
 
 <a href="ny-datakilde2_feature_catalogue_overview.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_overview.png" alt="Datamodell Ny datakilde2 - oversikt" style="max-width: 100%; height: auto;" /></a>
 
-#### Pakke: Administrative_områder
+#### Pakke: Alignment_GML
 
-<a href="ny-datakilde2_feature_catalogue_Administrative_omr_der.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Administrative_omr_der.png" alt="Datamodell Ny datakilde2 - Administrative_områder" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2_feature_catalogue_Alignment_GML.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Alignment_GML.png" alt="Datamodell Ny datakilde2 - Alignment_GML" style="max-width: 100%; height: auto;" /></a>
 
-#### Pakke: Arealdekke
+#### Pakke: Facility_GML
 
-<a href="ny-datakilde2_feature_catalogue_Arealdekke.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Arealdekke.png" alt="Datamodell Ny datakilde2 - Arealdekke" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2_feature_catalogue_Facility_GML.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Facility_GML.png" alt="Datamodell Ny datakilde2 - Facility_GML" style="max-width: 100%; height: auto;" /></a>
 
-#### Pakke: Bygninger_og_anlegg
+#### Pakke: GenerelleEgenskaper
 
-<a href="ny-datakilde2_feature_catalogue_Bygninger_og_anlegg.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Bygninger_og_anlegg.png" alt="Datamodell Ny datakilde2 - Bygninger_og_anlegg" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2_feature_catalogue_GenerelleEgenskaper.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_GenerelleEgenskaper.png" alt="Datamodell Ny datakilde2 - GenerelleEgenskaper" style="max-width: 100%; height: auto;" /></a>
 
-#### Pakke: Generelle typer
+#### Pakke: InfraGML_Part3_Alignment
 
-<a href="ny-datakilde2_feature_catalogue_Generelle_typer.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Generelle_typer.png" alt="Datamodell Ny datakilde2 - Generelle typer" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2_feature_catalogue_InfraGML_Part3_Alignment.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_InfraGML_Part3_Alignment.png" alt="Datamodell Ny datakilde2 - InfraGML_Part3_Alignment" style="max-width: 100%; height: auto;" /></a>
 
-#### Pakke: Høyde
+#### Pakke: InfraGML_Part4_Road
 
-<a href="ny-datakilde2_feature_catalogue_H_yde.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_H_yde.png" alt="Datamodell Ny datakilde2 - Høyde" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2_feature_catalogue_InfraGML_Part4_Road.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_InfraGML_Part4_Road.png" alt="Datamodell Ny datakilde2 - InfraGML_Part4_Road" style="max-width: 100%; height: auto;" /></a>
 
-#### Pakke: Restriksjonsområder
+#### Pakke: Part0_Core
 
-<a href="ny-datakilde2_feature_catalogue_Restriksjonsomr_der.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Restriksjonsomr_der.png" alt="Datamodell Ny datakilde2 - Restriksjonsområder" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2_feature_catalogue_Part0_Core.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Part0_Core.png" alt="Datamodell Ny datakilde2 - Part0_Core" style="max-width: 100%; height: auto;" /></a>
 
-#### Pakke: Samferdsel
+#### Pakke: Part1_LandFeature
 
-<a href="ny-datakilde2_feature_catalogue_Samferdsel.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Samferdsel.png" alt="Datamodell Ny datakilde2 - Samferdsel" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2_feature_catalogue_Part1_LandFeature.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Part1_LandFeature.png" alt="Datamodell Ny datakilde2 - Part1_LandFeature" style="max-width: 100%; height: auto;" /></a>
 
-#### Pakke: Stedsnavn
+#### Pakke: Part3_Alignment
 
-<a href="ny-datakilde2_feature_catalogue_Stedsnavn.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Stedsnavn.png" alt="Datamodell Ny datakilde2 - Stedsnavn" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2_feature_catalogue_Part3_Alignment.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Part3_Alignment.png" alt="Datamodell Ny datakilde2 - Part3_Alignment" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Part4_Road
+
+<a href="ny-datakilde2_feature_catalogue_Part4_Road.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Part4_Road.png" alt="Datamodell Ny datakilde2 - Part4_Road" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Part_GML
+
+<a href="ny-datakilde2_feature_catalogue_Part_GML.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Part_GML.png" alt="Datamodell Ny datakilde2 - Part_GML" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: StringLine
+
+<a href="ny-datakilde2_feature_catalogue_StringLine.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_StringLine.png" alt="Datamodell Ny datakilde2 - StringLine" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Terrengoverflate
+
+<a href="ny-datakilde2_feature_catalogue_Terrengoverflate.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Terrengoverflate.png" alt="Datamodell Ny datakilde2 - Terrengoverflate" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Utvalgte_GML_deler
+
+<a href="ny-datakilde2_feature_catalogue_Utvalgte_GML_deler.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Utvalgte_GML_deler.png" alt="Datamodell Ny datakilde2 - Utvalgte_GML_deler" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Veg
+
+<a href="ny-datakilde2_feature_catalogue_Veg.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Veg.png" alt="Datamodell Ny datakilde2 - Veg" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Vegdesign
+
+<a href="ny-datakilde2_feature_catalogue_Vegdesign.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Vegdesign.png" alt="Datamodell Ny datakilde2 - Vegdesign" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Vegelement
+
+<a href="ny-datakilde2_feature_catalogue_Vegelement.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Vegelement.png" alt="Datamodell Ny datakilde2 - Vegelement" style="max-width: 100%; height: auto;" /></a>
+
+#### Pakke: Vegkropp
+
+<a href="ny-datakilde2_feature_catalogue_Vegkropp.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue_Vegkropp.png" alt="Datamodell Ny datakilde2 - Vegkropp" style="max-width: 100%; height: auto;" /></a>
 
 #### Komplett diagram
 
 <a href="ny-datakilde2_feature_catalogue.png" title="Klikk for stor visning"><img src="ny-datakilde2_feature_catalogue.png" alt="Datamodell Ny datakilde2" style="max-width: 100%; height: auto;" /></a>
 
-#### FiktivDelelinje
+#### Feature
 
-linje for å dele opp store flateobjekter<br /><br />Merknad:<br />En del produktspesifikasjoner benytter spesifikke fiktive delelinjer.
+Kun plassholder for original klasse. Fjernes fra XSD.
 
 Egenskaper
 
@@ -59,19 +95,28 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Hjelpelinjer</th>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -79,11 +124,15 @@ Egenskaper
 Relasjoner
 
 **Arv**
-SOSI_Objekt_Hjelpelinjer
+AnyFeature
 
-#### Dataavgrensning
+**Assosiasjoner**
+PropertySet – rolle: propertySet – kardinalitet: 0..*
+PropertySet – rolle: propertySet – kardinalitet: 0..*
+Property – rolle: property – kardinalitet: 0..*
+Property – rolle: property – kardinalitet: 0..*
 
-generell avgrensningslinje, f.eks. mellom datasett med ulik kvalitet, innhold eller detaljering
+#### LandSurface
 
 Egenskaper
 
@@ -98,19 +147,62 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>TIN</td>
       <td>1</td>
     </tr>
+    <tr>
+      <td>material</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+#### PhysicalElement
+
+Kun plassholder for original klasse. Fjernes fra XSD.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Hjelpelinjer</th>
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -118,11 +210,15 @@ Egenskaper
 Relasjoner
 
 **Arv**
-SOSI_Objekt_Hjelpelinjer
+Feature
 
-#### SOSI_Objekt_Hjelpelinjer (abstrakt)
+**Assosiasjoner**
+PhysicalElement – rolle: part – kardinalitet: 0..*
+PhysicalElement – rolle: partOf – kardinalitet: 0..1
 
-abstrakt objekt som bærer en rekke egenskaper som er til felles for KantUtsnitt, Dataavgrensning og FiktivDelelinje i dette applikasjonsskjemaet
+#### Facility
+
+Facilities include buildings and civil engineering works and their associated siteworks.  Civil engineering works, or infrastructure facilities, are construction works comprising a structure, such as a dam, bridge, road, railway, runway, utilities, pipeline, or sewerage system, or are the result of operations such as dredging, earthwork, and geotechnical processes.<br />A facility has a life cycle, including planning, design, construction, maintenance, operation, and removal phases  The design and construction phases are typically performed as part of a project.  There may be multiple such projects during the life cycle of the facility to enable phased construction and incremental improvement.
 
 Egenskaper
 
@@ -137,17 +233,67 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>facility<wbr />ID</td>
+      <td></td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td></td>
+      <td>Status</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>footprint</td>
+      <td></td>
+      <td>geometry-any</td>
       <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
     </tr>
   </tbody>
 </table>
 
-#### SOSI_Objekt_Linjer_Samferdsel (abstrakt)
+Relasjoner
 
-abstrakt objekt som bærer en rekke egenskaper som er til felles for flere objekttyper i underpakke Samferdsel i dette applikasjonsskjemaet
+**Arv**
+Feature
+
+#### FacilityPart
+
+Land and Infrastructure facility, such as a road or bridge.  A facility has a life cycle, including planning, design, construction, maintenance, operation, and removal phases  The design and construction phases are typically performed as part of a project.  There may be multiple such projects during the life cycle of the facility to enable phased construction and incremental improvement.
 
 Egenskaper
 
@@ -162,47 +308,77 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumsamferdsel">Medium<wbr />Samferdsel</a><br />(kodeliste)</td>
+      <td>facility<wbr />Part<wbr />ID</td>
+      <td></td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td></td>
+      <td><a href="#kodeliste-facilityparttype">Facility<wbr />Part<wbr />Type</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td></td>
+      <td>Status</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>footprint</td>
+      <td></td>
+      <td>geometry-any</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
+      <td>alternative</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
     </tr>
     <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
     </tr>
   </tbody>
 </table>
 
-#### SOSI_Objekt_Flater (abstrakt)
+Relasjoner
 
-abstrakt supertype som samler fellesegenskaper og assosiasjoner som gjelder objekttyper som bare har flategeometri
+**Arv**
+Feature
+
+**Assosiasjoner**
+Facility
+FacilityPartRelationship – rolle: relationship – kardinalitet: 0..*
+
+#### Alignment
+
+PositioningElement which provides a Linear Referencing System for locating PhysicalElements.<br />An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.<br /><br />Kun plassholder for original klasse. Fjernes fra XSD.
 
 Egenskaper
 
@@ -217,10 +393,349 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>alignment<wbr />ID</td>
+      <td></td>
+      <td>ID</td>
       <td>1</td>
+    </tr>
+    <tr>
+      <td>design<wbr />Alternative</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>purpose</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>linestring2<wbr />DRepresentation</td>
+      <td></td>
+      <td>Line<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>linestring3<wbr />DRepresentation</td>
+      <td></td>
+      <td>Line<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+Feature
+
+#### Road
+
+that part of a Project that relates to a single alternative for a single Road part of a project for a single Road part of a Facility.  Each alternative is a separate Road ProjectPart.  An alternative may be a design alternative or a separate phase of construction.<br /><br />Kun plassholder for original klasse. Fjernes fra XSD.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>approximate<wbr />Width</td>
+      <td></td>
+      <td>Length</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FacilityPart</th>
+    </tr>
+    <tr>
+      <td>facility<wbr />Part<wbr />ID</td>
+      <td></td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td></td>
+      <td><a href="#kodeliste-facilityparttype">Facility<wbr />Part<wbr />Type</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td></td>
+      <td>Status</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>footprint</td>
+      <td></td>
+      <td>geometry-any</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>alternative</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+FacilityPart
+
+**Assosiasjoner**
+Alignment – rolle: alignment – kardinalitet: 0..*
+RoadElementSet – rolle: roadElementSet – kardinalitet: 0..*
+StringLine – rolle: stringLine – kardinalitet: 0..*
+StringLineSet – rolle: stringLineSet – kardinalitet: 0..*
+CrossSection – rolle: crossSection – kardinalitet: 0..*
+RoadElement – rolle: element – kardinalitet: 0..*
+
+#### RoadElement
+
+Kun plassholder for original klasse. Fjernes fra XSD.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td></td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>road<wbr />Element<wbr />Type</td>
+      <td></td>
+      <td><a href="#kodeliste-roadelementtype">Road<wbr />Element<wbr />Type</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>material</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+PhysicalElement
+
+**Assosiasjoner**
+LinearElement – rolle: locatedAlong – kardinalitet: 0..1
+RoadElementSet
+
+#### AnyFeature
+
+Også kalla AbstractFeature i LandInfra
+
+Egenskaper
+
+(ingen)
+
+#### AbstractFeature
+
+Kun plassholder for original klasse. Fjernes fra XSD.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+Feature
+
+**Assosiasjoner**
+AbstractFeature – rolle: part – kardinalitet: 0..*
+AbstractFeature – rolle: partOf – kardinalitet: 0..1
+
+#### Alignment
+
+PositioningElement which provides a Linear Referencing System for locating PhysicalElements.<br />An Alignment shall be continuous, non-branching, and non-overlapping. If it is a Project Alignment, it is for a single alternative, as specified by its owning ProjectPart.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>alignment<wbr />ID</td>
+      <td></td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>purpose</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>design<wbr />Altenrative</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>linestring2<wbr />DRepresentation</td>
+      <td></td>
+      <td>Line<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>linestring3<wbr />DRepresentation</td>
+      <td></td>
+      <td>Line<wbr />String</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
@@ -228,36 +743,11 @@ Egenskaper
 Relasjoner
 
 **Assosiasjoner**
-KantUtsnitt – rolle: avgrensesAvKantutsnitt – kardinalitet: 0..*
+AlignmentCurve – rolle: geometry – kardinalitet: 0..1
 
-#### SOSI_Objekt_Sperrelinjer (abstrakt)
+#### Referanselinje
 
-abstrakt objekt som bærer en rekke egenskaper som er felles for alle sperrelinjer i dette applikasjonsskjemaet
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektdataene</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-#### SOSI_Objekt_Kombinasjon_Ulike_Geometrityper (abstrakt)
-
-abstrakt objekt som bærer en rekke egenskaper som er til felles for alle objekttyper med en kombinasjon av punkt- og flategeometri eller linje- og flategeometri i dette applikasjonsskjemaet
+Referanselinje er en linje som brukes som referanse for flater. Kan være senterlinje eller andre flate avgrensninger.
 
 Egenskaper
 
@@ -272,3938 +762,310 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte linja til "norsk vegbygging".<br />Norske tillegg er begreper tilpasset norsk vegbygging.</td>
+      <td>Referanse<wbr />Linje<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Assosiasjoner**
-KantUtsnitt – rolle: avgrensesAvKantUtsnitt – kardinalitet: 0..*
-
-#### SOSI_Objekt_PunkterOgLinjer_Høyde (abstrakt)
-
-abstrakt objekt som bærer en rekke egenskaper som er til felles for flere objekttyper i underpakke Høyde i dette applikasjonsskjemaet
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumhøyde">Medium<wbr />Høyde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-#### KantUtsnitt
-
-avgrensning av et utsnitt
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Hjelpelinjer</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>0..1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Hjelpelinjer
-
-#### SOSI_Objekt_PunkterOgLinjer (abstrakt)
-
-abstrakt objekt som bærer en rekke egenskaper som er til felles for flere objekttyper med punkt- eller linjegeometri i underpakkene Administrative områder, Arealdekke, Bygninger og anlegg, Restriksjonsområder og Samferdsel i dette applikasjonsskjemaet
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-#### AvtaltAvgrensningslinje
-
-avtalt avgrensningslinje til havs basert på folkerettslig bindende avtaler<br /><br />Merknad:<br />Avtalt avgrensningslinje vil normalt gjelde alle aktuelle former for kyststatsjurisdiksjon. Detaljene vil framgå av den aktuelle avgrensningsavtale.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Teiggrensepunkt
-
-koordinatbestemt punkt som er påvist, beskrevet og/eller markert spesielt i den geografiske avgrensinga av teigen<br /><br /><br />-- Definition --<br />point established by coordinates, which is proven, described and/or marked specifically in the geographical demarcation of the parcel Note: Can also be am auxiliary point for technical registration purposes Note: A boundary point is placed either at the beginning or end of a parcel boundary.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>grensepunkttype</td>
-      <td>angivelse av hva slags grensemerke som er brukt i terrenget. Sier også om grensepunktet er merket i terrenget, eller om det bare er et registreringsteknisk punkt.<br /><br />-- Definition --<br />statement of what kind of grensemerke which is used in the terrain. Indicates also whether the boundary point is marked in the terrain, or whether it is merely a point for technical registration purposes.</td>
-      <td><a href="#kodeliste-grensepunkttype">Grensepunkttype</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>grensepunktnummer</td>
-      <td>Kommunens nummerering av grensepunkt</td>
-      <td>Character<wbr />String</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Fylkesgrense
-
-avgrensning av fylke
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Kommune
-
-inndeling i administrative og politiske enheter innenfor fylket<br /><br />Merknad: Tilsvarer NUTS 5 og LAU 2 på internasjonalt statistisk nivå
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kommunenavn</td>
-      <td>offisielt navn på kommunen</td>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>kommunenummer</td>
-      <td>nummerering av kommuner i henhold til Statistisk sentralbyrå sin offisielle liste<br /><br />Merknad: Det presiseres at kommune alltid skal ha 4 siffer, dvs. eventuelt med ledende null. Kommune benyttes for kopling mot en rekke andre registre som også benytter 4 siffer.<br /><br />-- Definition - -<br />numbering of municipalities in accordance with Statistics Norway’s official list<br />Note: It must be following that municipality number always consists of 4 digits, i.e. sometimes with leading zero. Municipality is used for establishing relations to a number of other registers which also use 4 digits.</td>
-      <td><a href="#kodeliste-kommunenummer">Kommunenummer</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>fylkesnummer</td>
-      <td>nummerering av kommuner i henhold til Statistisk sentralbyrå sin offisielle liste</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>fylkesnavn</td>
-      <td>offisielt navn på fylket</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-AvtaltAvgrensningslinje – rolle: avgrensesAvAvtaltAvgrensningslinje – kardinalitet: 0..*
-Fylkesgrense – rolle: avgrensesAvFylkesgrense – kardinalitet: 0..*
-Riksgrense – rolle: avgrensesAvRiksgrense – kardinalitet: 0..*
-Territorialgrense – rolle: avgrensesAvTerritorialgrense – kardinalitet: 0..*
-Kommunegrense – rolle: avgrensesAvKommunegrense – kardinalitet: 0..*
-
-#### Riksgrense
-
-avgrensningen av nasjonen Norge mot andre nasjoner<br /><br />Merknad:<br />Delvis avledet fra norsk svensk riksgrensemodell<br /><br />--Definition--<br />delimitation of the country of Norway over against other countries Note:Partially derived from the Norwegian-Swedish national boundary model
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Grunnlinje
-
-rette linjer trukket opp mellom punkter på de ytterste nes og skjær som stikker opp av havet ved lavvann (fjære sjø)<br /><br />Merknad:<br />Med rett linje forstås den korteste linje mellom to punkt (såkalt geodetisk linje).
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Kommunegrense
-
-avgrensing av kommune
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Grunnlinjepunkt
-
-knekkpunkt på grunnlinjen
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>grunnlinjepunktnavn</td>
-      <td>angivelse av navn på grunnlinjen</td>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>grunnlinjepunktnummer</td>
-      <td>angivelse av nummeret på grunnlinjen</td>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
     <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Territorialgrense
-
-avgrensning i havet av statens suverenitetsområde, beregnet 12 nm (22 224 m) utenfor og parallelt med grunnlinjen
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### ElvMidtlinje
-
-kunstig objekt hvor senterlinjen er en fiktiv linje som skjøter sammen en-strekselver gjennom en elveflate
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Park
-
-grøntområde i by- eller tettbygd område, opparbeidet og vedlikeholdt med plenareal, beplantninger, vannpartier og lignende<br /><br /><br />-- Definition --<br />green area in a city or densely populated area, worked up and maintained, with lawns, planting, water features, etc.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### Flomløpkant
-
-begrensningslinje for store markerte elveløp hvor det pga regulering eller andre årsaker bare det en sjelden gang er vannføring<br /><br /><br />-- Definition --<br />Demarkation line for large river courses where water flow is occational due to regulation or other causes.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### ElvelinjeFiktiv
-
-Kunstig objekt hvor senterlinjen representerer en fiktiv linje som skjøter sammen lenker der det er hull i beskrivelsen av vannforløp<br /><br />-- Definition –<br />Artificial objekt where the center linje represents a fictious line joining links where there are gaps in the description of water courses
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Skog
-
-alle typer skogsmark som barskog, lauvskog og blandingsskog<br /><br />Merknad: Også hogstflater - selv om nyplanting ikke er synlig.  Omfatter alle slags skogboniteter, også storvokste vierkrattbelter i Nord-Norge<br /><br /><br />-- Definition --<br />all types of forest land, such as coniferous forest, deciduous forest and mixed forest
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-
-#### ElveKant
-
-konturlinje mellom land og elveflate<br /><br /><br />-- Definition --<br />Demarkation line between land and river surface.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### InnsjøInnsjøSperre
-
-hjelpelinje for avgrensning av en innsjø mot en annen innsjø der det ikke er elv mellom<br /><br /><br />-- Definition --<br />Construction line for delimitation of lake surface from another lake where there is no river between them.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Sperrelinjer</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektdataene</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Sperrelinjer
-
-#### Myr
-
-åpent ikke skogvokst område med myrvegetasjon<br /><br />Merknad:  Myra kan være bevokst, men da av få eller små trær.  Grøftet myr som er blitt skogmark tas IKKE med<br /><br /><br />-- Definition --<br />open, non-forested area with marsh vegetation
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-
-#### ÅpentOmråde
-
-område som ikke er klassifisert som annet tema i henhold til gjeldende produktspesifikasjon
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-
-#### Gravplass
-
-areal hvor gravlegging kan finne sted i en grav  innenfor gravfelt
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantregulert – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-
-#### Kystkontur
-
-grense mellom land og sjø, definert som midlere høyvannslinje<br /><br />Merknad:<br />Tilsvarer COALNE i S-57<br /><br /><br />-- Definition --<br />boundary between land and sea, defined as the mean high water line Note: Corresponds to COALNE in S-57
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Arealbrukgrense
-
-avgrensning av de ulike arealbruksflatene<br /><br />Merknad:<br />Kode for bruken av arealet legges på flaten, dvs på representasjonspunktet der dette representerer flata.<br /><br /><br />-- Definition --<br />delimitation of the various land use areas Note: Land use code is assigned to the surface, i.e. on the representation point which represents this surface.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Lufthavn
-
-land- eller sjøområde (med bygninger, installasjoner og utstyr) som helt eller delvis brukes for luftfartøyers avgang, landing og annen manøvrering på bakken
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>lufthavntype</td>
-      <td>angivelse av type lufthavn</td>
-      <td><a href="#kodeliste-lufthavntype">Lufthavntype</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>trafikktype</td>
-      <td>beskrivelse av rutetrafikk</td>
-      <td><a href="#kodeliste-trafikktype">Trafikktype</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>iata<wbr />Kode</td>
-      <td>unik kode for lufthavner.<br /><br />Merknad1: Ikke alle lufthavner har IATA kode.<br />Merknad 2: Bare norske lufthavner er tatt med her.</td>
-      <td><a href="#kodeliste-iatakode">IATAKode</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>icao<wbr />Kode</td>
-      <td>angivelse av lufthavn ved kode på fire alfanumeriske tegn.<br /><br />Merknad: Den første bokstaven tilordnes etter kontinent og angir et land eller en gruppe land på det samme kontinentet. Den andre bokstaven angir landet og de to siste angir lufthavn.</td>
-      <td><a href="#kodeliste-icaokode">ICAOKode</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>lufthavneier</td>
-      <td>eier av lufthavn</td>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>navn</td>
-      <td>navn på flyplass<br /><br />Merknad: Benyttes spesielt for de flyplasser som ikke har IATA eller ICAO kode</td>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>retning</td>
-      <td>linjestykke i planet med retning</td>
-      <td>Retning<br />(datatype)</td>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- retningsverdi</td>
-      <td>generelt element med angivelse av retning</td>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Alignment</th>
+    </tr>
+    <tr>
+      <td>alignment<wbr />ID</td>
+      <td></td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>design<wbr />Alternative</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>purpose</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>linestring2<wbr />DRepresentation</td>
+      <td></td>
+      <td>Line<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>linestring3<wbr />DRepresentation</td>
+      <td></td>
+      <td>Line<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+Alignment
+
+#### VegElement (abstrakt)
+
+fornorsking av RoadElement, for å kunne knytte til norsk vegbyggings-terminologi.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fra<wbr />Profil</td>
+      <td>startprofil for dette vegelementet</td>
       <td>Real</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsenhet</td>
-      <td>enhet for retning</td>
-      <td><a href="#kodeliste-retningsenhet">Retningsenhet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsreferanse</td>
-      <td>referansesystem for retning</td>
-      <td><a href="#kodeliste-retningsreferanse">Retningsreferanse</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Kombinasjon_Ulike_Geometrityper</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Kombinasjon_Ulike_Geometrityper
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-
-#### FerskvannTørrfall
-
-sandbanker og avleiringer i elv/bekk som oversvømmes ved normal høyvannsføring<br /><br />Merknad:<br />Flatene avgrenses av FerskvannTørrfallKant og elve- eller kanalkant som grenser inn til tørrfallet.<br /><br /><br />-- Definition --<br />Banks of sand or sediments in rivers and brooks which is flooded during high water levels.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-FerskvannTørrfallkant – rolle: avgrensesAvFerskvanntørrfallkant – kardinalitet: 0..*
-
-#### SportIdrettPlass
-
-område hvor det utøves sport og idrett<br /><br /><br />-- Definition --<br />area where sports and athletics are engaged in??
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-
-#### KanalGrøft
-
-rennende vann der forløpet er menneskeskapt<br /><br /><br />-- Definition --<br />Running water where the water course is made by humans.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>vann<wbr />Bredde</td>
-      <td>gir informasjon om hvordan elv/bekk og kanal/grøft grovt er klassifisert etter bredde<br /><br />-- Definition --<br />gives information about how a river/brook and a channel/trench are classified according to width</td>
-      <td><a href="#kodeliste-vannbredde">Vann<wbr />Bredde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### ElvBekk
-
-mindre vannvei for rennende vann representert ved senterlinje
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>vannbredde</td>
-      <td>grov klassifikasjon av vassdrag etter gjennomsnittelig bredde over lengre strekninger<br /><br /><br />-- Definition - -<br />Rough classification of river system according to average width over longer sections.</td>
-      <td><a href="#kodeliste-vannbredde">Vann<wbr />Bredde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### FerskvannTørrfallkant
-
-avgrensningslinje for FerskvannTørrfall<br /><br /><br />-- Definition --<br />Demarkation line for FreshwaterForeshoreEdge
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Innsjøkant
-
-konturlinje mellom land og innsjø<br /><br /><br />-- Definition --<br />Demarkation line between land and lake surface.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### BymessigBebyggelse
-
-kvartalsbebyggelse (bykjerne) med stort innslag av forretnings- og servicebygg<br /><br />Merknad:<br />Husene har overveiende to eller flere etasjer.<br /><br /><br />-- Definition --<br />city block (town centre) with a large element of shops and service buildings. Note: The buildings have predominantly two or more storeys.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### Tettbebyggelse
-
-sammenhengende bebygd område (overveiende boligbegyggelse) hvor husene i hovedsak ligger tettere enn 50 meter<br /><br /><br />-- Definition --<br />continuous, developed area (predominantly residential) where the buildings, for the most part, are closer than 50 metres apart
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### DyrketMark
-
-fulldyrket (plogmark), beitemark som er overflatebehandlet og bærhager. Jordbruksareal som ligger brakk i kortere perioder eller brukes til kulturbeite, regnes også som dyrket mark<br /><br /><br />-- Definition --<br />fullly cultured (plowed land), pasture with surface treatment, and berry gardens. Farmlands which lie fallow for shorter periods or are used as cultivated pasture, are also regarded as crop land.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### Steintipp
-
-permanent massedeponering som ikke er skogbevokst og er dominerende i<br />landskapet (f.eks. laget i forbindelse med gruvedrift eller vassdragsutbygging)
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### Steinbrudd
-
-område for steinbrudd<br /><br /><br />-- Definition --<br />area for stone quarry. Land use boundary is used as delimitation.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### Rullebane
-
-avgrenset, rektangulært område på en flyplass på land innrettet for landing og avgang med luftfartøyer
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### HavInnsjøSperre
-
-en fiktiv linje som definerer grensen mellom hav og innsjø, i samme nivå som kystkontur (middel høyvann)<br /><br /><br />-- Definition --<br />Construction line for delimitation of lake surface where it turns into sea surface. At the same altitude as the shoreline (by middle high tide).
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Sperrelinjer</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektdataene</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Sperrelinjer
-
-#### HavElvSperre
-
-en fiktiv linje som definerer grensa mellom sjø og elv, i samme nivå som kystKontur (middel høyvann)<br /><br />Merknad:<br />Denne er identisk med samme linje nevnt under kapitlet Innsjøer og vassdrag).<br /><br /><br />-- Definition --<br />a fictitious line which defines the border between sea and river at the same level as coastline (mean high water) Note: This is identical to the same line referred to in the chapter on Lakes and watercourses).
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Sperrelinjer</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektdataene</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Sperrelinjer
-
-#### Golfbane
-
-område for golfspilling<br /><br /><br />-- Definition --<br />area for golfing
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### SnøIsbre
-
-grense mellom snø eller isbre og barmark der det er usikkert om det er isbre eller snø<br /><br /><br />Merknad:<br />Isbre kan også være en del av evig snø, særlig når breens kantlinje ikke kan defineres (og registreres) som Isbre.  Den gamle koden for isbre er overført til dette objektet !<br /><br /><br />-- Definition --<br />Snow or glacier and bare ground where it is uncertain if it is snow or glacier. Note: A snowfield can also be a part of perpetual snow, especially when the glacier's edge cannot be defined and registered as a glacier.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### Innsjø
-
-en ferskvannsflate som ikke er renndende vann<br /><br /><br />-- Definition --<br />Freshwater surface which is not running water.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>vatn<wbr />Løpenummer</td>
-      <td>unik identifikasjon på innsjøer som fortløpende løpenummer i henhold til NVEs Innsjøregister<br /><br />-- Definition --<br />unique identification of lakes as consecutive serial number in accordance with the lake register of the NVE (The Norwegian Water Resources and Energy Administration)</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>høyde</td>
-      <td>registrert høyde for vannspeilet.</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-InnsjøInnsjøSperre – rolle: avgrensesAvInnsjøinnsjøsperre – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-HavInnsjøSperre – rolle: avgrensesAvHavInnsjøSperre – kardinalitet: 0..*
-InnsjøElvSperre – rolle: avgrensesAvInnsjøElvSperre – kardinalitet: 0..*
-
-#### InnsjøMidtlinje
-
-kunstig objekt hvor senterlinjen er en fiktiv linje som skjøter sammen en-strekselver gjennom en innsjøflate
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>Fiktiv senterlinje i innsjø</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Havflate
-
-havområde som avgrenses av Kystkontur, Kystsperre, HavElvSperre og KystkonturTekniskAnlegg<br /><br /><br />-- Definition --<br />sea area which is delimited by Coastline, CoastDelineation, SeaRiverDelineation and ShorelineConstruction
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-HavInnsjøSperre – rolle: avgrensesAvHavInnsjøSperre – kardinalitet: 0..*
-HavElvSperre – rolle: avgrensesAvHavElvSperre – kardinalitet: 0..*
-
-#### InnsjøRegulert
-
-en ferskvannsflate som ikke er rennende vann og som er regulert<br /><br /><br />-- Definition --<br />Freshwater surface which is not running water, but regulated
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>vatn<wbr />Løpenummer</td>
-      <td>unik identifikasjon på innsjøer som fortløpende løpenummer i henhold til NVEs Innsjøregister<br /><br />-- Definition --<br />unique identification of lakes as consecutive serial number in accordance with the lake register of the NVE (The Norwegian Water Resources and Energy Administration)</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>laveste<wbr />Regulerte<wbr />Vannstand</td>
-      <td>laveste regulerte vannstand - LRV<br /><br />-- Definition --<br />lowest regulated water level</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>høyde</td>
-      <td>for regulerte innsjøer er HØYDE tilsvarende høyeste regulert vannstand (HRV)<br /><br />-- Definition --<br />highest regulated water level</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-InnsjøInnsjøSperre – rolle: avgrensesAvInnsjøinnsjøsperre – kardinalitet: 0..*
-InnsjøElvSperre – rolle: avgrensesAvInnsjøElvSperre – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantregulert – kardinalitet: 0..*
-
-#### Elv
-
-større vannvei for rennende vann representert ved flate
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-FerskvannTørrfallkant – rolle: avgrensesAvFerskvanntørrfallkant – kardinalitet: 0..*
-HavElvSperre – rolle: avgrensesAvHavElvSperre – kardinalitet: 0..*
-InnsjøElvSperre – rolle: avgrensesAvInnsjøElvSperre – kardinalitet: 0..*
-
-#### Industriområde
-
-område, bebygd eller ubebygd, benyttet til industriformål<br /><br />Merknad:<br />Omfatter også anlegg for vannforsyning, avfallshåndtering og rensing, samt kraftstasjon, transformatorstasjon o.l.<br /><br /><br />-- Definition --<br />developed or undeveloped, used for industrial purposes. Also includes installations for water supply, waste handling and cleaning, as well as power plants, transformer substation, etc.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### Foss
-
-vann i tilnærmet fritt fall<br /><br />Merknad:<br />Representeres med punkt eller linje mellom topp og bunn av foss.<br /><br /><br />-- Definition --<br />Quoted height of fall for waterfall and cascades.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>retning</td>
-      <td>linjestykke i planet med retning</td>
-      <td>Retning<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsverdi</td>
-      <td>generelt element med angivelse av retning</td>
+      <td>til<wbr />Profil</td>
+      <td>sluttprofil for dette vegelementet</td>
       <td>Real</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsenhet</td>
-      <td>enhet for retning</td>
-      <td><a href="#kodeliste-retningsenhet">Retningsenhet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsreferanse</td>
-      <td>referansesystem for retning</td>
-      <td><a href="#kodeliste-retningsreferanse">Retningsreferanse</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Skjær
-
-generalisert punktobjekt for små øyer eller landareal<br /><br /><br />-- Definition --<br />generalised point object for small islands or land area
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### InnsjøkantRegulert
-
-avgrensningslinje for innsjø som er oppdemt/regulert<br /><br /><br />-- Definition --<br />Demarkation line for dammed or regulated lake.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Tregruppe
-
-enkeltstående tre eller trær i små grupper<br /><br />Merknad: Avstanden mellom trærne/gruppene skal være så stor at det ikke kan defineres som et sammenhengende skogsområde<br /><br /><br />-- Definition --<br />single tree or trees in small groups
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### InnsjøElvSperre
-
-hjelpelinje for avgrensning av innsjø mot elv eller kanal/grøft<br /><br /><br />-- Definition --<br />Construction line for delimitation of lake surface from river, canal or ditch.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Sperrelinjer</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektdataene</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Sperrelinjer
-
-#### Alpinbakke
-
-nedfart for ski med permanent karakter<br /><br /><br />-- Definition --<br />permanent downhill ski slope
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-FiktivDelelinje – rolle: avgrensesAvFiktivdelelinje – kardinalitet: 0..*
-Dataavgrensning – rolle: avgrensesAvDataavgrensning – kardinalitet: 0..*
-ElveKant – rolle: avgrensesAvElveKant – kardinalitet: 0..*
-Kystkontur – rolle: avgrensesAvKystkontur – kardinalitet: 0..*
-Arealbrukgrense – rolle: avgrensesAvArealbrukgrense – kardinalitet: 0..*
-Innsjøkant – rolle: avgrensesAvInnsjøkant – kardinalitet: 0..*
-InnsjøkantRegulert – rolle: avgrensesAvInnsjøkantRegulert – kardinalitet: 0..*
-
-#### Tårn
-
-høy bygningsmessig konstruksjon hvor høyden er stor i forhold til bygningens areal i grunnplanet<br />Merknad: Omfatter alle tårn med unntak av de tårn som har en mer spesifisert beskrivelse- som f.eks Silo og tank.<br />Eksempel: Måletårn og stupetårn<br /><br /><br />-- Definition --<br />Tall building structure in which the height is great in relation to the footprint of the building
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Reingjerde
-
-gjerde for reindrift<br /><br /><br />-- Definition --<br />fence for reindeer husbandry
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Gruve
-
-ikke dagbrudd og skjerp, hvor gruveinngangen er tydelig<br /><br /><br />-- Definition --<br />not quarry and prospect, where the pit entrance is prominent
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### MastTele
-
-mast med radio- og telekommunikasjonsutstyr for sending/mottak av telesignaler<br /><br />Merknad:<br />Kan benyttes dersom ..KOPLING * 2 * MA<br /><br /><br />-- Definition --<br />mast with radio and telecommunication equipment for sending /receiving telecommunications signals. Note: may be used if ..KOPLING * 2 * MA  (KOPLING := coupling)
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Campingplass
-
-faste anlegg med vaskerom, campinghytter o.l.<br /><br /><br />-- Definition --<br />permanent  construction with wash rooms, cabins, etc.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Lysløype
-
-løypetrasé som har belysning<br /><br /><br />-- Definition --<br />trail route with lighting
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Parkeringsområde
-
-område for parkering av kjøretøy
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Navigasjonsinstallasjon
-
-objekt som hjelper sjøfarende å navigere på sjøen<br /><br /><br />-- Definition --<br />object which helps mariners to navigate at sea
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Taubane
-
-innretning hvor tau eller vaiere bærer og eller trekker last over en strekning<br /><br /><br />-- Definition --<br />facility where ropes or cables carry and/or pull cargo over some distance
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Vindkraftverk
-
-kraftverk som nytter vindens energi til å produsere elkraft<br /><br />Merknad:<br />Kan benyttes dersom ..KOPLING * 3 * VKST<br /><br /><br />-- Definition --<br />power plant which utilises the wind's energy to produce electric power. Note: may be used if ..KOPLING * 3 * VKST   (KOPLING := coupling)
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Pir
-
-markert utstikkende brygge, normalt med vann under, i sjø<br /><br /><br />-- Definition --<br />marked protruding pier, normally with water underneath, in the sea
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Rørgate
-
-rør som leder vann frem til foredlingsanlegg<br /><br /><br />-- Definition --<br />pipes which lead water into processing facility
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Bygning
-
-bygning som er registrert i Matrikkelen<br /><br />Representasjonspunkt for bygningen. Punktet angis med geometritypen Punkt definert i SOSI<br /><br />Skal plasseres innenfor bygningens omriss.<br /><br />Punkt registreres også uten at en har omrisset, men da settes ikke kvalitetsmerket for at den er verifisert mot bygningens omriss.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>bygningstype</td>
-      <td>bygningstype sier hva bygningen er brukt til</td>
-      <td><a href="#kodeliste-bygningstypekode">Bygningstype<wbr />Kode</a><br />(kodeliste)</td>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>hytteinformasjon</td>
-      <td>informasjon om hytter i form av betjeningsgrad, eier og tilgjengelighet<br /><br />-- Definition --<br />Information on cabins in the form of identification, services offered and owner</td>
-      <td>Hytteinformasjon<br />(datatype)</td>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- betjeningsgrad</td>
-      <td>beskrivelse av hvilke servicefunksjoner som er tilgengelige<br /><br />-- Definition --<br />description of which service functions are available</td>
-      <td><a href="#kodeliste-betjeningsgrad">Betjeningsgrad</a><br />(kodeliste)</td>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- hytteeier</td>
-      <td>eieren av en hytte<br /><br />-- Definition --<br />the owner of a cabin</td>
-      <td><a href="#kodeliste-hytteeier">Hytteeier</a><br />(kodeliste)</td>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- tilgjengelighet</td>
-      <td>beskriver om hytta er låst eller ulåst</td>
-      <td><a href="#kodeliste-tilgjengelighet">Tilgjengelighet</a><br />(kodeliste)</td>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>navn</td>
-      <td>navn på turisthytta</td>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
+    </tr>
+    <tr>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td>ID for vegelementet</td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>material</td>
+      <td>angivelse av material for vegelementet, fritekst.</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Kombinasjon_Ulike_Geometrityper</th>
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
     </tr>
     <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
     </tr>
     <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -4211,14 +1073,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-SOSI_Objekt_Kombinasjon_Ulike_Geometrityper
+RoadElementN
 
-**Assosiasjoner**
-Takkant – rolle: avgrensesAvTakkant – kardinalitet: 0..*
+#### Veg
 
-#### Tankkant
-
-avgrensning av tank<br /><br /><br />-- Definition --<br />delimitation of tank/vessel
+fornorsking av landInfra/Road, for å kunne knytte til norske tillegg.
 
 Egenskaper
 
@@ -4233,649 +1092,229 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegen til "norsk vegbygging-teori".</td>
+      <td>Veg<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
       <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>- komponent<wbr />Referanse</td>
+      <td>Henviser til mer informasjon om en komponent gitt i kodeliste Komponentreferanse.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Molo
-
-kunstig eller naturlig oppbygning som demper eller tilintetgjør bølgebevegelser i sjøen<br /><br /><br />-- Definition --<br />artificial or natural structure which reduces or eliminates waves in the sea
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
+      <td>- dimensjonerende<wbr />Parametre</td>
+      <td>samlingen av dimensjonerende verdier for vegen gitt i kodeliste DimensjonerendeParametere_Veg.</td>
+      <td>Dimensjonerende<wbr />Verdier_<wbr />Veg<br />(datatype)</td>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
+      <td>- - standardklasse<wbr />Vegstandard</td>
+      <td>Standard vegklasse</td>
+      <td><a href="#kodeliste-dimensjoneringsklasse">Dimensjoneringsklasse</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>- - hastighet</td>
+      <td>Dimensjonerende hastighet for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendehastighet">Dimensjonerende<wbr />Hastighet</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>- - vegbredde</td>
+      <td>Dimensjonerende vegbredde for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendevegbredde">Dimensjonerende<wbr />Vegbredde</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
+      <td>- - motorkjøretøy</td>
+      <td>Dimensjonerende motorkjøretøytype for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendemotorkjøretøy">Dimensjonerende<wbr />Motorkjøretøy</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Skytebaneinnretning
-
-omriss av tekniske anlegg på skytebane - standplass og skiver som ikke blir registrert som f.eks bygninger og murer<br /><br /><br />-- Definition --<br />outline of technical facilities at shooting range - stands and targets that are not registered as building or walls
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
+      <td>- - trafikkmengde<wbr />ÅDT</td>
+      <td>Dimensjonerende trafikkmengde målt i ÅDT for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendetrafikkmengdeådt">Dimensjonerende<wbr />Trafikkmengde<wbr />ÅDT</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>- - kjøremåte</td>
+      <td>Dimensjonerende kjøremåte for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendekjøremåte">Dimensjonerende<wbr />Kjøremåte</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>- - max<wbr />Overhøyde<wbr />Prosent</td>
+      <td>Max tverrfall i prosent</td>
+      <td><a href="#kodeliste-maxoverhøydeprosent">Max<wbr />Overhøyde<wbr />Prosent</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
+      <td>- - trafikk</td>
+      <td>Dimensjonerende trafikk målt i aksel-last for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendetrafikkgruppe">Dimensjonerende<wbr />Trafikkgruppe</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Ledning
-
-begrepet ledning er i modellen generalisert til å bety alle typer langsgående fysiske objekter i ledningstraseen<br /><br />Merknad:<br />Dette inkluderer også tunnel, kanal, rør og andre objekter som brukes som omsluttende konstruksjon for andre ledninger.<br /><br /><br />-- Definition --<br />in the model, the term line has been generalised to mean all types of longitudinal physical objects in the route. Note: this also includes tunnels, ducts, pipes and other objects used as encasing?? structures for other lines
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Takkant
-
-bygningens ytre takflateavgrensing<br /><br />Merknad: Høydereferansen er de målte punktene på taket.<br /><br />Merknad: Dersom deler av takkanten ikke er synlig kodes den synlige delen som takkant- og den ikke synlige som fiktiv bygningsavgrensning.<br /><br /><br />-- Definition --<br />the external delimitation of the roof surface of the building
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### KaiBrygge
-
-angivelse av  innretninger som er satt opp for å betjene båter ved lasting- lossing og landligge<br />Merknad: Kai er utvidet til også å kunne være bare et fortøyningsanlegg- f.eks. enkeltstående metallring for fastgjøring av skip.<br /><br /><br />-- Definition --<br />indication of facilities set up to serve boats during loading, unloading and docking
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Skitrekk
-
-taubane til å dra skiløper opp bratte bakker<br />Merknad: Særlig brukt i alpinbakker<br /><br /><br />-- Definition --<br />cableway for pulling skiers up steep slopes
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra Taubane</th>
-    </tr>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-Taubane
-
-#### Flytebrygge
-
-brygge som er forankret til bunn og hvor plasseringen kan avhenge av vind og strømretning<br /><br /><br />-- Definition --<br />wharf chained to the bottom and whose location may depend on the direction of the wind and current
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### LuftledningLH
-
-linje som fører elektrisk kraft over store avstander og der det er usikkert om det er lav- eller høyspentlinje<br /><br />Merknad:<br />Kan benyttes dersom ..MEDIUM L og ..LEDNING * 3 8<br /><br /><br />-- Definition --<br />line conducting electrical power over large distances and where it is uncertain whether there is a low-voltage or high-voltage line. Note: may be used if ..MEDIUM L and ..LINE * 3 8
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>fler<wbr />Linjer</td>
-      <td>angivelse av antall kraftlinjer</td>
-      <td><a href="#kodeliste-flerlinjer">Fler<wbr />Linjer</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Hoppbakke
-
-anlegg for skihopping med kunstig eller naturlig tilløp<br /><br /><br />-- Definition --<br />facility for ski jumping with artificial or natural approach
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>lengde</td>
-      <td>bakkens lengde i meter</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>retning</td>
-      <td>linjestykke i planet med retning</td>
-      <td>Retning<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsverdi</td>
-      <td>generelt element med angivelse av retning</td>
+      <td>- total<wbr />Overbygningstykkelse</td>
+      <td>totaltykkelsen på overbygningen, angitt i meter</td>
       <td>Real</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsenhet</td>
-      <td>enhet for retning</td>
-      <td><a href="#kodeliste-retningsenhet">Retningsenhet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsreferanse</td>
-      <td>referansesystem for retning</td>
-      <td><a href="#kodeliste-retningsreferanse">Retningsreferanse</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
+      <th colspan="4" scope="rowgroup">Arvet fra Road</th>
     </tr>
     <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
+      <td>approximate<wbr />Width</td>
+      <td></td>
+      <td>Length</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra FacilityPart</th>
+    </tr>
+    <tr>
+      <td>facility<wbr />Part<wbr />ID</td>
+      <td></td>
+      <td>ID</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>type</td>
+      <td></td>
+      <td><a href="#kodeliste-facilityparttype">Facility<wbr />Part<wbr />Type</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>status</td>
+      <td></td>
+      <td>Status</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>footprint</td>
+      <td></td>
+      <td>geometry-any</td>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>alternative</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -4883,290 +1322,15 @@ Egenskaper
 Relasjoner
 
 **Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Dam
-
-konstruksjon for å heve vannspeilet og danne et kunstig vannmagasin, samt regulere vannføringen<br /><br /><br />-- Definition --<br />construction for elevating the water surface and creating an artifical water reservoir as well as regulating the flow of water
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### SpesiellDetalj
-
-objekttyper som det er nødvendig å angi av kartografiske hensyn og som ikke fanges opp av definerte objekttyper
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Tank
-
-lukkede kar for oppbevaring av gass eller væsker som ikke er registrert som bygning<br /><br /><br />-- Definition --<br />closed tank/vessel for storage of gas or fluids which is not registered as building
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Kombinasjon_Ulike_Geometrityper</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Kombinasjon_Ulike_Geometrityper
+Road
 
 **Assosiasjoner**
-Tankkant – rolle: avgrensesAvTankkant – kardinalitet: 0..*
+Referanselinje – rolle: referanselinje – kardinalitet: 0..*
+VegElement – rolle: element – kardinalitet: 0..*
 
-#### Høydekurve
+#### RoadElementN (abstrakt)
 
-linje i terrenget med fast høydeverdi (z-verdi) over referansehøyden<br /><br />Merknad: Høydekurver skal ikke krysse hverandre, bortsett fra der dette er tilfelle (overheng).<br /><br /><br />-- Definition --<br />line in the terrain with a fixed height value (z value) above the reference height
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>høyde</td>
-      <td>angivelse av høydekurvens høyde over høydereferansen i meter<br /><br />-- Definition --<br />indication of the depression curve's height above the height reference in metres - to be given with decimals if necessary</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer_Høyde</th>
-    </tr>
-    <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumhøyde">Medium<wbr />Høyde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer_Høyde
-
-#### Terrengpunkt
-
-punkt i terrenget med målt høydeverdi som brukes for å angi høyde på markerte flater i terrenget som for eksempel sadler og store flater, i veg- og gatekryss og andre kryss mellom samferdselslinjer, på gårdsplasser utenfor hovedinnganger og på parkeringsplasser<br /><br /><br />-- Definition --<br />point in the terrain with a measured height value used to indicate the height on pronounced surfaces in the terrain, such as saddles and large surfaces, in road and street intersections and other intersections between transportation lines, in courtyards outside main entrances and in car parks
+Hensikt: Ta bort kodeliste RoadElementType fra RoadElement
 
 Egenskaper
 
@@ -5181,580 +1345,43 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td>ID for vegelementet</td>
+      <td>ID</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>høyde</td>
-      <td>angivelse av punktets høyde, og oppgis i meter<br /><br />-- Definition --<br />indication of the height of the point, to be given with decimals if necessary</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer_Høyde</th>
-    </tr>
-    <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumhøyde">Medium<wbr />Høyde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer_Høyde
-
-#### TrigonometriskPunkt
-
-varig merket punkt, markert med bolt eller annet merke, der plane koordinater og høyde er bestemt i et trigonometrisk nett, i et geodetisk system<br /><br /><br />-- Definition --<br />permanently marked point, marked with a bolt or other mark in which the plane coordinates and/or height are determined in a Trigonometrical network in a geodetic system
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>høyde</td>
-      <td>angivelse av punktets høyde, og oppgis i meter<br /><br />-- Definition --<br />indication of the height of the point, to be given with decimals if necessary</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer_Høyde</th>
-    </tr>
-    <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumhøyde">Medium<wbr />Høyde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer_Høyde
-
-#### Forsenkningskurve
-
-linje i terrenget med fast høydeverdi (z-verdi) som beskriver en forsenkning i terrenget<br /><br />Merknad: Alle kurver som beskriver en forsenkning skal kodes som forsenkningskurver- ikke bare den nederste kurven.<br /><br /><br />-- Definition --<br />line in the terrain with a fixed height value (z value) which describes a depression in the terrain
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>høyde</td>
-      <td>angir forsenkningskurvens  høyde over høydereferansen i meter<br /><br />-- Definition --<br />indicates the depression curve's height above the height reference in metres - to given with decimals if necessary</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer_Høyde</th>
-    </tr>
-    <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumhøyde">Medium<wbr />Høyde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer_Høyde
-
-#### Hjelpekurve
-
-linje som følger terrenget med fast høydeverdi (z-verdi) og som brukes for bedre å beskrive terrenget mellom de vanlige høydekurvene<br /><br />Merknad: Tidligere kalt mellomkurve<br /><br /><br />-- Definition --<br />line which follows the terrain with a fixed height value (z value), and which is used to provide a better description of the terrain between the ordinary ??(contour lines / height contours)
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>høyde</td>
-      <td>angivelse av hjelpekurvens høyde over høydereferansen i meter<br /><br />-- Definition --<br />indication of the auxiliary curve's height above the height reference in metres - to be given with decimals if necessary</td>
-      <td>Integer</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer_Høyde</th>
-    </tr>
-    <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumhøyde">Medium<wbr />Høyde</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer_Høyde
-
-#### Allmenning
-
-område som alle, eller en bestemt gruppe har bruksrett til<br /><br />Merknad: Det er ofte vilkår om at den bruksberettigede må ha en eiendom av en viss størrelse. Eksempel på rettigheter er beiterett, hogstrett, fiskerett.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>allmenningtype</td>
-      <td>nærmere inndeling av allmenninger</td>
-      <td><a href="#kodeliste-allmenningtype">Allmenningtype</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>navn på området</td>
+      <td>material</td>
+      <td>angivelse av material for vegelementet, fritekst.</td>
       <td>Character<wbr />String</td>
-      <td>1</td>
+      <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-Allmenninggrense – rolle: avgrensesAvAllmenninggrense – kardinalitet: 0..*
-
-#### Skytefeltgrense
-
-avgrenser skytefelt
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Naturverngrense
-
-avgrenser et naturvernområde
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Allmenninggrense
-
-avgrensning av allmenning
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>grense</td>
-      <td>forløp som følger overgang mellom ulike fenomener</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Naturvernområde
-
-naturvernområde
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>vernedato</td>
-      <td>dato for vern av området</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>verneform</td>
-      <td>ulike type vern sortert under forskjellige lovverk og med tilhørende restriksjoner</td>
-      <td><a href="#kodeliste-verneform">Verneform</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>navn på naturvernområdet</td>
+      <td>name</td>
+      <td></td>
       <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
+      <td>0..1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -5762,14 +1389,11 @@ Egenskaper
 Relasjoner
 
 **Arv**
-SOSI_Objekt_Flater
+PhysicalElement
 
-**Assosiasjoner**
-Naturverngrense – rolle: avgrensesAvNaturverngrense – kardinalitet: 0..*
+#### Overbygningselement_for_Vegdesign
 
-#### Skytefelt
-
-område for militære avdelingers skarpskyteøvelse til lands og/eller til vanns<br /><br />Merknad: Gjelder også testfelt knyttet til våpen- spregningsindustri<br /><br /><br />-- Definition --<br />area where divisions from the armed forces undertake live firing practice on land and/or at sea. Note: Also applies to proving grounds related to the explosive armaments industry
+Overbygningselement_for_Vegdesign skal ha betegnelse i henhold til kodeliste OverbygningLagtype, og i henhold til lag i overbygningen beskrevet i N200.<br />Link til N200 + eventuelt figur.
 
 Egenskaper
 
@@ -5784,430 +1408,41 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>område</td>
-      <td>objektets utstrekning</td>
-      <td>GM_<wbr />Surface</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>navn på området</td>
+      <td>name</td>
+      <td>navn på elementet, fritekst</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>skytefeltstatus</td>
-      <td>angir skytefeltstatus</td>
-      <td><a href="#kodeliste-skytefeltstatus">Skytefeltstatus</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Flater</th>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Flater
-
-**Assosiasjoner**
-Skytefeltgrense – rolle: avgrensesAvSkytefeltgrense – kardinalitet: 0..*
-
-#### Naturvernpunkt
-
-vernet enkeltobjekt etter gammelt lovverk. Vil ikke bli etablert nye. Trær, stein osv.
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
+      <td>lagtype</td>
+      <td>lagtypen på laget, gitt ved kodelisteverdi</td>
+      <td><a href="#kodeliste-overbygninglagtype">Overbygning<wbr />Lagtype</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>vernedato</td>
-      <td>dato for vern av området</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>verneform</td>
-      <td>ulike typer vern sortert under forskjellige lovverk og med tilhørende restriksjoner</td>
-      <td><a href="#kodeliste-verneform">Verneform</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>navn på naturvernområdet</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Veglenke
-
-Objekttype som representerer lenker i vegnettet<br />Eksempel: NVDB Referanselenkedeler
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>type<wbr />Veg</td>
-      <td>type veg (FormOfWay).</td>
-      <td><a href="#kodeliste-typeveg">Type<wbr />Veg</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>vegsystem</td>
-      <td>definerer hvilke deler av vegnettet som forvaltningsmessig hører sammen</td>
-      <td>Vegsystem<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- vegkategori</td>
-      <td>kategorisering som angir på hvilket nivå vegmyndigheten for strekningen ligger</td>
-      <td><a href="#kodeliste-vegkategori">Vegkategori</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- vegfase</td>
-      <td>angir vegens fase i livet</td>
-      <td><a href="#kodeliste-vegfase">Vegfase</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- vegnummer</td>
-      <td>angir hvilke deler av vegnettet som rutemessig hører sammen</td>
+      <td>lagnummer</td>
+      <td>nummer på laget, nummerert fra toppen og nedover</td>
       <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>motorvegtype</td>
-      <td>klassifisering av veger etter grad av vilkår med hensyn til f.eks. fart, avkjøringer/kryss og antall kjørefelt</td>
-      <td><a href="#kodeliste-motorvegtype">Motorvegtype</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>rutemerking</td>
-      <td>forteller om det er merking  langs en sti, løype, veg, sykkelvei mv</td>
-      <td><a href="#kodeliste-rutemerking">Rute<wbr />Merking</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>vedlikeholdsansvarlig</td>
-      <td>institusjon eller andre som har ansvar for vedlikehold av rute</td>
-      <td><a href="#kodeliste-vedlikeholdsansvarlig">Vedlikeholdsansvarlig</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Linjer_Samferdsel</th>
-    </tr>
-    <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumsamferdsel">Medium<wbr />Samferdsel</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_Linjer_Samferdsel
-
-#### Stasjon
-
-representasjonspunkt for stasjon, holdeplass eller godsterminal<br /><br /><br />-- Definition --<br />representation point for station, stopping place or freight terminal
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>navn</td>
-      <td>navn på stasjon<br /><br />-- Definition --<br />name of a station</td>
-      <td>Character<wbr />String</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>retning</td>
-      <td>linjestykke i planet med retning<br /><br /><br />-- Definition - -<br />directed line segment in the plane</td>
-      <td>Retning<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsverdi</td>
-      <td>generelt element med angivelse av retning</td>
+      <td>tykkelse</td>
+      <td>tykkelsen på laget, gitt i meter</td>
       <td>Real</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsenhet</td>
-      <td>enhet for retning</td>
-      <td><a href="#kodeliste-retningsenhet">Retningsenhet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsreferanse</td>
-      <td>referansesystem for retning</td>
-      <td><a href="#kodeliste-retningsreferanse">Retningsreferanse</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-
-Relasjoner
-
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Vegsperring
-
-fysisk sperring av vegen<br /><br /><br />-- Definition --<br />physical blockage of the road
-
-Egenskaper
-
-<table class="feature-attribute-table">
-  <thead>
-    <tr>
-      <th>Egenskap</th>
-      <th>Beskrivelse</th>
-      <th>Type</th>
-      <th>Multiplisitet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>posisjon</td>
-      <td>sted som objektet eksisterer på</td>
-      <td>GM_<wbr />Point</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>vegsperringtype</td>
-      <td>angir type vegsperring<br /><br />-- Definition --<br />indicates type of roadblock</td>
-      <td><a href="#kodeliste-vegsperringtype">Vegsperringtype</a><br />(kodeliste)</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>retning</td>
-      <td>linjestykke i planet med retning<br /><br /><br />-- Definition - -<br />directed line segment in the plane</td>
-      <td>Retning<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsverdi</td>
-      <td>generelt element med angivelse av retning</td>
+      <td>indre<wbr />Fyllingshelling</td>
+      <td>brukes til å angi at laget ikke kun ligger under vegdesignelementet, men at fylingen skrår utover. Angis som desimaltall</td>
       <td>Real</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsenhet</td>
-      <td>enhet for retning</td>
-      <td><a href="#kodeliste-retningsenhet">Retningsenhet</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- retningsreferanse</td>
-      <td>referansesystem for retning</td>
-      <td><a href="#kodeliste-retningsreferanse">Retningsreferanse</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_PunkterOgLinjer</th>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
 
-Relasjoner
+#### VegdesignElement
 
-**Arv**
-SOSI_Objekt_PunkterOgLinjer
-
-#### Bane
-
-teoretisk linje som representerer ett enkelt eller flere parallelle spor som del av en banestrekning<br /><br /><br />-- Definition --<br />theoretical line which represents a single or several parallel tracks as part of a railway line<br /><br /><br />-- INSPIRE --<br />Maps to RailwayLink
+VegdesignElement er flateelementer topp vegkonstruksjon inkludert både kjøreflater og alle andre overflater til og med fylling/skjæring. Flatebetegnelsene framkommer i union av flere kodelister. Unionen av kodelister er VegdesignElementType. Noen flater har regelverk knyttet til seg, for eksempel kjøreflater.<br />Andre benyttes for å sette av plass til for eksempel rekkverk, busslomme, overvannshåndtering eller landskapsforming.
 
 Egenskaper
 
@@ -6222,73 +1457,187 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>senterlinje</td>
-      <td>forløp som følger objektets sentrale del</td>
-      <td>GM_<wbr />Curve</td>
+      <td>veg<wbr />Design</td>
+      <td>flatetypen dette vegdesignelementet tilhører</td>
+      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>jernbaneinformasjon</td>
-      <td>beskrivelse av jernbanen.</td>
-      <td>Jernbaneinformasjon<br />(datatype)</td>
+      <td>- flatetype</td>
+      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
+      <td>Vegdesign<wbr />Element<wbr />Type</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- anleggstype</td>
-      <td>angir type jernbaneanlegg</td>
-      <td><a href="#kodeliste-jernbanetype">Jernbanetype</a><br />(kodeliste)</td>
-      <td>0..1</td>
+      <td>- flaterekkefølge</td>
+      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>Integer</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>- banestatus</td>
-      <td>definerer status for drift på en banestrekning. I denne sammenhengen betyr Midlertidig ute av drift at anlegget finnes, men at det ikke er trafikk. Det kan kreves vedlikeholdsarbeid for å sett i drift. Nedlagt betyr at strekningen er nedlagt ved Stortingsvedtak, men at strekningen fortsatt finnes fysisk i terrenget. Nedlagte strekninger kan kreve nytt vedtak for å sette i drift.</td>
-      <td><a href="#kodeliste-jernbanestatus">Jernbanestatus</a><br />(kodeliste)</td>
-      <td>0..1</td>
+      <td>- vegside</td>
+      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
+      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>sporantall</td>
-      <td>definerer antall spor på en banestrekning<br /><br />-- Definition --<br />defines the number of tracks on a railway line</td>
-      <td><a href="#kodeliste-sporantall">Sporantall</a><br />(kodeliste)</td>
+      <td>ytterkant</td>
+      <td>ytterkant på elementet</td>
+      <td>Ytterkant</td>
       <td>1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra SOSI_Objekt_Linjer_Samferdsel</th>
+      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
     </tr>
     <tr>
-      <td>medium</td>
-      <td>objektets beliggenhet i forhold til jordoverflaten<br /><br />Eksempel:<br />På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</td>
-      <td><a href="#kodeliste-mediumsamferdsel">Medium<wbr />Samferdsel</a><br />(kodeliste)</td>
+      <td>fra<wbr />Profil</td>
+      <td>startprofil for dette vegelementet</td>
+      <td>Real</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget</td>
+      <td>til<wbr />Profil</td>
+      <td>sluttprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
       <td>Date</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>kvalitet</td>
-      <td>beskrivelse av kvaliteten på stedfestingen</td>
-      <td>Posisjonskvalitet<br />(datatype)</td>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- målemetode</td>
-      <td>metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</td>
-      <td><a href="#kodeliste-målemetode">Målemetode</a><br />(kodeliste)</td>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
+    </tr>
+    <tr>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td>ID for vegelementet</td>
+      <td>ID</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- nøyaktighet</td>
-      <td>punktstandardavviket i grunnriss for punkter samt tverravvik for linjer<br /><br />Merknad:<br />Oppgitt i cm</td>
-      <td><a href="#kodeliste-nøyaktighet">Nøyaktighet</a><br />(kodeliste)</td>
-      <td>1</td>
+      <td>material</td>
+      <td>angivelse av material for vegelementet, fritekst.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
     </tr>
   </tbody>
 </table>
@@ -6296,11 +1645,197 @@ Egenskaper
 Relasjoner
 
 **Arv**
-SOSI_Objekt_Linjer_Samferdsel
+VegElement
 
-#### StedsnavnTekst
+**Assosiasjoner**
+Overbygningselement_for_Vegdesign – rolle: overbygning – kardinalitet: 0..*
+Underbygning – rolle: underbygning – kardinalitet: 0..*
+Planum – rolle: planum – kardinalitet: 0..*
 
-StedsnavnTekst er stedsnavn fra SSR tilpasset visning på kart
+#### Planum
+
+Planum kalles også traubunn, og er overflaten av underbygningen.<br />Traubunn er graveflate som graves ut, eller toppflate bearbeidet undergrunn som gjøres før oppbygging av overbygning. ved bygging av veg,
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
+    </tr>
+    <tr>
+      <td>fra<wbr />Profil</td>
+      <td>startprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>til<wbr />Profil</td>
+      <td>sluttprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
+    </tr>
+    <tr>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td>ID for vegelementet</td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>material</td>
+      <td>angivelse av material for vegelementet, fritekst.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegkroppElement
+
+**Assosiasjoner**
+YtreFlatekant – rolle: venstreSide – kardinalitet: 0..1
+YtreFlatekant – rolle: høyreSide – kardinalitet: 0..1
+
+#### Overbygning
+
+Den del av vegkroppen som er over traubunn/planum.<br />Overbygningen kan bestå av frostsikringslag, filterlag (ev. fiberduk), forsterkningslag, bærelag og dekke (bindlag/bindelag og slitelag).
 
 Egenskaper
 
@@ -6315,133 +1850,1176 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>navneobjekthovedgruppe</td>
-      <td>hovedgruppene følger i hovedsak Inspire "NamedPlaceTypeValue", men populatedPlace og building er samlet under bebyggelse og hydrography er delt mellom sjø og ferskvann.</td>
-      <td><a href="#kodeliste-navneobjekthovedgruppe">Navneobjekthovedgruppe</a><br />(kodeliste)</td>
+      <td>lagtype</td>
+      <td>Betegnelse på fysisk lag i overbygningen  i henhold til kodeliste OverbygningLagtype.</td>
+      <td><a href="#kodeliste-overbygninglagtype">Overbygning<wbr />Lagtype</a><br />(kodeliste)</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>navneobjektgruppe</td>
-      <td>inndeling i kategorier under hver hovedgruppe.</td>
-      <td><a href="#kodeliste-navneobjektgruppe">Navneobjektgruppe</a><br />(kodeliste)</td>
+      <td>lagnummer</td>
+      <td>Lagene nummereres fra toppen, dvs ofte  VegdekkeSlitelag som nr 1</td>
+      <td>Integer</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>navneobjekttype</td>
-      <td>stedets navneobjekttype er en underinndeling av navneobjektgruppene som igjen er inndeling av navneobjekthovedgruppene.</td>
-      <td><a href="#kodeliste-navneobjekttype">Navneobjekttype</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>språk</td>
-      <td>angir hvilket språk teksten hører til, norsk, kvensk, nordsamisk, lulesamisk, sørsamisk osv.</td>
-      <td><a href="#kodeliste-språkkode">Språk<wbr />Kode</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>stedsnavnnummer</td>
-      <td>stedsnummer, stedsnavnnummer og skrivemåtenummer skal sammen utgjøre en såkalt tematisk id som brukes av registerførere som opplslagsnummer. identifikatoren ligner litt på Gnr/Bnr/Fnr.<br /><br />Stedsnavnnummer er et løpende nummer (starter på 1) systemet gir stedsnavnet som en identifikator. stedsnavnnummeret er kun unikt under et stedsnummer og kan ikke brukes om igjen for dette stedsnavnet.</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>språkprioritering</td>
-      <td>stedsnavnet sin prioritering i forhold til de ulike språkgruppene</td>
-      <td><a href="#kodeliste-språkprioriteringkode">Språkprioritering<wbr />Kode</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>stedsnummer</td>
-      <td>stedsnummer, stedsnavnsnummer og skrivemåtenummer skal sammen utgjøre en såkalt tematisk id som brukes av registerførere som opplslagsnummer. Identifikatoren ligner litt på Gnr/Bnr/Fnr.<br /><br />Stedsnummeret er et løpende nummer systemet gir stedet som en identifikator. Stedsnummeret er unikt og kan ikke brukes om igjen.</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>skrivemåtenummer</td>
-      <td>stedsnummer, stedsnavnsnummer og skrivemåtenummer skal sammen utgjøre en såkalt tematisk id som brukes av registerførere som opplslagsnummer. Identifikatoren ligner litt på Gnr/Bnr/Fnr.<br /><br />Skrivemåtenummer er et løpende nummer systemet gir skrivemåten som en identifikator. skrivemåtenummeret er kun unikt under et stedsnavnsnummer og kan ikke brukes om igjen for dette stedsnavnet.</td>
-      <td>Integer</td>
+      <td>tykkelse</td>
+      <td>tykkelse på laget, enhet meter</td>
+      <td>Real</td>
       <td>0..1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra FellesTekst</th>
+      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
+    </tr>
+    <tr>
+      <td>fra<wbr />Profil</td>
+      <td>startprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>til<wbr />Profil</td>
+      <td>sluttprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
+    </tr>
+    <tr>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td>ID for vegelementet</td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>material</td>
+      <td>angivelse av material for vegelementet, fritekst.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegkroppElement
+
+**Assosiasjoner**
+VegdesignElement – rolle: vegdesignElement – kardinalitet: 0..1
+
+#### VegkroppElement (abstrakt)
+
+Fysisk del av Overbygning, Underbygning. eller Planum.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
+    </tr>
+    <tr>
+      <td>fra<wbr />Profil</td>
+      <td>startprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>til<wbr />Profil</td>
+      <td>sluttprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
+    </tr>
+    <tr>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td>ID for vegelementet</td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>material</td>
+      <td>angivelse av material for vegelementet, fritekst.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegElement
+
+**Assosiasjoner**
+Volumobjekt – rolle: volum – kardinalitet: 0..1
+ToppOverflate – rolle: toppOverflate – kardinalitet: 0..1
+YtreFlatekant – rolle: ytterkant – kardinalitet: 0..1
+
+#### Underbygning
+
+Den del av vegkroppen som er under traubunn/planum.<br />Underbygningen kan bestå av fylling, undergrunn og undergrunn, forbedret.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lagtype</td>
+      <td>Betegnelse på fysisk lag i underbygningen  i henhold til kodeliste UnderbygningLagtype.</td>
+      <td><a href="#kodeliste-underbygninglagtype">Underbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>lagnummer</td>
+      <td>lagnummer, nummerert i stigende rekkefølge fra planum = 0  og nedover.</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>tykkelse</td>
+      <td>tykkelse på laget, enhet meter.</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
+    </tr>
+    <tr>
+      <td>fra<wbr />Profil</td>
+      <td>startprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>til<wbr />Profil</td>
+      <td>sluttprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
+    </tr>
+    <tr>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td>ID for vegelementet</td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>material</td>
+      <td>angivelse av material for vegelementet, fritekst.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegkroppElement
+
+#### Sideområde
+
+Den delen av vegoverflata som ligger på sida av vegkroppen og som ikke er knytta til noen overbygning
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra VegElement</th>
+    </tr>
+    <tr>
+      <td>fra<wbr />Profil</td>
+      <td>startprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>til<wbr />Profil</td>
+      <td>sluttprofil for dette vegelementet</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til norsk vegbygging-terminologi.</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra RoadElementN</th>
+    </tr>
+    <tr>
+      <td>road<wbr />Element<wbr />ID</td>
+      <td>ID for vegelementet</td>
+      <td>ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>material</td>
+      <td>angivelse av material for vegelementet, fritekst.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra Feature</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td></td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>spatial<wbr />Representation</td>
+      <td></td>
+      <td>Spatial<wbr />Representation</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>linearly<wbr />Referenced<wbr />Location</td>
+      <td></td>
+      <td>Linearly<wbr />Referenced<wbr />Location</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegkroppElement
+
+**Assosiasjoner**
+VegdesignElement – rolle: vegdesignElement – kardinalitet: 0..1
+
+#### GenerelleEgenskaper
+
+Abstrakt supertype med generelle egenskaper fra SOSI Del 1 og LandInfra
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Vegkropp
+
+Vegens overbygning og underbygning, samt planum.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+GenerelleEgenskaper
+
+**Assosiasjoner**
+VegKroppElement – rolle: vegkroppElement – kardinalitet: 0..*
+
+#### Veg_Prosjektreferanse
+
+fornorsking av landInfra/Road, for å kunne knytte til norske tillegg.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegen til "norsk vegbygging-teori".</td>
+      <td>Veg<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponent<wbr />Referanse</td>
+      <td>Henviser til mer informasjon om en komponent gitt i kodeliste Komponentreferanse.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- dimensjonerende<wbr />Parametre</td>
+      <td>samlingen av dimensjonerende verdier for vegen gitt i kodeliste DimensjonerendeParametere_Veg.</td>
+      <td>Dimensjonerende<wbr />Verdier_<wbr />Veg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - standardklasse<wbr />Vegstandard</td>
+      <td>Standard vegklasse</td>
+      <td><a href="#kodeliste-dimensjoneringsklasse">Dimensjoneringsklasse</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - hastighet</td>
+      <td>Dimensjonerende hastighet for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendehastighet">Dimensjonerende<wbr />Hastighet</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - vegbredde</td>
+      <td>Dimensjonerende vegbredde for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendevegbredde">Dimensjonerende<wbr />Vegbredde</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - motorkjøretøy</td>
+      <td>Dimensjonerende motorkjøretøytype for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendemotorkjøretøy">Dimensjonerende<wbr />Motorkjøretøy</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - trafikkmengde<wbr />ÅDT</td>
+      <td>Dimensjonerende trafikkmengde målt i ÅDT for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendetrafikkmengdeådt">Dimensjonerende<wbr />Trafikkmengde<wbr />ÅDT</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kjøremåte</td>
+      <td>Dimensjonerende kjøremåte for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendekjøremåte">Dimensjonerende<wbr />Kjøremåte</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - max<wbr />Overhøyde<wbr />Prosent</td>
+      <td>Max tverrfall i prosent</td>
+      <td><a href="#kodeliste-maxoverhøydeprosent">Max<wbr />Overhøyde<wbr />Prosent</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - trafikk</td>
+      <td>Dimensjonerende trafikk målt i aksel-last for vegen</td>
+      <td><a href="#kodeliste-dimensjonerendetrafikkgruppe">Dimensjonerende<wbr />Trafikkgruppe</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- total<wbr />Overbygningstykkelse</td>
+      <td>totaltykkelsen på overbygningen, angitt i meter</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+GenerelleEgenskaper
+
+**Assosiasjoner**
+Vegkropp – rolle: vegelementsamling – kardinalitet: 0..*
+VegKroppElement – rolle: element – kardinalitet: 0..*
+StringLineN – rolle: stringLine – kardinalitet: 0..*
+
+#### StringLineN_Planum
+
+Linje som beskriver planum/traubunn.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vegdesign<wbr />Ref</td>
+      <td>referanse til vegdesinget som linja er avledet fra</td>
+      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- flatetype</td>
+      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
+      <td>Vegdesign<wbr />Element<wbr />Type</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- flaterekkefølge</td>
+      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- vegside</td>
+      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
+      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
     </tr>
     <tr>
       <td>geometri</td>
-      <td>kurve-geometri på tekstobjekter brukes slik: Punkt nr. 1 på kurva er objektets referansekoordinat. Punkt nr. 2 er tekstens plasseringskoordinat. Punkt nr. 3 angir retning på teksten. Dersom kurva inneholder flere koordinater angir disse forløp på teksten.</td>
+      <td>linjas geometri</td>
       <td>GM_<wbr />Curve</td>
       <td>1</td>
     </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
     <tr>
-      <td>streng</td>
-      <td>teksten som skal presenteres på kartet</td>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget<br /><br />Merknad: I mange tilfeller er denne forskjellig fra Oppdateringsdato, da registrerte endringer kan bufres i en kortere eller lengre periode før disse legges inn i databasen.<br />Ved førstegangsregistrering settes Datafangstdato lik førsteDatafangstdato.</td>
-      <td>Date</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>tekstformatering</td>
-      <td>ulike egenskaper til brukt for å presentere teksten på mediumet</td>
-      <td>Tekstformatering<br />(datatype)</td>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- tekst<wbr />Referansepunkt</td>
-      <td>tekstens referansepunkt er det stedet på teksten som en tekstplassering refererer seg til.</td>
-      <td>Tekst<wbr />Referanse<wbr />Punkt<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - tekst<wbr />Referanse<wbr />Punkt<wbr />Nord</td>
-      <td>vertikal plassering av teksten.<br />Merknad: N50 Kartdata plasseres alltid teksten langs bunnlinja, dvs. TRNORD = 0</td>
-      <td><a href="#kodeliste-tekstreferansepunktnord">Tekst<wbr />Referanse<wbr />Punkt<wbr />Nord</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - tekst<wbr />Referanse<wbr />Punkt<wbr />Øst</td>
-      <td>horisontal plassering av teksten</td>
-      <td><a href="#kodeliste-tekstreferansepunktøst">Tekst<wbr />Referanse<wbr />Punkt<wbr />Øst</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- tegnavstand</td>
-      <td>avstanden mellom bokstavene i teksten, enhet er prosent</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- skriftkode</td>
-      <td>produktavhengig koplingsnøkkel mot presentasjonsinformasjon</td>
-      <td><a href="#kodeliste-skriftkode">Skriftkode</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- skrifttype</td>
-      <td>angivelse av den skrifttype eller font som skal benyttes. Default skrifttype er ARIAL</td>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- referansemålestokk</td>
-      <td>egenskap som beskriver hvilken målestokk (oppgitt som målestokkstall) denne teksten er redigert for, både størrelse og<br />plassering. Kan benyttes for å velge hvilke tekster som skal tegnes ut i ulike målestokker.</td>
-      <td>Integer</td>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>fulltekst</td>
-      <td>navnet i SSR som skal vises på kartet. Vil i de fleste tilfeller være likt Streng, men kan avvike dersom det av kartografiske hensyn bare vises deler av navnet e.l.</td>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
       <td>Character<wbr />String</td>
-      <td>1</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
@@ -6449,11 +3027,185 @@ Egenskaper
 Relasjoner
 
 **Arv**
-FellesTekst
+StringLineN
 
-#### FellesTekst (abstrakt)
+#### StringLineN_Referanselinje
 
-abstrakt objekt som bærer en felles egenskaper som brukes på tekstobjektene
+Spesifikk linje som vegelement(er) refererer seg til
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
+    </tr>
+    <tr>
+      <td>geometri</td>
+      <td>linjas geometri</td>
+      <td>GM_<wbr />Curve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+StringLineN
+
+#### StringLineN_Underbygning
+
+Linjer som beskriver lag/flate i underbygning.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lagtype</td>
+      <td>navn på underbygninglaget som linja representerer</td>
+      <td><a href="#kodeliste-underbygninglagtype">Underbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>vegdesign<wbr />Ref</td>
+      <td>referanse til vegdesinget som linja er avledet fra</td>
+      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- flatetype</td>
+      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
+      <td>Vegdesign<wbr />Element<wbr />Type</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- flaterekkefølge</td>
+      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- vegside</td>
+      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
+      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
+    </tr>
+    <tr>
+      <td>geometri</td>
+      <td>linjas geometri</td>
+      <td>GM_<wbr />Curve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+StringLineN
+
+#### StringLineN
+
+linjer som går langs  vegen.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
 
 Egenskaper
 
@@ -6469,88 +3221,60 @@ Egenskaper
   <tbody>
     <tr>
       <td>geometri</td>
-      <td>kurve-geometri på tekstobjekter brukes slik: Punkt nr. 1 på kurva er objektets referansekoordinat. Punkt nr. 2 er tekstens plasseringskoordinat. Punkt nr. 3 angir retning på teksten. Dersom kurva inneholder flere koordinater angir disse forløp på teksten.</td>
+      <td>linjas geometri</td>
       <td>GM_<wbr />Curve</td>
       <td>1</td>
     </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
     <tr>
-      <td>streng</td>
-      <td>teksten som skal presenteres på kartet</td>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget<br /><br />Merknad: I mange tilfeller er denne forskjellig fra Oppdateringsdato, da registrerte endringer kan bufres i en kortere eller lengre periode før disse legges inn i databasen.<br />Ved førstegangsregistrering settes Datafangstdato lik førsteDatafangstdato.</td>
-      <td>Date</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>tekstformatering</td>
-      <td>ulike egenskaper til brukt for å presentere teksten på mediumet</td>
-      <td>Tekstformatering<br />(datatype)</td>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- tekst<wbr />Referansepunkt</td>
-      <td>tekstens referansepunkt er det stedet på teksten som en tekstplassering refererer seg til.</td>
-      <td>Tekst<wbr />Referanse<wbr />Punkt<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - tekst<wbr />Referanse<wbr />Punkt<wbr />Nord</td>
-      <td>vertikal plassering av teksten.<br />Merknad: N50 Kartdata plasseres alltid teksten langs bunnlinja, dvs. TRNORD = 0</td>
-      <td><a href="#kodeliste-tekstreferansepunktnord">Tekst<wbr />Referanse<wbr />Punkt<wbr />Nord</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - tekst<wbr />Referanse<wbr />Punkt<wbr />Øst</td>
-      <td>horisontal plassering av teksten</td>
-      <td><a href="#kodeliste-tekstreferansepunktøst">Tekst<wbr />Referanse<wbr />Punkt<wbr />Øst</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- tegnavstand</td>
-      <td>avstanden mellom bokstavene i teksten, enhet er prosent</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- skriftkode</td>
-      <td>produktavhengig koplingsnøkkel mot presentasjonsinformasjon</td>
-      <td><a href="#kodeliste-skriftkode">Skriftkode</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- skrifttype</td>
-      <td>angivelse av den skrifttype eller font som skal benyttes. Default skrifttype er ARIAL</td>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- referansemålestokk</td>
-      <td>egenskap som beskriver hvilken målestokk (oppgitt som målestokkstall) denne teksten er redigert for, både størrelse og<br />plassering. Kan benyttes for å velge hvilke tekster som skal tegnes ut i ulike målestokker.</td>
-      <td>Integer</td>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>fulltekst</td>
-      <td>navnet i SSR som skal vises på kartet. Vil i de fleste tilfeller være likt Streng, men kan avvike dersom det av kartografiske hensyn bare vises deler av navnet e.l.</td>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
       <td>Character<wbr />String</td>
-      <td>1</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
 
-#### PresentasjonTekst
+Relasjoner
 
-PresentasjonTekst benyttes for høydetall som skal presenteres på kartet. Kodelista teksttype angir hva slags type objekt høydetall står til.
+**Arv**
+GenerelleEgenskaper
+
+#### StringLineN_Sideområde
+
+Linjer som beskriver sideområde av veg.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
 
 Egenskaper
 
@@ -6565,91 +3289,76 @@ Egenskaper
   </thead>
   <tbody>
     <tr>
-      <td>teksttype</td>
-      <td>kodeliste som angir hva slags type objekt teksten beskriver.</td>
-      <td><a href="#kodeliste-teksttype">Teksttype</a><br />(kodeliste)</td>
+      <td>vegdesign<wbr />Ref</td>
+      <td>referanse til vegdesinget som linja er avledet fra</td>
+      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- flatetype</td>
+      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
+      <td>Vegdesign<wbr />Element<wbr />Type</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- flaterekkefølge</td>
+      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- vegside</td>
+      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
+      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
       <td>1</td>
     </tr>
     <tr class="inherited-from">
-      <th colspan="4" scope="rowgroup">Arvet fra FellesTekst</th>
+      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
     </tr>
     <tr>
       <td>geometri</td>
-      <td>kurve-geometri på tekstobjekter brukes slik: Punkt nr. 1 på kurva er objektets referansekoordinat. Punkt nr. 2 er tekstens plasseringskoordinat. Punkt nr. 3 angir retning på teksten. Dersom kurva inneholder flere koordinater angir disse forløp på teksten.</td>
+      <td>linjas geometri</td>
       <td>GM_<wbr />Curve</td>
       <td>1</td>
     </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
     <tr>
-      <td>streng</td>
-      <td>teksten som skal presenteres på kartet</td>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
       <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>oppdateringsdato</td>
-      <td>dato for siste endring på objektetdataene<br /><br />-Definition-<br />Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
-      <td>Date</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>datafangstdato</td>
-      <td>dato når objektet siste gang ble registrert/observert/målt i terrenget<br /><br />Merknad: I mange tilfeller er denne forskjellig fra Oppdateringsdato, da registrerte endringer kan bufres i en kortere eller lengre periode før disse legges inn i databasen.<br />Ved førstegangsregistrering settes Datafangstdato lik førsteDatafangstdato.</td>
-      <td>Date</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>tekstformatering</td>
-      <td>ulike egenskaper til brukt for å presentere teksten på mediumet</td>
-      <td>Tekstformatering<br />(datatype)</td>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
       <td>1</td>
     </tr>
     <tr>
-      <td>- tekst<wbr />Referansepunkt</td>
-      <td>tekstens referansepunkt er det stedet på teksten som en tekstplassering refererer seg til.</td>
-      <td>Tekst<wbr />Referanse<wbr />Punkt<br />(datatype)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- - tekst<wbr />Referanse<wbr />Punkt<wbr />Nord</td>
-      <td>vertikal plassering av teksten.<br />Merknad: N50 Kartdata plasseres alltid teksten langs bunnlinja, dvs. TRNORD = 0</td>
-      <td><a href="#kodeliste-tekstreferansepunktnord">Tekst<wbr />Referanse<wbr />Punkt<wbr />Nord</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- - tekst<wbr />Referanse<wbr />Punkt<wbr />Øst</td>
-      <td>horisontal plassering av teksten</td>
-      <td><a href="#kodeliste-tekstreferansepunktøst">Tekst<wbr />Referanse<wbr />Punkt<wbr />Øst</a><br />(kodeliste)</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>- tegnavstand</td>
-      <td>avstanden mellom bokstavene i teksten, enhet er prosent</td>
-      <td>Integer</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- skriftkode</td>
-      <td>produktavhengig koplingsnøkkel mot presentasjonsinformasjon</td>
-      <td><a href="#kodeliste-skriftkode">Skriftkode</a><br />(kodeliste)</td>
-      <td>0..1</td>
-    </tr>
-    <tr>
-      <td>- skrifttype</td>
-      <td>angivelse av den skrifttype eller font som skal benyttes. Default skrifttype er ARIAL</td>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
       <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>- referansemålestokk</td>
-      <td>egenskap som beskriver hvilken målestokk (oppgitt som målestokkstall) denne teksten er redigert for, både størrelse og<br />plassering. Kan benyttes for å velge hvilke tekster som skal tegnes ut i ulike målestokker.</td>
-      <td>Integer</td>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
       <td>0..1</td>
     </tr>
     <tr>
-      <td>fulltekst</td>
-      <td>navnet i SSR som skal vises på kartet. Vil i de fleste tilfeller være likt Streng, men kan avvike dersom det av kartografiske hensyn bare vises deler av navnet e.l.</td>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
       <td>Character<wbr />String</td>
-      <td>1</td>
+      <td>0..1</td>
     </tr>
   </tbody>
 </table>
@@ -6657,766 +3366,1127 @@ Egenskaper
 Relasjoner
 
 **Arv**
-FellesTekst
+StringLineN
+
+#### StringLineN_Overbygning
+
+Linjer som beskriver overbygningslag.<br />Oftest beregnet med ett punkt pr generert tverrprofil, og lenket sammen.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lagtype</td>
+      <td>navn på overbygninglaget som linja representerer</td>
+      <td><a href="#kodeliste-overbygninglagtype">Overbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>vegdesign<wbr />Ref</td>
+      <td>referanse til vegdesinget som linja er avledet fra</td>
+      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- flatetype</td>
+      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
+      <td>Vegdesign<wbr />Element<wbr />Type</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- flaterekkefølge</td>
+      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- vegside</td>
+      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
+      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra StringLineN</th>
+    </tr>
+    <tr>
+      <td>geometri</td>
+      <td>linjas geometri</td>
+      <td>GM_<wbr />Curve</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+StringLineN
+
+#### VegdesignElement_for_Vegkropp
+
+VegdesignElement er flateelementer topp vegkonstruksjon inkludert både kjøreflater og alle andre overflater til og med fylling/skjæring. Flatebetegnelsene framkommer i union av flere kodelister. Unionen av kodelister er VegdesignElementType. Noen flater har regelverk knyttet til seg, for eksempel kjøreflater.<br />Andre benyttes for å sette av plass til for eksempel rekkverk, busslomme, overvannshåndtering eller landskapsforming.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>veg<wbr />Design</td>
+      <td>flatetypen dette vegdesignelementet tilhører</td>
+      <td>Vegdesign<wbr />Ref<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- flatetype</td>
+      <td>angivelse av hva slags vegdesignflatetype dette gjelder</td>
+      <td>Vegdesign<wbr />Element<wbr />Type</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- flaterekkefølge</td>
+      <td>rekkefølge på flaten stringlinen representerer i vegdesignet</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- vegside</td>
+      <td>angivelse av vegside, etter kodeliste. NB! Erstatter tidligere praksisk med positivt og negativt tall.</td>
+      <td><a href="#kodeliste-side">Side</a><br />(enumerering)</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+GenerelleEgenskaper
+
+#### Planum
+
+Planum kalles også traubunn, og er overflaten av underebygningen.<br />Traubunn er graveflate som graves ut, eller toppflate bearbeidet undergrunn som gjøres før oppbygging av overbygning. ved bygging av veg,
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra VegKroppElement</th>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegKroppElement
+
+**Assosiasjoner**
+YtreFlatekant – rolle: høyreSide – kardinalitet: 0..1
+YtreFlatekant – rolle: venstreSide – kardinalitet: 0..1
+
+#### VegKroppElement (abstrakt)
+
+fornorsking av RoadElement, for å kunne knytte til norsk vegbyggings-teori
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+GenerelleEgenskaper
+
+**Assosiasjoner**
+ToppOverflate – rolle: toppOverflate – kardinalitet: 0..1
+YtreFlatekant – rolle: ytterkant – kardinalitet: 0..1
+Volumobjekt – rolle: volum – kardinalitet: 0..1
+
+#### Underbygning
+
+En fellesbetegnelse for undergrunn, forbedret og fylling opp til planum.<br />Den del av vegkroppen som er under traubunn/planum.<br />Underbygningen kan bestå av fylling, undergrunn og undergrunn, forbedret.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lagtype</td>
+      <td>Betegnelse på fysisk lag i underbygningen  i henhold til kodeliste UnderbygningLagtype.</td>
+      <td><a href="#kodeliste-underbygninglagtype">Underbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>lagnummer</td>
+      <td>lagnummer, nummerert i stigende rekkefølge fra planum = 0  og nedover.</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>tykkelse</td>
+      <td>tykkelse på laget, enhet meter</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra VegKroppElement</th>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegKroppElement
+
+#### Overbygning
+
+Den del av vegkroppen som er over traubunn/planum.<br />Overbygningen kan bestå av frostsikringslag, filterlag (ev. fiberduk), forsterkningslag, bærelag og dekke (bindlag/bindelag og slitelag).
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lagtype</td>
+      <td>Betegnelse på fysisk lag i overbygningen  i henhold til kodeliste OverbygningLagtype.</td>
+      <td><a href="#kodeliste-overbygninglagtype">Overbygning<wbr />Lagtype</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>lagnummer</td>
+      <td>Lagene nummereres fra toppen, dvs ofte  VegdekkeSlitelag som nr 1</td>
+      <td>Integer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>tykkelse</td>
+      <td>tykkelse på laget, enhet meter</td>
+      <td>Real</td>
+      <td>0..1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra VegKroppElement</th>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegKroppElement
+
+**Assosiasjoner**
+VegdesignElement_for_Vegkropp – rolle: vegdesignElement – kardinalitet: 0..1
+
+#### Sideområde
+
+Den delen av vegoverflata som ligger på sida av vegkroppen og som ikke er knytta til noen overbygning
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra VegKroppElement</th>
+    </tr>
+    <tr>
+      <td>norske<wbr />Tillegg</td>
+      <td>angivelse av tilleggsverdier for å knytte vegelementet til "norsk vegbygging-teori".</td>
+      <td>Veg<wbr />Element<wbr />Norske<wbr />Tillegg<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- tilhører<wbr />Prosjekt</td>
+      <td>identifikasjon av prosjektet leveransen tilhører</td>
+      <td>Prosjektreferanse<br />(datatype)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgiver<wbr />Navn</td>
+      <td>navn på oppdragsgiver</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - oppdragsgivers<wbr />Organisasjonsnummer</td>
+      <td>oppdragsgivers organisasjonsnummer</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektnavn</td>
+      <td>Oppdragsgivers prosjektnavn</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />ID</td>
+      <td>Oppdragsgivers prosjektID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjektfase</td>
+      <td>Prosjektfase i henhold til faser definert for prosjektet</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - fasestatus</td>
+      <td>Status på dataleveransen i forhold til fasen.<br />Fasebetegnelsen som brukes må finnes i oppdragsgivers liste over definerte faser for prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - levert<wbr />Av<wbr />Organisasjon</td>
+      <td>navn på organisasjon/firma som er ansvarlig for leveransen</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - utarbeidet<wbr />Av</td>
+      <td>Navn på kontaktperson hos den som har utarbeidet datasettet</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - prosjekt<wbr />URL</td>
+      <td>URL til prosjektdatabasen det mer informasjon om prosjektet kan finnes.<br />Merknad: Det antas at prosjektdatabasen også kan inneholde informasjon om andre prosjekt, og at noen av de andre egenskapene på dette objektet må brukes for å søke fram det rette prosjektet og del/fase av prosjektet.</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>- - leveransedato</td>
+      <td>Dato for leveransen. Bør entydig identifisere leveranse, dvs to leveranser til samme prosjekt/fase/status kan ikke ha samme leveransedato</td>
+      <td>Date</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- komponentreferanse</td>
+      <td>referanse til ekstern database, der mer om objektet finnes.</td>
+      <td>Komponentreferanse<br />(datatype)</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodesystem</td>
+      <td>Navnet på kodesystemet som brukes (velges fra kodeliste).</td>
+      <td><a href="#kodeliste-komponentkodesystem">Komponentkodesystem</a><br />(kodeliste)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - kodesystemversjon</td>
+      <td>versjonen på komponentkodesystemet (dersom slikt finnes)</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- - komponentkodeverdi</td>
+      <td>Identifikasjonen på komponenten i oppgitt kodesystem</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+VegKroppElement
+
+**Assosiasjoner**
+VegdesignElement_for_Vegkropp – rolle: vegdesignElement – kardinalitet: 0..1
+
+#### Terrengflate
+
+Tatt med LandSurface for å kunne levere med terrengoverflata. Da slipper vegkroppen å ligge i løse lufta.<br /><br />LandSurface er tatt fra LandInfra/Land Feature, men er forenklet kraftig.
+
+Egenskaper
+
+<table class="feature-attribute-table">
+  <thead>
+    <tr>
+      <th>Egenskap</th>
+      <th>Beskrivelse</th>
+      <th>Type</th>
+      <th>Multiplisitet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>geometri</td>
+      <td>terrengoverlate i form av en TIN</td>
+      <td>GM_<wbr />Tin</td>
+      <td>1</td>
+    </tr>
+    <tr class="inherited-from">
+      <th colspan="4" scope="rowgroup">Arvet fra GenerelleEgenskaper</th>
+    </tr>
+    <tr>
+      <td>identifikasjon</td>
+      <td>Bruker SOSI_Identifikasjon i stedet for LandInfra/ID</td>
+      <td>Identifikasjon<br />(datatype)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- lokal<wbr />Id</td>
+      <td>lokal identifikator av et objekt<br />Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.<br />lokalId skal være en UUID</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- navnerom</td>
+      <td>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI<br />Eksempel: <a href="http://data.geonorge.no/SentraltStedsnavnsregister/1.0">http://data.geonorge.no/SentraltStedsnavnsregister/1.0</a><br />Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</td>
+      <td>Character<wbr />String</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>- versjon<wbr />Id</td>
+      <td>identifikasjon av en spesiell versjon av et geografisk objekt (instans)</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>navn</td>
+      <td>Tilsvarer LandInfra/AbstractData/name</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td>beskrivelse</td>
+      <td>Tilsvarer LandInfra/AbstractData/description</td>
+      <td>Character<wbr />String</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+Relasjoner
+
+**Arv**
+GenerelleEgenskaper
 
 ### Kodelister
 
-#### <a id="kodeliste-mediumsamferdsel"></a>«CodeList» MediumSamferdsel
-
-**Definisjon:** objektets beliggenhet i forhold til jordoverflaten
-
-Eksempel:
-Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/mediumsamferdsel">https://register.geonorge.no/sosi-kodelister/kartdata/mediumsamferdsel</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-målemetode"></a>«CodeList» Målemetode
-
-**Definisjon:** metode som ligger til grunn for registrering av posisjon
-
-
--- Definition - -
-method on which registration of position is based
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/m%C3%A5lemetode">https://register.geonorge.no/sosi-kodelister/kartdata/m%C3%A5lemetode</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-nøyaktighet"></a>«CodeList» Nøyaktighet
-
-**Definisjon:** punktstandardavviket i grunnriss for punkter samt tverravvik for linjer
-
-Merknad:
-Oppgitt i cm
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/n%c3%b8yaktighet">https://register.geonorge.no/sosi-kodelister/kartdata/n%c3%b8yaktighet</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-mediumhøyde"></a>«CodeList» MediumHøyde
-
-**Definisjon:** objektets beliggenhet i forhold til jordoverflaten
-
-Eksempel:
-Veg på bro, i tunnel, inne i et bygningsmessig anlegg, etc.
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/mediumh%C3%B8yde">https://register.geonorge.no/sosi-kodelister/kartdata/mediumh%C3%B8yde</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-grensepunkttype"></a>«CodeList» Grensepunkttype
-
-**Definisjon:** Angivelse av hva slags grensemerke som er brukt i terrenget.
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/grensepunkttype">https://register.geonorge.no/sosi-kodelister/kartdata/grensepunkttype</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-kommunenummer"></a>«CodeList» Kommunenummer
-
-**Definisjon:** nummerering av kommuner i henhold til Statistisk sentralbyrå sin offisielle liste samt et utvalg av utgåtte numre
-
-Merknad: Det presiseres at kommune alltid skal ha 4 sifre, dvs. eventuelt med ledende null. Kommune benyttes for kopling mot en rekke andre registre som også benytter 4 sifre.
-
-Merknad 2: Modelleringsverktøyet Enterprise Architect håndterer ikke samiske tegn eller tankestrek. Det betyr at det vil forekomme avvik mellom definisjonene i denne lista i SOSI modellregister og definisjonene i offisielt standarddokument.
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer">https://register.geonorge.no/sosi-kodelister/inndelinger/inndelingsbase/kommunenummer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-lufthavntype"></a>«CodeList» Lufthavntype
-
-**Definisjon:** angivelse av type lufthavn
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/lufthavntype">https://register.geonorge.no/sosi-kodelister/kartdata/lufthavntype</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-trafikktype"></a>«CodeList» Trafikktype
-
-**Definisjon:** angivelse av type rutetrafikk
-
-Merknad: Benyttes i N50 Kartdata i forhold til luftfart
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/trafikktype">https://register.geonorge.no/sosi-kodelister/kartdata/trafikktype</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-iatakode"></a>«CodeList» IATAKode
-
-**Definisjon:** unik kode for lufthavner.
-
-Merknad1: Ikke alle lufthavner har IATA kode.
-Merknad 2: Bare norske lufthavner er tatt med her.
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/iatakode">https://register.geonorge.no/sosi-kodelister/kartdata/iatakode</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-icaokode"></a>«CodeList» ICAOKode
-
-**Definisjon:** angivelse av lufthavn ved &lt;a href="C:\\wiki\\Kode"&gt;&lt;font color="#0000ff"&gt;&lt;u&gt;kode&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; på fire &lt;a href="C:\\w\\index.php?title=Alfanumerisk&amp;action=edit&amp;redlink=1"&gt;&lt;font color="#0000ff"&gt;&lt;u&gt;alfanumeriske&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; &lt;a href="C:\\wiki\\Tegn"&gt;&lt;font color="#0000ff"&gt;&lt;u&gt;tegn&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;.
-
-Merknad: Den første bokstaven tilordnes etter kontinent og angir et land eller en gruppe land på det samme kontinentet. Den andre bokstaven angir landet og de to siste angir lufthavn.
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/icaokode">https://register.geonorge.no/sosi-kodelister/kartdata/icaokode</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-retningsenhet"></a>«CodeList» Retningsenhet
-
-**Definisjon:** enhet for retning
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/retningsenhet">https://register.geonorge.no/sosi-kodelister/kartdata/retningsenhet</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-retningsreferanse"></a>«CodeList» Retningsreferanse
-
-**Definisjon:** referansesystem for retning
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/retningsreferanse">https://register.geonorge.no/sosi-kodelister/kartdata/retningsreferanse</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-vannbredde"></a>«CodeList» VannBredde
-
-**Definisjon:** grov klassifikasjon av vassdrag etter gjennomsnittelig bredde over lengre strekninger
-
-
--- Definition - -
-Rough classification of river system according to average width over longer sections.
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/vannbredde">https://register.geonorge.no/sosi-kodelister/kartdata/vannbredde</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-bygningstypekode"></a>«CodeList» BygningstypeKode
-
-**Definisjon:** bygningstype sier hva bygningen er brukt til
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/bygningstypekode">https://register.geonorge.no/sosi-kodelister/kartdata/bygningstypekode</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-betjeningsgrad"></a>«CodeList» Betjeningsgrad
-
-**Definisjon:** beskrivelse av hvilke servicefunksjoner som er tilgengelige
-
-
--- Definition - -
-description of which service functions are available
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/betjeningsgrad">https://register.geonorge.no/sosi-kodelister/kartdata/betjeningsgrad</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-hytteeier"></a>«CodeList» Hytteeier
-
-**Definisjon:** eieren av en turisthytte
-
-
--- Definition - -
-the owner of a cabin
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/hytteeier">https://register.geonorge.no/sosi-kodelister/kartdata/hytteeier</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-tilgjengelighet"></a>«CodeList» Tilgjengelighet
-
-**Definisjon:** beskriver om hytta er låst eller ulåst.
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/tilgjengelighet">https://register.geonorge.no/sosi-kodelister/kartdata/tilgjengelighet</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-flerlinjer"></a>«CodeList» FlerLinjer
-
-**Definisjon:** angivelse av antall kraftlinjer
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/flerlinjer">https://register.geonorge.no/sosi-kodelister/kartdata/flerlinjer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-allmenningtype"></a>«CodeList» Allmenningtype
-
-**Definisjon:** nærmere inndeling av allmenninger
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/allmenningtype">https://register.geonorge.no/sosi-kodelister/kartdata/allmenningtype</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-verneform"></a>«CodeList» Verneform
-
-**Definisjon:** verneformer som sorterer under forskjellig lovverk og restriksjoner
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/verneform">https://register.geonorge.no/sosi-kodelister/kartdata/verneform</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-skytefeltstatus"></a>«CodeList» Skytefeltstatus
-
-**Definisjon:** angir skytefeltstatus
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/skytefeltstatus">https://register.geonorge.no/sosi-kodelister/kartdata/skytefeltstatus</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-typeveg"></a>«CodeList» TypeVeg
-
-**Definisjon:** type veg (FormOfWay).
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/typeveg">https://register.geonorge.no/sosi-kodelister/kartdata/typeveg</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-vegkategori"></a>«CodeList» Vegkategori
-
-**Definisjon:** kategorisering som angir på hvilket nivå vegmyndigheten for strekningen ligger
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/vegkategori">https://register.geonorge.no/sosi-kodelister/kartdata/vegkategori</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-vegfase"></a>«CodeList» Vegfase
-
-**Definisjon:** angir vegens fase i livet
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/vegfase">https://register.geonorge.no/sosi-kodelister/kartdata/vegfase</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-motorvegtype"></a>«CodeList» Motorvegtype
-
-**Definisjon:** klassifisering av veger etter grad av vilkår med hensyn til f.eks. fart, avkjøringer/kryss og antall kjørefelt
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/motorvegtype">https://register.geonorge.no/sosi-kodelister/kartdata/motorvegtype</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-rutemerking"></a>«CodeList» RuteMerking
-
-**Definisjon:** forteller om det er merking  langs en sti, løype, veg, sykkelvei mv
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/rutemerking">https://register.geonorge.no/sosi-kodelister/kartdata/rutemerking</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-vedlikeholdsansvarlig"></a>«CodeList» Vedlikeholdsansvarlig
-
-**Definisjon:** institusjon eller andre som har ansvar for vedlikehold av rute
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/vedlikeholdsansvarlig">https://register.geonorge.no/sosi-kodelister/kartdata/vedlikeholdsansvarlig</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-vegsperringtype"></a>«CodeList» Vegsperringtype
-
-**Definisjon:** angir type vegsperring
-
-
--- Definition - -
-indicates type of roadblock
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/vegsperringtype">https://register.geonorge.no/sosi-kodelister/kartdata/vegsperringtype</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-jernbanetype"></a>«CodeList» Jernbanetype
-
-**Definisjon:** klassifisering av jernbaneanlegg i hht. konstruksjon/dimensjonering
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/jernbanetype">https://register.geonorge.no/sosi-kodelister/kartdata/jernbanetype</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-jernbanestatus"></a>«CodeList» Jernbanestatus
-
-**Definisjon:** definerer status for drift på en banestrekning
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/jernbanestatus">https://register.geonorge.no/sosi-kodelister/kartdata/jernbanestatus</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-sporantall"></a>«CodeList» Sporantall
-
-**Definisjon:** antall jernbanespor
-
-Profilparametre i tagged values
-
-<table class="feature-attribute-table">
-  <colgroup>
-    <col style="width: 35%;" />
-    <col style="width: 65%;" />
-  </colgroup>
-  <tbody>
-    <tr>
-      <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/sporantall">https://register.geonorge.no/sosi-kodelister/kartdata/sporantall</a></td>
-    </tr>
-  </tbody>
-</table>
-
-#### <a id="kodeliste-navneobjekthovedgruppe"></a>«CodeList» Navneobjekthovedgruppe
-
-**Definisjon:** hovedgruppene følger i hovedsak Inspire "NamedPlaceTypeValue", men populatedPlace og building er samlet under bebyggelse og hydrography er delt mellom sjø og ferskvann.
+#### <a id="kodeliste-facilityparttype"></a>«CodeList» FacilityPartType
 
 Profilparametre i tagged values
 
@@ -7430,16 +4500,79 @@ Profilparametre i tagged values
       <th scope="row">asDictionary</th>
       <td>false</td>
     </tr>
+  </tbody>
+</table>
+
+Koder
+
+<table class="code-list-table">
+  <thead>
     <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/stedsnavn/navneobjekthovedgruppe">https://register.geonorge.no/sosi-kodelister/stedsnavn/navneobjekthovedgruppe</a></td>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bridge</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>building</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>drainage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>environmental</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>railway</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>road</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>site</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tunnel</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wastewater</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>waterDistribution</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
 
-#### <a id="kodeliste-navneobjektgruppe"></a>«CodeList» Navneobjektgruppe
-
-**Definisjon:** inndeling i kategorier under hver hovedgruppe.
+#### <a id="kodeliste-roadelementtype"></a>«CodeList» RoadElementType
 
 Profilparametre i tagged values
 
@@ -7453,16 +4586,176 @@ Profilparametre i tagged values
       <th scope="row">asDictionary</th>
       <td>false</td>
     </tr>
+  </tbody>
+</table>
+
+Koder
+
+<table class="code-list-table">
+  <thead>
     <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/stedsnavn/navneobjektgruppe">https://register.geonorge.no/sosi-kodelister/stedsnavn/navneobjektgruppe</a></td>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pavement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pavementSurfaceCourse</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pavementIntermediateCourse</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pavementBaseCourse</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pavementSubbase</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>shoulder</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>hardShoulder</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>softShoulder</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>barrier</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>guardRail</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>curb</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>verticalCurb</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mountablelCurb</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>curbAndGutter</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gutter</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>crossPan</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>greenAreaMedian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pavedMedian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>raisedMedian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fencedMedian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>medianGuardRail</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>medianConcreteBarrier</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>verge</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sidewalk</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bikePath</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>drainageDitch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cutSlope</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fillSlope</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>codeList</td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
 
-#### <a id="kodeliste-navneobjekttype"></a>«CodeList» Navneobjekttype
+#### <a id="kodeliste-komponentkodesystem"></a>«CodeList» Komponentkodesystem
 
-**Definisjon:** stedets navneobjekttype er en underinndeling av navneobjektgruppene som igjen er inndeling av navneobjekthovedgruppene.
+**Definisjon:** Kodeliste med navn på aktuelle kodesystemer. Lista kan utvides ved behov.
 
 Profilparametre i tagged values
 
@@ -7476,16 +4769,47 @@ Profilparametre i tagged values
       <th scope="row">asDictionary</th>
       <td>false</td>
     </tr>
+  </tbody>
+</table>
+
+Koder
+
+<table class="code-list-table">
+  <thead>
     <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/stedsnavn/navneobjekttype">https://register.geonorge.no/sosi-kodelister/stedsnavn/navneobjekttype</a></td>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HBR761Prosesskode</td>
+      <td>Se R761, Prosesskode</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EPD-ID</td>
+      <td>Link (URL) til EPD Norge (eller annen EPD) for oppslag av EPD for aktuell byggevare.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NS3420</td>
+      <td>NS3420-kode angis tilsvarende denne, som NS-kode med link/URL.:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MMI</td>
+      <td>Se RIFs Modell Modenhets Indeks for samferdsel</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
 
-#### <a id="kodeliste-språkkode"></a>«CodeList» SpråkKode
+#### <a id="kodeliste-dimensjoneringsklasse"></a>«CodeList» Dimensjoneringsklasse
 
-**Definisjon:** subsett av ISO 639-3 som inneholder trebokstavs-koder de språkene som trengs for å konvertere innholdet fra SSR. Kodelisten kan utvides ved behov etter produksjonssetting.
+**Definisjon:** Dimensjoneringsklasser for nasjonale hovedveger
+Kilde: N100 (versjon mai 2019)
 
 Profilparametre i tagged values
 
@@ -7497,20 +4821,63 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/stedsnavn/spr%C3%A5kkode">https://register.geonorge.no/sosi-kodelister/stedsnavn/spr%C3%A5kkode</a></td>
+      <td>false</td>
     </tr>
   </tbody>
 </table>
 
-#### <a id="kodeliste-språkprioriteringkode"></a>«CodeList» SpråkprioriteringKode
+Koder
 
-**Definisjon:** kodeliste som angir visningsrekkefølgen til stedsnavn på forskjellig språk.
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H1</td>
+      <td>H1 Nasjonal hovedveg, ÅDT &lt; 6000, fartsgrense 80 km/t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>H3 Nasjonal hovedveg, ÅDT &gt; 12000, fartsgrense 110 km/t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>H5</td>
+      <td>H5 Nasjonal hovedveg, ÅDT 6000 -12000, fartsgrense 90 km/t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hø1</td>
+      <td>Hø1- Øvrige hovedveger, ÅDT &lt; 4000, fartsgrense 80 km/t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hø2</td>
+      <td>Hø2 - Øvrige hovedveger, ÅDT &lt; 120000, fartsgrense 60 km/t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L1</td>
+      <td>L1 Lokale veger, ÅDT &lt; 1500, fartsgrense 60 km/t eller 80 km/t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L2</td>
+      <td>L2 Øvrige lokale veger,  ÅDT &lt; 300, lav fartsgrense</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-Det er de første fem verdiene i kodene (de norske språkene) som varierer mellom kodene, ellers er det lik (alfabetisk i forhold til ISO-kodeverdien) rekkefølge på språkene som ikke er aktuelle for behandling etter lov om stadnamn.
+#### <a id="kodeliste-dimensjonerendehastighet"></a>«CodeList» DimensjonerendeHastighet
+
+**Definisjon:** Dimensjonerende hastighet målt i km/t
 
 Profilparametre i tagged values
 
@@ -7522,18 +4889,65 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/stedsnavn/spr%C3%A5kprioriteringkode">https://register.geonorge.no/sosi-kodelister/stedsnavn/spr%C3%A5kprioriteringkode</a></td>
+      <td>false</td>
     </tr>
   </tbody>
 </table>
 
-#### <a id="kodeliste-tekstreferansepunktnord"></a>«CodeList» TekstReferansePunktNord
+Koder
 
-**Definisjon:** vertikal plassering av teksten
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>30 km/t</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>40 km/t</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>50 km/t</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>60 km/t</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>80 km/t</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>90 km/t</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>110 km/t</td>
+      <td>110</td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-dimensjonerendevegbredde"></a>«CodeList» DimensjonerendeVegbredde
+
+**Definisjon:** Dimensjonerende vegbredde på rettstrekning, dvs. uten hensyn til breddeutvidelse i kurver.
+Kilde: N100 (versjon mai 2019)
+Kodene er navngitt med m og evt. cm for å unngå at de inneholder kommategn
 
 Profilparametre i tagged values
 
@@ -7545,18 +4959,63 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/tekstreferansepunktnord">https://register.geonorge.no/sosi-kodelister/kartdata/tekstreferansepunktnord</a></td>
+      <td>false</td>
     </tr>
   </tbody>
 </table>
 
-#### <a id="kodeliste-tekstreferansepunktøst"></a>«CodeList» TekstReferansePunktØst
+Koder
 
-**Definisjon:** horisontal plassering av teksten
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>23m</td>
+      <td>23 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12m50cm</td>
+      <td>12,5 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9m</td>
+      <td>9 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7m50cm</td>
+      <td>7,5 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6m</td>
+      <td>6 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4m</td>
+      <td>4 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3m50cm</td>
+      <td>3,5 m</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-dimensjonerendemotorkjøretøy"></a>«CodeList» DimensjonerendeMotorkjøretøy
+
+**Definisjon:** Dimensjonerende motorkjøretøy velges ut fra veg-og gatenettets funksjon, trafikkmengde og muligheterfor omkjøring.
 
 Profilparametre i tagged values
 
@@ -7568,18 +5027,61 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/tekstreferansepunkt%C3%B8st">https://register.geonorge.no/sosi-kodelister/kartdata/tekstreferansepunkt%C3%B8st</a></td>
+      <td>false</td>
     </tr>
   </tbody>
 </table>
 
-#### <a id="kodeliste-skriftkode"></a>«CodeList» Skriftkode
+Koder
 
-**Definisjon:** koblingsnøkkel mot presentasjonsinformasjon. Forslag til presentasjon av stedsnavn og høydetall basert på skriftkoder. Presentasjonskoden er basert på hovedkartserien 1:50 000/M711 produsert av Kartverket. Kartverket har egne fonter, men oversatt til TimesNewRoman slik at enhver kan presentere dataene tilnærmet presentasjonen til Kartverket. Ved bruk av ESRI FGDB filformat ligger fontinformasjon allerede inne i egenskapstabellen.
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P</td>
+      <td>Personbiler, varebiler, kombibiler (P)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LL</td>
+      <td>Liten lastebil (LL)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Lastebiler (inkl. brannbiler med stige) (L)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Boggibusser (B)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VT</td>
+      <td>Vogntog (VT)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MVT</td>
+      <td>Modulvogntog (MVT)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-dimensjonerendetrafikkmengdeådt"></a>«CodeList» DimensjonerendeTrafikkmengdeÅDT
+
+**Definisjon:** Dimensjonerende antall kjøretøy i snitt pr døgn, ÅDT
+
+Kilde: N100 (versjon mai 2019)
+<a href="https://www.vegvesen.no/siteassets/content/vedlegg/handboker/n100-veg-og-gateutforming-041219.pdf">https://www.vegvesen.no/siteassets/content/vedlegg/handboker/n100-veg-og-gateutforming-041219.pdf</a>
 
 Profilparametre i tagged values
 
@@ -7591,18 +5093,63 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true</td>
-    </tr>
-    <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/skriftkode">https://register.geonorge.no/sosi-kodelister/kartdata/skriftkode</a></td>
+      <td>false</td>
     </tr>
   </tbody>
 </table>
 
-#### <a id="kodeliste-teksttype"></a>«CodeList» Teksttype
+Koder
 
-**Definisjon:** beskriver hva teksten står til.
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>under6000</td>
+      <td>&lt;6000 kjøretøy i snitt pr døgn</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mellom6000og12000</td>
+      <td>6000-12000  kjøretøy i snitt pr døgn</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>over12000</td>
+      <td>&gt;12000 kjøretøy i snitt pr døgn</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>under4000</td>
+      <td>&lt;4000 kjøretøy i snitt pr døgn</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>under12000</td>
+      <td>&lt;12000 kjøretøy i snitt pr døgn</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>under1500</td>
+      <td>&lt;1500 kjøretøy i snitt pr døgn</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>under300</td>
+      <td>&lt;300 kjøretøy i snitt pr døgn</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-dimensjonerendekjøremåte"></a>«CodeList» DimensjonerendeKjøremåte
+
+**Definisjon:** Beskriver den frihet et kjøretøy trenger i veg-/kjørearealet ved trafikkering av vegnettet. Se kjøremåte A, B og C.
 
 Profilparametre i tagged values
 
@@ -7614,11 +5161,335 @@ Profilparametre i tagged values
   <tbody>
     <tr>
       <th scope="row">asDictionary</th>
-      <td>true</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>Kjøremåte A:
+Ved kjøremåte A forutsettes følgende nårdet gjelder dimensjonerende kjøretøy:
+&lt;ul&gt;
+&lt;li&gt;kjøretøyet skal kunne trafikkere veg-/gateanlegget kun ved bruk av eget kjørefelt. Dette betyr athele kjøretøyet, inklusiv overheng, skal kunne bevege seg innenfor sitt eget kjørefelt&lt;/li&gt;
+&lt;li&gt;på veger og gater utenom kryss skal disse strekningene kunne trafikkeres med en fart tilsvarendefartsgrensen&lt;/li&gt;
+&lt;li&gt;i kryss skal kjøretøyet kunne kjøre gjennom krysset med en fart på 15 km/t&lt;/li&gt;
+&lt;li&gt;i slyng skal kjøretøyet kunne kjøre med en fart på 15 km/t&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;kjøretøyet skal ikke behøve å rygge på snuplasser&lt;/li&gt;
+&lt;/ul&gt;</td>
+      <td></td>
     </tr>
     <tr>
-      <th scope="row">codeList</th>
-      <td><a href="https://register.geonorge.no/sosi-kodelister/kartdata/teksttype">https://register.geonorge.no/sosi-kodelister/kartdata/teksttype</a></td>
+      <td>B</td>
+      <td>Kjøremåte B:
+Ved kjøremåte B forutsettes følgende når det gjelder dimensjonerende kjøretøy:
+&lt;ul&gt;
+&lt;li&gt;i kryss forutsettes kjøretøyet å kunne bruke deler av motgående kjørefelt i den veg/gate kjøretøyetsvinger inn i&lt;/li&gt;
+&lt;li&gt;på veger og gater utenfor kryss antas at valgt kjøretøy på enkelte partier trafikkerer disse med enlavere fart enn fartsgrensen&lt;/li&gt;
+&lt;li&gt;i kryss forutsettes valgt kjøretøy å kunne kjøre gjennom krysset med en lavere fart enn 15 km/t&lt;/li&gt;
+&lt;li&gt;i slyng skal kjøretøyet kunne kjøre med en fart på 15 km/t&lt;/li&gt;
+&lt;li&gt;kjøretøyet vil i noen tilfeller måtte regne med å rygge på snuplasser&lt;/li&gt;
+&lt;/ul&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Kjøremåte C:
+Kjøremåte C vil primært være knyttet til kryss. Ved kjøremåte C forutsettes følgende når det gjelder dimensjonerende kjøretøy:
+&lt;ul&gt;
+&lt;li&gt;kjøretøyet forutsettes å kunne bruke hele kjørebanebredden både i den veg/gate kjøretøyet svinger av fra og i den veg/gate kjøretøyet svinger inn i&lt;/li&gt;
+&lt;li&gt;valgt kjøretøy forutsettes å kjøre gjennom krysset med en lavere fart enn 15 km/t&lt;/li&gt;
+&lt;li&gt;kjøretøyet vil i noen tilfeller måtte regne med å rygge på snuplasser&lt;/li&gt;
+&lt;/ul&gt;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-maxoverhøydeprosent"></a>«CodeList» MaxOverhøydeProsent
+
+**Definisjon:** Max tverrfall/overhøyde målt i prosent
+Kilde N100 (versjon mai 2019)
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>8 %</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5 %</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-dimensjonerendetrafikkgruppe"></a>«CodeList» DimensjonerendeTrafikkgruppe
+
+**Definisjon:** Trafikkgruppe målt i ekvivalente 10 tonns aksler (N):
+Dimensjonerende aksellast: 10 tonn
+Dimensjoneringsperiode: 20 år
+Dimensjonerende trafikkbelastning: Ekvivalente 10 tonns aksler per felt i dimensjoneringsperioden.
+Kilde: N200 (2018)
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>&lt;500 000 = Trafikkgruppe A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>500 000 - 1 000 000 = Trafikkgruppe B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>1 000 000 – 2 000 000 = Trafikkgruppe C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>2 000 000 – 3 500 000 = Trafikkgruppe D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>3 500 000 – 10 000 000 = Trafikkgruppe E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>&gt; 10 000 000 = Trafikkgruppe F</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-overbygninglagtype"></a>«CodeList» OverbygningLagtype
+
+**Definisjon:** Kodeliste som betegner fysisk lag i overbygningen
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>slitelag</td>
+      <td>Det øverste laget i et vegdekke. Settes sammen/beregnes for å kunne oppta trafikk- og klimapåkjenninger.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bindelag</td>
+      <td>Nedre del av asfaltdekket når dette består av mer enn ett lag, dvs. lag mellom slitelag og bærelag.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bærelag</td>
+      <td>Bærelag. Dersom det brukes flere bærelag, skilles de med lagnummer.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>forsterkningslag</td>
+      <td>Lag i vegens overbygning, under bærelag. Hovedfunksjonen er å fordele trafikkbelastningen slik at undergrunnen ikke overbelastes.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>frostsikringslag</td>
+      <td>Lag under forsterkningslaget, eller bygget sammen med forsterkningslaget, for å hindre frosten i å trenge ned i tele- farlig undergrunn eller underbygning.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>filterlag</td>
+      <td>Lag av filtermateriale, normalt nederste lag i overbygningen mellom planum og forsterkningslaget. Er i dag normalt erstattet av en fiberduk.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fiberduk</td>
+      <td>Kan være fiberduk. Fiberduk kan legges under armeringslaget for å unngå at materialer fra grunnen trenger inn i overbygningen.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-side"></a>«Enumeration» Side
+
+**Definisjon:** kodeliste for angivelse av vegside
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>left</td>
+      <td>venstre side</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>høyre side</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>both</td>
+      <td>begge sider</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>neither</td>
+      <td>ingen av sidene</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>unspecified</td>
+      <td>uspesifisert side</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### <a id="kodeliste-underbygninglagtype"></a>«CodeList» UnderbygningLagtype
+
+**Definisjon:** Kodeliste som betegner fysisk lag i underbygningen
+
+Profilparametre i tagged values
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">asDictionary</th>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>undergrunn</td>
+      <td>Eksisterende masser i grunnen, som gjennom bearbeiding, evt. ved tilsetning av materialer, får en forbedret styrke i forhold til opprinnelig styrke. Eksempler på tiltak kan være komprimering, senking av grunnvannstanden. Formålet er å oppnå en redusert tykkelse på nødvendig overbygning. Se også grunnforsterkning med lokale materialer.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dypsprengning</td>
+      <td>Løssprengning av fjell til et visst nivå under teoretisk traubunn.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>undergrunnForbedret</td>
+      <td>Eksisterende masser i grunnen som er forbedret eller stabilisert</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fylling</td>
+      <td>Fylling som del av underbyggning</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
