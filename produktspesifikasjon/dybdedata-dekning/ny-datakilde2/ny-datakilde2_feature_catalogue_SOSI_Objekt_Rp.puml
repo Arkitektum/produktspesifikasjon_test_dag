@@ -1,0 +1,58 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - Ny datakilde2 - SOSI_Objekt_Rp
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "SOSI_Objekt_Rp" {
+
+  abstract class "SOSI_Objekt_Planområde_Rp" as SOSI_Objekt_Planomr_de_Rp <<featureType>> {
+    + førsteDigitaliseringsdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+    + prosesshistorie [0..*] : CharacterString
+    + informasjon [0..*] : CharacterString
+    + link [0..*] : Link
+  }
+
+  abstract class SOSI_Objekt_Planlinjer_Rp <<featureType>> {
+    + førsteDigitaliseringsdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  abstract class "SOSI_Objekt_Plandelområde_Rp" as SOSI_Objekt_Plandelomr_de_Rp <<featureType>> {
+    + førsteDigitaliseringsdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [1] : Målemetode
+    + nøyaktighet [0..1] : Integer
+  }
+}
+
+@enduml

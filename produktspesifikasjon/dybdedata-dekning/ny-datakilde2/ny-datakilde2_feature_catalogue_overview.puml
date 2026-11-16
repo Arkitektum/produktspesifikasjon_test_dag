@@ -28,147 +28,209 @@ skinparam stereotypeCBackgroundColor #EAD9CE
 skinparam stereotypeCBorderColor #9C8578
 skinparam stereotypeCFontColor #2D201A
 
-package "Generelle konsepter" {
-  abstract class "FellesegenskaperPåkrevd" as FellesegenskaperP_krevd <<featureType>> {
+package "Arealformål" {
+  class "RbFormålOmråde" as RbForm_lOmr_de <<featureType>> {
   }
-  abstract class FellesegenskaperOpsjonell <<featureType>> {
+  class "RpFormålGrense" as RpForm_lGrense <<featureType>> {
   }
-}
-
-package "Havnedata-2021-Utkast" {
-  class "Havneområde" as Havneomr_de <<featureType>> {
-  }
-  class Havneanlegg <<featureType>> {
-  }
-  class HavnegjerdeInngang <<featureType>> {
-  }
-  class Havnegjerde <<featureType>> {
-  }
-  class Drivstofftilkobling <<featureType>> {
-  }
-  abstract class ObjektId <<featureType>> {
-  }
-  class Kran <<featureType>> {
-  }
-  class Slipp <<featureType>> {
-  }
-  class "Tømmestasjon" as T_mmestasjon <<featureType>> {
-  }
-  class FlytedokkGrense <<featureType>> {
-  }
-  abstract class HavneanleggId <<featureType>> {
-  }
-  class "Tørrdokk" as T_rrdokk <<featureType>> {
-  }
-  class Toalett <<featureType>> {
-  }
-  class "ForvaltningsområdeGrense" as Forvaltningsomr_deGrense <<featureType>> {
-  }
-  class SlippGrense <<featureType>> {
-  }
-  class "TørrdokkGrense" as T_rrdokkGrense <<featureType>> {
-  }
-  abstract class HavnId <<featureType>> {
-  }
-  class Kamera <<featureType>> {
-  }
-  class "Lastbegrensningsområde" as Lastbegrensningsomr_de <<featureType>> {
-  }
-  class "Kaiområde" as Kaiomr_de <<featureType>> {
-  }
-  class "KaiområdeGrense" as Kaiomr_deGrense <<featureType>> {
-  }
-  class Flytedokk <<featureType>> {
-  }
-  class Beredskapspunkt <<featureType>> {
-  }
-  class Havnesensor <<featureType>> {
-  }
-  class ELkobling <<featureType>> {
-  }
-  class "Forvaltningsområde" as Forvaltningsomr_de <<featureType>> {
-  }
-  class "HavneområdeGrense" as Havneomr_deGrense <<featureType>> {
-  }
-  class Fender <<featureType>> {
-  }
-  class VAuttak <<featureType>> {
-  }
-  class HavneanleggGrense <<featureType>> {
-  }
-  class Avfallspunkt <<featureType>> {
-  }
-  class "Fortøyningsinnretning" as Fort_yningsinnretning <<featureType>> {
-  }
-  abstract class KaiId <<featureType>> {
-  }
-  class "LastbegrensningsområdeGrense" as Lastbegrensningsomr_deGrense <<featureType>> {
-  }
-  class Kaifront <<featureType>> {
+  class "RpArealformålOmråde" as RpArealform_lOmr_de <<featureType>> {
   }
 }
 
-package "Reguleringer" {
-  class "Forbudsområde" as Forbudsomr_de <<featureType>> {
+package "Bestemmelser/hensyn" {
+  class RpAngittHensynGrense <<featureType>> {
   }
-  class FartsrestriksjonerGrense <<featureType>> {
+  class "RpBåndleggingGrense" as RpB_ndleggingGrense <<featureType>> {
   }
-  class "ForbudsområdeGrense" as Forbudsomr_deGrense <<featureType>> {
+  class "RbFareOmråde" as RbFareOmr_de <<featureType>> {
   }
-  class Fartsrestriksjoner <<featureType>> {
+  class "RpStøySone" as RpSt_ySone <<featureType>> {
+  }
+  class RpInfrastrukturGrense <<featureType>> {
+  }
+  class "RpBåndleggingSone" as RpB_ndleggingSone <<featureType>> {
+  }
+  class "RpBestemmelseOmråde" as RpBestemmelseOmr_de <<featureType>> {
+  }
+  class "RbRekkefølgeGrense" as RbRekkef_lgeGrense <<featureType>> {
+  }
+  class RpInfrastrukturSone <<featureType>> {
+  }
+  class RpDetaljeringGrense <<featureType>> {
+  }
+  class "RbBevaringOmråde" as RbBevaringOmr_de <<featureType>> {
+  }
+  class RpBestemmelseGrense <<featureType>> {
+  }
+  class "RbFornyelseOmråde" as RbFornyelseOmr_de <<featureType>> {
+  }
+  class RbFornyelseGrense <<featureType>> {
+  }
+  class RpDetaljeringSone <<featureType>> {
+  }
+  class RpSikringSone <<featureType>> {
+  }
+  class RbBevaringGrense <<featureType>> {
+  }
+  class RpFareSone <<featureType>> {
+  }
+  class RbRestriksjonGrense <<featureType>> {
+  }
+  class "RpGjennomføringSone" as RpGjennomf_ringSone <<featureType>> {
+  }
+  class "RpGjennomføringGrense" as RpGjennomf_ringGrense <<featureType>> {
+  }
+  class RpAngittHensynSone <<featureType>> {
+  }
+  class RpSikringGrense <<featureType>> {
+  }
+  class "RbRekkefølgeOmråde" as RbRekkef_lgeOmr_de <<featureType>> {
+  }
+  class RpFareGrense <<featureType>> {
+  }
+  class "RbRestriksjonOmråde" as RbRestriksjonOmr_de <<featureType>> {
+  }
+  class "RpStøyGrense" as RpSt_yGrense <<featureType>> {
+  }
+}
+
+package "Juridiske punt/linjer og påskrift" {
+  class "RpPåskrift" as RpP_skrift <<featureType>> {
+  }
+  class "RpRegulertHøyde" as RpRegulertH_yde <<featureType>> {
+  }
+  class RpJuridiskPunkt <<featureType>> {
+  }
+  class RpJuridiskLinje <<featureType>> {
+  }
+}
+
+package "Planområde" {
+  class RpGrense <<featureType>> {
+  }
+  class "RpOmråde" as RpOmr_de <<featureType>> {
+  }
+}
+
+package "SOSI_Objekt_Rp" {
+  abstract class "SOSI_Objekt_Planområde_Rp" as SOSI_Objekt_Planomr_de_Rp <<featureType>> {
+  }
+  abstract class SOSI_Objekt_Planlinjer_Rp <<featureType>> {
+  }
+  abstract class "SOSI_Objekt_Plandelområde_Rp" as SOSI_Objekt_Plandelomr_de_Rp <<featureType>> {
   }
 }
 
 
-HavnId <|-- Havneomr_de
-Havneomr_de --> Havneomr_deGrense : avgrensning [0..*]
-HavneanleggId <|-- Havneanlegg
-Havneanlegg --> HavneanleggGrense : avgrensning [0..*]
-Havnegjerde <|-- HavnegjerdeInngang
-HavneanleggId <|-- Havnegjerde
-ObjektId <|-- Drivstofftilkobling
-KaiId <|-- ObjektId
-ObjektId <|-- Kran
-KaiId <|-- Slipp
-Slipp --> SlippGrense : avgrensning [0..*]
-ObjektId <|-- T_mmestasjon
-FellesegenskaperP_krevd <|-- FlytedokkGrense
-HavnId <|-- HavneanleggId
-HavneanleggId <|-- T_rrdokk
-T_rrdokk --> T_rrdokkGrense : avgrensning [0..*]
-ObjektId <|-- Toalett
-FellesegenskaperP_krevd <|-- Forvaltningsomr_deGrense
-FellesegenskaperP_krevd <|-- SlippGrense
-FellesegenskaperP_krevd <|-- T_rrdokkGrense
-FellesegenskaperOpsjonell <|-- HavnId
-Havnesensor <|-- Kamera
-KaiId <|-- Lastbegrensningsomr_de
-Lastbegrensningsomr_de --> Lastbegrensningsomr_deGrense : avgrensning [0..*]
-KaiId <|-- Kaiomr_de
-Kaiomr_de --> Kaiomr_deGrense : avgrensning [0..*]
-FellesegenskaperP_krevd <|-- Kaiomr_deGrense
-HavneanleggId <|-- Flytedokk
-Flytedokk --> FlytedokkGrense : avgrensning [0..*]
-ObjektId <|-- Beredskapspunkt
-HavnId <|-- Havnesensor
-ObjektId <|-- ELkobling
-HavnId <|-- Forvaltningsomr_de
-Forvaltningsomr_de --> Forvaltningsomr_deGrense : avgrensning [0..*]
-FellesegenskaperP_krevd <|-- Havneomr_deGrense
-ObjektId <|-- Fender
-ObjektId <|-- VAuttak
-FellesegenskaperP_krevd <|-- HavneanleggGrense
-ObjektId <|-- Avfallspunkt
-ObjektId <|-- Fort_yningsinnretning
-HavneanleggId <|-- KaiId
-FellesegenskaperP_krevd <|-- Lastbegrensningsomr_deGrense
-ObjektId <|-- Kaifront
-FellesegenskaperP_krevd <|-- FellesegenskaperOpsjonell
-FellesegenskaperOpsjonell <|-- Forbudsomr_de
-Forbudsomr_de --> Forbudsomr_deGrense : avgrensning [0..*]
-FellesegenskaperP_krevd <|-- FartsrestriksjonerGrense
-FellesegenskaperP_krevd <|-- Forbudsomr_deGrense
-FellesegenskaperOpsjonell <|-- Fartsrestriksjoner
-Fartsrestriksjoner --> FartsrestriksjonerGrense : avgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpGrense
+RpGrense --> RpOmr_de : [1..2]
+SOSI_Objekt_Planomr_de_Rp <|-- RpOmr_de
+RpOmr_de --> RpGrense : planavgrensning [0..*]
+RpOmr_de --> RpGjennomf_ringSone : gjennomføring [0..*]
+RpOmr_de --> RpDetaljeringSone : detaljering [0..*]
+RpOmr_de --> RbForm_lOmr_de : reguleringsformål [1..*]
+RpOmr_de --> RpBestemmelseOmr_de : bestemmelse [0..*]
+RpOmr_de --> RpRegulertH_yde : regulertHøyde [0..*]
+RpOmr_de --> RpFareSone : fare [0..*]
+RpOmr_de --> RbFornyelseOmr_de : fornyelse [0..*]
+RpOmr_de --> RpSikringSone : sikring [0..*]
+RpOmr_de --> RpJuridiskPunkt : juridiskPunkt [0..*]
+RpOmr_de --> RbFareOmr_de : fare [0..*]
+RpOmr_de --> RpP_skrift : påskrift [0..*]
+RpOmr_de --> RpJuridiskLinje : juridiskLinje [0..*]
+RpOmr_de --> RbRestriksjonOmr_de : restriksjon [0..*]
+RpOmr_de --> RbBevaringOmr_de : bevaring [0..*]
+RpOmr_de --> RpB_ndleggingSone : båndlegging [0..*]
+RpOmr_de --> RbRekkef_lgeOmr_de : rekkefølge [0..*]
+RpOmr_de --> RpAngittHensynSone : angittHensyn [0..*]
+RpOmr_de --> RpSt_ySone : støy [0..*]
+RpOmr_de --> RpArealform_lOmr_de : formålsområde [1..*]
+RpOmr_de --> RpInfrastrukturSone : infrastruktur [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbForm_lOmr_de
+RbForm_lOmr_de --> RpOmr_de : [1]
+RbForm_lOmr_de --> RpForm_lGrense : avgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpForm_lGrense
+RpForm_lGrense --> RbForm_lOmr_de : [1..2]
+RpForm_lGrense --> RpArealform_lOmr_de : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpArealform_lOmr_de
+RpArealform_lOmr_de --> RpOmr_de : [1]
+RpArealform_lOmr_de --> RpForm_lGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpAngittHensynGrense
+RpAngittHensynGrense --> RpAngittHensynSone : [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpB_ndleggingGrense
+RpB_ndleggingGrense --> RpB_ndleggingSone : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbFareOmr_de
+RbFareOmr_de --> RpOmr_de : [1]
+RbFareOmr_de --> RpFareGrense : avgrensning [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpSt_ySone
+RpSt_ySone --> RpOmr_de : [1]
+RpSt_ySone --> RpSt_yGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpInfrastrukturGrense
+RpInfrastrukturGrense --> RpInfrastrukturSone : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpB_ndleggingSone
+RpB_ndleggingSone --> RpOmr_de : [1]
+RpB_ndleggingSone --> RpB_ndleggingGrense : avgrensning [1..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpBestemmelseOmr_de
+RpBestemmelseOmr_de --> RpOmr_de : [1]
+RpBestemmelseOmr_de --> RpBestemmelseGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RbRekkef_lgeGrense
+RbRekkef_lgeGrense --> RbRekkef_lgeOmr_de : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpInfrastrukturSone
+RpInfrastrukturSone --> RpOmr_de : [1]
+RpInfrastrukturSone --> RpInfrastrukturGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpDetaljeringGrense
+RpDetaljeringGrense --> RpDetaljeringSone : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbBevaringOmr_de
+RbBevaringOmr_de --> RpOmr_de : [1]
+RbBevaringOmr_de --> RbBevaringGrense : avgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpBestemmelseGrense
+RpBestemmelseGrense --> RpBestemmelseOmr_de : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbFornyelseOmr_de
+RbFornyelseOmr_de --> RpOmr_de : [1]
+RbFornyelseOmr_de --> RbFornyelseGrense : avgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RbFornyelseGrense
+RbFornyelseGrense --> RbFornyelseOmr_de : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpDetaljeringSone
+RpDetaljeringSone --> RpOmr_de : [1]
+RpDetaljeringSone --> RpDetaljeringGrense : avgrensning [1..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpSikringSone
+RpSikringSone --> RpOmr_de : [1]
+RpSikringSone --> RpSikringGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RbBevaringGrense
+RbBevaringGrense --> RbBevaringOmr_de : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpFareSone
+RpFareSone --> RpOmr_de : [1]
+RpFareSone --> RpFareGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RbRestriksjonGrense
+RbRestriksjonGrense --> RbRestriksjonOmr_de : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpGjennomf_ringSone
+RpGjennomf_ringSone --> RpOmr_de : [1]
+RpGjennomf_ringSone --> RpGjennomf_ringGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpGjennomf_ringGrense
+RpGjennomf_ringGrense --> RpGjennomf_ringSone : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpAngittHensynSone
+RpAngittHensynSone --> RpOmr_de : [1]
+RpAngittHensynSone --> RpAngittHensynGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpSikringGrense
+RpSikringGrense --> RpSikringSone : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbRekkef_lgeOmr_de
+RbRekkef_lgeOmr_de --> RpOmr_de : [1]
+RbRekkef_lgeOmr_de --> RbRekkef_lgeGrense : rekkefølgeAvgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpFareGrense
+RpFareGrense --> RbFareOmr_de : [1..2]
+RpFareGrense --> RpFareSone : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbRestriksjonOmr_de
+RbRestriksjonOmr_de --> RpOmr_de : [1]
+RbRestriksjonOmr_de --> RbRestriksjonGrense : avgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpSt_yGrense
+RpSt_yGrense --> RpSt_ySone : [1]
+SOSI_Objekt_Planlinjer_Rp <|-- RpP_skrift
+RpP_skrift --> RpOmr_de : [1]
+SOSI_Objekt_Planlinjer_Rp <|-- RpRegulertH_yde
+RpRegulertH_yde --> RpOmr_de : [1]
+SOSI_Objekt_Planlinjer_Rp <|-- RpJuridiskPunkt
+RpJuridiskPunkt --> RpOmr_de : [1]
+SOSI_Objekt_Planlinjer_Rp <|-- RpJuridiskLinje
+RpJuridiskLinje --> RpOmr_de : [1]
 
 @enduml

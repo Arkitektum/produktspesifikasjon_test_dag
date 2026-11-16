@@ -1,0 +1,259 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - Ny datakilde2 - Bestemmelser/hensyn
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Bestemmelser/hensyn" {
+
+  class RpAngittHensynGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpBåndleggingGrense" as RpB_ndleggingGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RbFareOmråde" as RbFareOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformFare
+    + feltbetegnelse [0..1] : CharacterString
+    + reguleringsformålsutdyping [0..1] : CharacterString
+  }
+
+  class "RpStøySone" as RpSt_ySone <<featureType>> {
+    + område [1] : Flate
+    + støy [1] : RpStøySoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpInfrastrukturGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpBåndleggingSone" as RpB_ndleggingSone <<featureType>> {
+    + område [1] : Flate
+    + båndlegging [1] : RpBåndleggingSoneType
+    + båndlagtFremTil [0..1] : Date
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class "RpBestemmelseOmråde" as RpBestemmelseOmr_de <<featureType>> {
+    + område [1] : Flate
+    + bestemmelseOmrådeNavn [1] : CharacterString
+    + type [1] : RpBestemmelseHjemmel
+  }
+
+  class "RbRekkefølgeGrense" as RbRekkef_lgeGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RpInfrastrukturSone <<featureType>> {
+    + område [1] : Flate
+    + infrastruktur [1] : RpInfrastrukturSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpDetaljeringGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RbBevaringOmråde" as RbBevaringOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformBevaring
+    + feltbetegnelse [0..1] : CharacterString
+  }
+
+  class RpBestemmelseGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RbFornyelseOmråde" as RbFornyelseOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformFornyelse
+    + feltbetegnelse [0..1] : CharacterString
+  }
+
+  class RbFornyelseGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RpDetaljeringSone <<featureType>> {
+    + område [1] : Flate
+    + detaljering [1] : RpDetaljeringSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpSikringSone <<featureType>> {
+    + område [1] : Flate
+    + sikring [1] : RpSikringSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RbBevaringGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RpFareSone <<featureType>> {
+    + område [1] : Flate
+    + fare [1] : RpFareSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RbRestriksjonGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RpGjennomføringSone" as RpGjennomf_ringSone <<featureType>> {
+    + område [1] : Flate
+    + gjennomføring [1] : RpGjennomføringSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class "RpGjennomføringGrense" as RpGjennomf_ringGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class RpAngittHensynSone <<featureType>> {
+    + område [1] : Flate
+    + angittHensyn [1] : RpAngittHensynSoneType
+    + hensynSonenavn [1] : CharacterString
+    + beskrivelse [0..1] : CharacterString
+  }
+
+  class RpSikringGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RbRekkefølgeOmråde" as RbRekkef_lgeOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformRekkefølge
+    + feltbetegnelse [0..1] : CharacterString
+  }
+
+  class RpFareGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "RbRestriksjonOmråde" as RbRestriksjonOmr_de <<featureType>> {
+    + område [1] : Flate
+    + reguleringsformål [1] : RegformRestriksjon
+    + feltbetegnelse [0..1] : CharacterString
+  }
+
+  class "RpStøyGrense" as RpSt_yGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class "RpOmråde" as RpOmr_de <<Planområde>> {
+  }
+  class "SOSI_Objekt_Plandelområde_Rp" as SOSI_Objekt_Plandelomr_de_Rp <<SOSI_Objekt_Rp>> {
+  }
+  class SOSI_Objekt_Planlinjer_Rp <<SOSI_Objekt_Rp>> {
+  }
+}
+
+SOSI_Objekt_Planlinjer_Rp <|-- RpAngittHensynGrense
+RpAngittHensynGrense --> RpAngittHensynSone : [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpB_ndleggingGrense
+RpB_ndleggingGrense --> RpB_ndleggingSone : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbFareOmr_de
+RbFareOmr_de --> RpOmr_de : [1]
+RbFareOmr_de --> RpFareGrense : avgrensning [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpSt_ySone
+RpSt_ySone --> RpOmr_de : [1]
+RpSt_ySone --> RpSt_yGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpInfrastrukturGrense
+RpInfrastrukturGrense --> RpInfrastrukturSone : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpB_ndleggingSone
+RpB_ndleggingSone --> RpOmr_de : [1]
+RpB_ndleggingSone --> RpB_ndleggingGrense : avgrensning [1..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpBestemmelseOmr_de
+RpBestemmelseOmr_de --> RpOmr_de : [1]
+RpBestemmelseOmr_de --> RpBestemmelseGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RbRekkef_lgeGrense
+RbRekkef_lgeGrense --> RbRekkef_lgeOmr_de : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpInfrastrukturSone
+RpInfrastrukturSone --> RpOmr_de : [1]
+RpInfrastrukturSone --> RpInfrastrukturGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpDetaljeringGrense
+RpDetaljeringGrense --> RpDetaljeringSone : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbBevaringOmr_de
+RbBevaringOmr_de --> RpOmr_de : [1]
+RbBevaringOmr_de --> RbBevaringGrense : avgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpBestemmelseGrense
+RpBestemmelseGrense --> RpBestemmelseOmr_de : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbFornyelseOmr_de
+RbFornyelseOmr_de --> RpOmr_de : [1]
+RbFornyelseOmr_de --> RbFornyelseGrense : avgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RbFornyelseGrense
+RbFornyelseGrense --> RbFornyelseOmr_de : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpDetaljeringSone
+RpDetaljeringSone --> RpOmr_de : [1]
+RpDetaljeringSone --> RpDetaljeringGrense : avgrensning [1..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpSikringSone
+RpSikringSone --> RpOmr_de : [1]
+RpSikringSone --> RpSikringGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RbBevaringGrense
+RbBevaringGrense --> RbBevaringOmr_de : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpFareSone
+RpFareSone --> RpOmr_de : [1]
+RpFareSone --> RpFareGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RbRestriksjonGrense
+RbRestriksjonGrense --> RbRestriksjonOmr_de : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpGjennomf_ringSone
+RpGjennomf_ringSone --> RpOmr_de : [1]
+RpGjennomf_ringSone --> RpGjennomf_ringGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpGjennomf_ringGrense
+RpGjennomf_ringGrense --> RpGjennomf_ringSone : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RpAngittHensynSone
+RpAngittHensynSone --> RpOmr_de : [1]
+RpAngittHensynSone --> RpAngittHensynGrense : avgrensning [1..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpSikringGrense
+RpSikringGrense --> RpSikringSone : [1..2]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbRekkef_lgeOmr_de
+RbRekkef_lgeOmr_de --> RpOmr_de : [1]
+RbRekkef_lgeOmr_de --> RbRekkef_lgeGrense : rekkefølgeAvgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpFareGrense
+RpFareGrense --> RbFareOmr_de : [1..2]
+RpFareGrense --> RpFareSone : [0..*]
+SOSI_Objekt_Plandelomr_de_Rp <|-- RbRestriksjonOmr_de
+RbRestriksjonOmr_de --> RpOmr_de : [1]
+RbRestriksjonOmr_de --> RbRestriksjonGrense : avgrensning [0..*]
+SOSI_Objekt_Planlinjer_Rp <|-- RpSt_yGrense
+RpSt_yGrense --> RpSt_ySone : [1]
+
+@enduml
