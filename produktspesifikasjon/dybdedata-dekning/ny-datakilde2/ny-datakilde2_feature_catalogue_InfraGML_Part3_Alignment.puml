@@ -1,0 +1,62 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - Ny datakilde2 - InfraGML_Part3_Alignment
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "InfraGML_Part3_Alignment" {
+
+  class Referanselinje <<featureType>> {
+    + norskeTillegg [0..1] : ReferanseLinjeNorskeTillegg
+  }
+
+  class ReferanseLinjeNorskeTillegg <<dataType>> {
+    + tilhørerProsjekt [0..1] : Prosjektreferanse
+  }
+
+  class Prosjektreferanse <<dataType>> {
+    + oppdragsgiverNavn [1] : CharacterString
+    + oppdragsgiversOrganisasjonsnummer [0..1] : CharacterString
+    + prosjektnavn [1] : CharacterString
+    + prosjektID [1] : CharacterString
+    + prosjektfase [0..1] : CharacterString
+    + fasestatus [0..1] : CharacterString
+    + levertAvOrganisasjon [1] : CharacterString
+    + utarbeidetAv [1] : CharacterString
+    + prosjektURL [0..1] : CharacterString
+    + leveransedato [1] : Date
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class Alignment <<Alignment_GML>> {
+  }
+}
+
+Alignment <|-- Referanselinje
+
+@enduml

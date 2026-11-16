@@ -1,0 +1,84 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - Ny datakilde2 - Vegkropp
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Vegkropp" {
+
+  class Planum <<featureType>> {
+    ' Ingen attributter
+  }
+
+  class Overbygning <<featureType>> {
+    + lagtype [1] : OverbygningLagtype
+    + lagnummer [1] : Integer
+    + tykkelse [0..1] : Real
+  }
+
+  abstract class VegkroppElement <<featureType>> {
+    ' Ingen attributter
+  }
+
+  class Underbygning <<featureType>> {
+    + lagtype [1] : UnderbygningLagtype
+    + lagnummer [1] : Integer
+    + tykkelse [0..1] : Real
+  }
+
+  class "Sideområde" as Sideomr_de <<featureType>> {
+    ' Ingen attributter
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class ToppOverflate <<external>> {
+  }
+  class VegElement <<InfraGML_Part4_Road>> {
+  }
+  class VegdesignElement <<Vegdesign>> {
+  }
+  class Volumobjekt <<external>> {
+  }
+  class YtreFlatekant <<external>> {
+  }
+}
+
+VegkroppElement <|-- Planum
+Planum --> YtreFlatekant : venstreSide [0..1]
+Planum --> YtreFlatekant : høyreSide [0..1]
+VegkroppElement <|-- Overbygning
+Overbygning --> VegdesignElement : vegdesignElement [0..1]
+VegElement <|-- VegkroppElement
+VegkroppElement --> Volumobjekt : volum [0..1]
+VegkroppElement --> ToppOverflate : toppOverflate [0..1]
+VegkroppElement --> YtreFlatekant : ytterkant [0..1]
+VegkroppElement <|-- Underbygning
+VegkroppElement <|-- Sideomr_de
+Sideomr_de --> VegdesignElement : vegdesignElement [0..1]
+
+@enduml

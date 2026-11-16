@@ -1,0 +1,74 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - Ny datakilde2 - Vegdesign
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Vegdesign" {
+
+  class Overbygningselement_for_Vegdesign <<featureType>> {
+    + name [1] : CharacterString
+    + lagtype [1] : OverbygningLagtype
+    + lagnummer [1] : Integer
+    + tykkelse [0..1] : Real
+    + indreFyllingshelling [0..1] : Real
+  }
+
+  class VegdesignElement <<featureType>> {
+    + vegDesign [1] : VegdesignRef
+    + ytterkant [1] : Ytterkant
+  }
+
+  class VegdesignElement_for_Vegkropp <<featureType>> {
+    + vegDesign [1] : VegdesignRef
+  }
+
+  class VegdesignRef <<dataType>> {
+    + flatetype [1] : VegdesignElementType
+    + flaterekkefølge [1] : Integer
+    + vegside [1] : Side
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class GenerelleEgenskaper <<GenerelleEgenskaper>> {
+  }
+  class Planum <<Vegelement>> {
+  }
+  class Underbygning <<Vegelement>> {
+  }
+  class VegElement <<InfraGML_Part4_Road>> {
+  }
+}
+
+VegElement <|-- VegdesignElement
+VegdesignElement --> Overbygningselement_for_Vegdesign : overbygning [0..*]
+VegdesignElement --> Underbygning : underbygning [0..*]
+VegdesignElement --> Planum : planum [0..*]
+GenerelleEgenskaper <|-- VegdesignElement_for_Vegkropp
+
+@enduml

@@ -1,0 +1,74 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dybdedata - dekning - Ny datakilde2 - Part4_Road
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Part4_Road" {
+
+  class Road <<featureType>> {
+    + approximateWidth [0..1] : Length
+  }
+
+  class RoadElement <<featureType>> {
+    + roadElementID [1] : ID
+    + roadElementType [1] : RoadElementType
+    + material [0..1] : CharacterString
+  }
+}
+
+package "Eksterne referanser" <<Frame>> {
+  class Alignment <<Alignment_GML>> {
+  }
+  class CrossSection <<external>> {
+  }
+  class FacilityPart <<Facility_GML>> {
+  }
+  class LinearElement <<external>> {
+  }
+  class PhysicalElement <<Facility_GML>> {
+  }
+  class RoadElementSet <<external>> {
+  }
+  class StringLine <<external>> {
+  }
+  class StringLineSet <<external>> {
+  }
+}
+
+FacilityPart <|-- Road
+Road --> Alignment : alignment [0..*]
+Road --> RoadElementSet : roadElementSet [0..*]
+Road --> StringLine : stringLine [0..*]
+Road --> StringLineSet : stringLineSet [0..*]
+Road --> CrossSection : crossSection [0..*]
+Road --> RoadElement : element [0..*]
+PhysicalElement <|-- RoadElement
+RoadElement --> LinearElement : locatedAlong [0..1]
+RoadElement --> RoadElementSet
+
+@enduml
