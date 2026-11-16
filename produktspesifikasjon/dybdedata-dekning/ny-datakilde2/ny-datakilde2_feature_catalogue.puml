@@ -30,289 +30,356 @@ skinparam stereotypeCFontColor #2D201A
 
 package "Objekttyper" {
 
-  class Feature <<featureType>> {
-    + name [0..1] : CharacterString
-    + description [0..1] : CharacterString
-    + spatialRepresentation [0..*] : SpatialRepresentation
-    + linearlyReferencedLocation [0..*] : LinearlyReferencedLocation
+  class Kran <<featureType>> {
+    + energikilde [0..*] : Energikilde
+    + høydereferanse [1] : Høydereferanse
+    + kranspesifikasjon [0..1] : CharacterString
+    + krantype [1] : Krantype
+    + maksbelastning [0..1] : Integer
+    + maksbelastningRekkevidde [0..1] : Integer
+    + mobilitet [1] : Boolean
+    + posisjon [1] : Punkt
+    + rekkevidde [0..1] : Integer
+    + status [0..1] : Status
   }
 
-  class LandSurface <<featureType>> {
-    + spatialRepresentation [1] : TIN
-    + material [0..1] : CharacterString
+  class HavneanleggGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  class PhysicalElement <<featureType>> {
-    ' Ingen attributter
+  class VAuttak <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + kapasitet [0..1] : Integer
+    + kumnummer [0..1] : Integer
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
+    + tilkoblingsdimensjon [0..1] : CharacterString
+    + VAuttakstype [1] : VAuttakstype
   }
 
-  class Facility <<featureType>> {
-    + facilityID [1] : ID
-    + type [1] : CharacterString
-    + status [1] : Status
-    + footprint [0..1] : Geometry
+  class Havneanlegg <<featureType>> {
+    + eier [0..1] : CharacterString
+    + eierskap [1..*] : Eierskap
+    + forvaltesAv [0..1] : CharacterString
+    + ISPSHavneanlegg [0..1] : ISPSHavneanlegg
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
   }
 
-  class FacilityPart <<featureType>> {
-    + facilityPartID [1] : ID
-    + type [1] : FacilityPartType
-    + status [1] : Status
-    + footprint [0..1] : Geometry
-    + alternative [0..1] : CharacterString
-  }
-
-  class Alignment <<featureType>> {
-    + alignmentID [1] : ID
-    + designAlternative [1] : CharacterString
-    + purpose [0..1] : CharacterString
-    + linestring2DRepresentation [0..1] : LineString
-    + linestring3DRepresentation [0..1] : LineString
-  }
-
-  class Road <<featureType>> {
-    + approximateWidth [0..1] : Length
-  }
-
-  class RoadElement <<featureType>> {
-    + roadElementID [1] : ID
-    + roadElementType [1] : RoadElementType
-    + material [0..1] : CharacterString
-  }
-
-  class AnyFeature <<featureType>> {
-    ' Ingen attributter
-  }
-
-  class AbstractFeature <<featureType>> {
-    ' Ingen attributter
-  }
-
-  class Alignment <<featureType>> {
-    + alignmentID [1] : ID
-    + purpose [0..1] : CharacterString
-    + designAltenrative [0..1] : CharacterString
-    + linestring2DRepresentation [0..1] : LineString
-    + linestring3DRepresentation [0..1] : LineString
-  }
-
-  class Referanselinje <<featureType>> {
-    + norskeTillegg [0..1] : ReferanseLinjeNorskeTillegg
-  }
-
-  abstract class VegElement <<featureType>> {
-    + fraProfil [0..1] : Real
-    + tilProfil [0..1] : Real
-    + norskeTillegg [0..1] : VegElementNorskeTillegg
-  }
-
-  class Veg <<featureType>> {
-    + norskeTillegg [0..1] : VegNorskeTillegg
-  }
-
-  abstract class RoadElementN <<featureType>> {
-    + roadElementID [1] : ID
-    + material [0..1] : CharacterString
-  }
-
-  class Overbygningselement_for_Vegdesign <<featureType>> {
-    + name [1] : CharacterString
-    + lagtype [1] : OverbygningLagtype
-    + lagnummer [1] : Integer
-    + tykkelse [0..1] : Real
-    + indreFyllingshelling [0..1] : Real
-  }
-
-  class VegdesignElement <<featureType>> {
-    + vegDesign [1] : VegdesignRef
-    + ytterkant [1] : Ytterkant
-  }
-
-  class Planum <<featureType>> {
-    ' Ingen attributter
-  }
-
-  class Overbygning <<featureType>> {
-    + lagtype [1] : OverbygningLagtype
-    + lagnummer [1] : Integer
-    + tykkelse [0..1] : Real
-  }
-
-  abstract class VegkroppElement <<featureType>> {
-    ' Ingen attributter
-  }
-
-  class Underbygning <<featureType>> {
-    + lagtype [1] : UnderbygningLagtype
-    + lagnummer [1] : Integer
-    + tykkelse [0..1] : Real
-  }
-
-  class "Sideområde" as Sideomr_de <<featureType>> {
-    ' Ingen attributter
-  }
-
-  class GenerelleEgenskaper <<featureType>> {
-    + identifikasjon [1] : Identifikasjon
+  class Flytedokk <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + løftekapasitet [0..1] : Integer
+    + maksFartøyBredde [0..1] : Real
+    + maksFartøyDyptgående [0..1] : Real
+    + maksFartøyLengde [0..1] : Integer
     + navn [0..1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+    + status [0..1] : Status
   }
 
-  class Vegkropp <<featureType>> {
-    ' Ingen attributter
+  class Toalett <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
   }
 
-  class Veg_Prosjektreferanse <<featureType>> {
-    + norskeTillegg [0..1] : VegNorskeTillegg
+  class FlytedokkGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  class StringLineN_Planum <<featureType>> {
-    + vegdesignRef [0..1] : VegdesignRef
+  class Fender <<featureType>> {
+    + antall [0..1] : Integer
+    + fendergruppering [0..1] : Kurve
+    + fenderorientering [1] : Fenderorientering
+    + fenderspesifikasjon [0..1] : CharacterString
+    + fendertype [1] : Fendertype
+    + høydereferanse [1] : Høydereferanse
+    + høydeSjøkartnull [1] : Real
+    + posisjon [0..1] : Punkt
+    + status [0..1] : Status
   }
 
-  class StringLineN_Referanselinje <<featureType>> {
-    ' Ingen attributter
+  class "LastbegrensningsområdeGrense" as Lastbegrensningsomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  class StringLineN_Underbygning <<featureType>> {
-    + lagtype [1] : UnderbygningLagtype
-    + vegdesignRef [0..1] : VegdesignRef
+  class Avfallspunkt <<featureType>> {
+    + avfallsplan [0..1] : CharacterString
+    + avfallstype [0..*] : Avfallstype
+    + beholdertype [0..1] : Beholdertype
+    + høydereferanse [1] : Høydereferanse
+    + mobilitet [1] : Boolean
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
   }
 
-  class StringLineN <<featureType>> {
-    + geometri [1] : GM_Curve
+  class "Kaiområde" as Kaiomr_de <<featureType>> {
+    + kaidekketype [0..1] : Kaidekketype
+    + kaitype [0..1] : Kaitype
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
   }
 
-  class "StringLineN_Sideområde" as StringLineN_Sideomr_de <<featureType>> {
-    + vegdesignRef [0..1] : VegdesignRef
+  class "Fortøyningsinnretning" as Fort_yningsinnretning <<featureType>> {
+    + fortøyningstype [1] : Fortøyningstype
+    + høydereferanse [1] : Høydereferanse
+    + høydeSjøkartnull [1] : Real
+    + maksbelastning [0..1] : Integer
+    + posisjon [1] : Punkt
+    + sertifiseringsdato [0..1] : Date
+    + spesifikasjon [0..1] : CharacterString
+    + status [0..1] : Status
+    + tillattFortøyningsvinkelGrunnriss [0..1] : CharacterString
+    + tillattFortøyningsvinkelOppriss [0..1] : CharacterString
   }
 
-  class StringLineN_Overbygning <<featureType>> {
-    + lagtype [1] : OverbygningLagtype
-    + vegdesignRef [0..1] : VegdesignRef
+  class Havnegjerde <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + periode [0..*] : Periode
+    + senterlinje [1] : Kurve
+    + status [0..1] : Status
   }
 
-  class VegdesignElement_for_Vegkropp <<featureType>> {
-    + vegDesign [1] : VegdesignRef
+  class "Tørrdokk" as T_rrdokk <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + løftekapasitet [0..1] : Integer
+    + maksFartøyBredde [0..1] : Real
+    + maksFartøyDyptgående [0..1] : Real
+    + maksFartøyLengde [0..1] : Integer
+    + navn [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+    + status [0..1] : Status
   }
 
-  class Planum <<featureType>> {
-    ' Ingen attributter
+  class "KaiområdeGrense" as Kaiomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  abstract class VegKroppElement <<featureType>> {
-    + norskeTillegg [0..1] : VegElementNorskeTillegg
+  class HavnegjerdeInngang <<featureType>> {
+    + avsperringstype [1] : Avsperringstype
+    + høydereferanse [1] : Høydereferanse
+    + periode [0..*] : Periode
+    + senterlinje [1] : Kurve
+    + status [0..1] : Status
+    + åpningstype [0..1] : Åpningstype
   }
 
-  class Underbygning <<featureType>> {
-    + lagtype [1] : UnderbygningLagtype
-    + lagnummer [1] : Integer
-    + tykkelse [0..1] : Real
+  class "ForvaltningsområdeGrense" as Forvaltningsomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  class Overbygning <<featureType>> {
-    + lagtype [1] : OverbygningLagtype
-    + lagnummer [1] : Integer
-    + tykkelse [0..1] : Real
+  class SlippGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  class "Sideområde" as Sideomr_de <<featureType>> {
-    ' Ingen attributter
+  class "TørrdokkGrense" as T_rrdokkGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  class Terrengflate <<featureType>> {
-    + geometri [1] : GM_Tin
+  class "HavneområdeGrense" as Havneomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  class AlignmentSet <<external>> {
-    ' definert i en annen modell
+  class "Havneområde" as Havneomr_de <<featureType>> {
+    + forvaltesAv [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
   }
 
-  class CrossSection <<external>> {
-    ' definert i en annen modell
+  class "Forvaltningsområde" as Forvaltningsomr_de <<featureType>> {
+    + forvaltesAv [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
   }
 
-  class Element <<external>> {
-    ' definert i en annen modell
+  class Beredskapspunkt <<featureType>> {
+    + beredskapstype [1..*] : Beredskapstype
+    + høydereferanse [1] : Høydereferanse
+    + posisjon [1] : Punkt
+    + spesifikasjon [0..1] : CharacterString
+    + status [0..1] : Status
   }
 
-  class Property <<external>> {
-    ' definert i en annen modell
+  class Kaifront <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + høydeSjøkartnull [1] : Real
+    + kaifronttype [1] : Kaifronttype
+    + kaitype [1..*] : Kaitype
+    + lengde [1] : Real
+    + senterlinje [1] : Kurve
+    + status [0..1] : Status
   }
 
-  class PropertySet <<external>> {
-    ' definert i en annen modell
+  class Havnesensor <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + objektLøpenummer [0..1] : CharacterString
+    + posisjon [1] : Punkt
+    + sensortype [0..1] : Sensortype
+    + status [0..1] : Status
   }
 
-  class Railway <<external>> {
-    ' definert i en annen modell
+  class Slipp <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + høydeSjøkartnull [1] : Real
+    + kaidekketype [0..1] : Kaidekketype
+    + kranKapasitet [0..1] : Integer
+    + maksBreddeFartøy [0..1] : Real
+    + maksDyptgåendeFartøy [0..1] : Real
+    + maksLengdeFartøy [0..1] : Real
+    + navn [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+    + slippKapasitet [0..1] : Integer
+    + spesifikasjon [0..1] : CharacterString
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
   }
 
-  class RoadElementSet <<external>> {
-    ' definert i en annen modell
+  class "Lastbegrensningsområde" as Lastbegrensningsomr_de <<featureType>> {
+    + akseltrykk [0..1] : Real
+    + bruksklassetype [0..1] : Bruksklassetype
+    + kaidekketype [0..1] : Kaidekketype
+    + lastId [0..1] : CharacterString
+    + lastreferanse [0..1] : CharacterString
+    + minsteAvstandPunktlast [0..1] : Real
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+    + punktlast [0..1] : Real
+    + vektbegrensning [0..1] : Real
   }
 
-  class StringLineSet <<external>> {
-    ' definert i en annen modell
+  class Kamera <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + objektLøpenummer [0..1] : CharacterString
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
   }
 
-  class SuperelevationEvent <<external>> {
-    ' definert i en annen modell
+  class Drivstofftilkobling <<featureType>> {
+    + drivstofftype [1..*] : Drivstofftype
+    + høydereferanse [1] : Høydereferanse
+    + kapasitet [0..1] : Integer
+    + mobilitet [1] : Boolean
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
   }
 
-  class TemplateLocation <<external>> {
-    ' definert i en annen modell
+  class "Tømmestasjon" as T_mmestasjon <<featureType>> {
+    + avløpstype [1..*] : Avløpstype
+    + høydereferanse [1] : Høydereferanse
+    + kapasitet [0..1] : Integer
+    + kumnummer [0..1] : Integer
+    + mobilitet [1] : Boolean
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
+    + tilkoblingsdimensjon [0..1] : CharacterString
   }
 
-  class ReferanseLinjeNorskeTillegg <<dataType>> {
-    + tilhørerProsjekt [0..1] : Prosjektreferanse
+  class ELkobling <<featureType>> {
+    + ELanleggstype [1..*] : ELanleggstype
+    + ELkoblinger [0..*] : ELkoblingEgenskaper
+    + høydereferanse [1] : Høydereferanse
+    + posisjon [1] : Punkt
+    + rekkeviddeLadeanlegg [0..1] : Integer
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
   }
 
-  class Prosjektreferanse <<dataType>> {
-    + oppdragsgiverNavn [1] : CharacterString
-    + oppdragsgiversOrganisasjonsnummer [0..1] : CharacterString
-    + prosjektnavn [1] : CharacterString
-    + prosjektID [1] : CharacterString
-    + prosjektfase [0..1] : CharacterString
-    + fasestatus [0..1] : CharacterString
-    + levertAvOrganisasjon [1] : CharacterString
-    + utarbeidetAv [1] : CharacterString
-    + prosjektURL [0..1] : CharacterString
-    + leveransedato [1] : Date
+  abstract class HavneanleggId <<featureType>> {
+    + havneanleggId [0..1] : CharacterString
+    + havneanleggNavn [0..1] : CharacterString
+    + ISPS [0..1] : Boolean
   }
 
-  class VegElementNorskeTillegg <<dataType>> {
-    + tilhørerProsjekt [0..1] : Prosjektreferanse
-    + komponentreferanse [0..*] : Komponentreferanse
+  abstract class FellesegenskaperOpsjonell <<featureType>> {
+    + informasjon [0..1] : CharacterString
+    + link [0..1] : CharacterString
+    + oppdateringsdato [0..1] : Date
   }
 
-  class Komponentreferanse <<dataType>> {
-    + komponentkodesystem [1] : Komponentkodesystem
-    + kodesystemversjon [1] : CharacterString
-    + komponentkodeverdi [1] : CharacterString
+  abstract class "FellesegenskaperPåkrevd" as FellesegenskaperP_krevd <<featureType>> {
+    + datafangstdato [1] : Date
+    + identifikasjon [1] : Identifikasjon
+    + kvalitet [1] : Posisjonskvalitet
   }
 
-  class VegNorskeTillegg <<dataType>> {
-    + tilhørerProsjekt [0..1] : Prosjektreferanse
-    + komponentReferanse [0..*] : Komponentreferanse
-    + dimensjonerendeParametre [0..1] : DimensjonerendeVerdier_Veg
-    + totalOverbygningstykkelse [0..1] : Real
+  abstract class HavnId <<featureType>> {
+    + havn [1] : CharacterString
+    + UNLOCODE [1] : CharacterString
   }
 
-  class DimensjonerendeVerdier_Veg <<dataType>> {
-    + standardklasseVegstandard [1] : Dimensjoneringsklasse
-    + hastighet [1] : DimensjonerendeHastighet
-    + vegbredde [1] : DimensjonerendeVegbredde
-    + motorkjøretøy [1] : DimensjonerendeMotorkjøretøy
-    + trafikkmengdeÅDT [1] : DimensjonerendeTrafikkmengdeÅDT
-    + kjøremåte [1] : DimensjonerendeKjøremåte
-    + maxOverhøydeProsent [1] : MaxOverhøydeProsent
-    + trafikk [1] : DimensjonerendeTrafikkgruppe
+  abstract class KaiId <<featureType>> {
+    + kaiId [1] : CharacterString
+    + kaiIdIntern [0..1] : CharacterString
+    + kainavn [0..1] : CharacterString
   }
 
-  class VegdesignRef <<dataType>> {
-    + flatetype [1] : VegdesignElementType
-    + flaterekkefølge [1] : Integer
-    + vegside [1] : Side
+  abstract class ObjektId <<featureType>> {
+    + objektLøpenummer [1] : CharacterString
+  }
+
+  class "Forbudsområde" as Forbudsomr_de <<featureType>> {
+    + fastsattAv [0..1] : CharacterString
+    + forbudstype [1..*] : Forbudstype
+    + forskriftLenke [0..1] : CharacterString
+    + forskriftNavn [0..1] : CharacterString
+    + gjelderFor [0..1] : CharacterString
+    + gjelderForFartøytype [1..*] : Fartøytype
+    + lovhjemmel [0..1] : CharacterString
+    + område [1] : Flate
+    + periodeGyldigFra [0..1] : Date
+    + periodeGyldigTil [0..1] : Date
+    + posisjon [0..1] : Punkt
+  }
+
+  class Fartsrestriksjoner <<featureType>> {
+    + fastsattAv [0..1] : CharacterString
+    + forskriftLenke [0..1] : CharacterString
+    + forskriftNavn [1] : CharacterString
+    + gjelderFor [0..1] : CharacterString
+    + gjelderForFartøytype [1..*] : Fartøytype
+    + hastighet [1] : Integer
+    + lovhjemmel [0..1] : CharacterString
+    + område [1] : Flate
+    + periodeGyldigFra [0..1] : Date
+    + periodeGyldigTil [0..1] : Date
+    + posisjon [0..1] : Punkt
+  }
+
+  class "ForbudsområdeGrense" as Forbudsomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class FartsrestriksjonerGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class ISPSHavneanlegg <<dataType>> {
+    + kontaktinformasjonPFSO [0..1] : CharacterString
+    + portFacilityNrIMO [0..1] : CharacterString
+    + sikkerhetsbarriere [0..1] : Boolean
+    + sikringstype [0..1] : Sikringstype
+    + statusGodkjenning [0..1] : CharacterString
+  }
+
+  class Periode <<dataType>> {
+    + mndFra [1] : Måned
+    + mndTil [1] : Måned
+  }
+
+  class ELkoblingEgenskaper <<dataType>> {
+    + effekt [0..1] : Integer
+    + faser [0..1] : CharacterString
+    + frekvens [0..1] : Frekvens
+    + kontaktId [0..1] : CharacterString
+    + sikringstørrelse [0..1] : Integer
+    + spenning [0..1] : Spenning
   }
 
   class Identifikasjon <<dataType>> {
@@ -321,108 +388,64 @@ package "Objekttyper" {
     + versjonId [0..1] : CharacterString
   }
 
-  class FacilityPartRelationship {
-  }
-
-  class StringLine {
-  }
-
-  class LinearElement {
-  }
-
-  class AlignmentCurve {
-  }
-
-  class YtreFlatekant {
-  }
-
-  class Volumobjekt {
-  }
-
-  class ToppOverflate {
+  class Posisjonskvalitet <<dataType>> {
+    + datafangstmetode [1] : Datafangstmetode
+    + datafangstmetodeHøyde [0..1] : Datafangstmetode
+    + nøyaktighet [1] : Integer
+    + nøyaktighetHøyde [0..1] : Integer
+    + synbarhet [0..1] : Synbarhet
   }
 }
 
-  AnyFeature <|-- Feature
-  Feature --> PropertySet : propertySet [0..*]
-  Feature --> PropertySet : propertySet [0..*]
-  Feature --> Property : property [0..*]
-  Feature --> Property : property [0..*]
-  Feature <|-- PhysicalElement
-  PhysicalElement --> PhysicalElement : part [0..*]
-  PhysicalElement --> PhysicalElement : partOf [0..1]
-  Feature <|-- Facility
-  Feature <|-- FacilityPart
-  FacilityPart --> Facility
-  FacilityPart --> FacilityPartRelationship : relationship [0..*]
-  Feature <|-- Alignment
-  FacilityPart <|-- Road
-  Road --> Alignment : alignment [0..*]
-  Road --> RoadElementSet : roadElementSet [0..*]
-  Road --> StringLine : stringLine [0..*]
-  Road --> StringLineSet : stringLineSet [0..*]
-  Road --> CrossSection : crossSection [0..*]
-  Road --> RoadElement : element [0..*]
-  PhysicalElement <|-- RoadElement
-  RoadElement --> LinearElement : locatedAlong [0..1]
-  RoadElement --> RoadElementSet
-  Feature <|-- AbstractFeature
-  AbstractFeature --> AbstractFeature : part [0..*]
-  AbstractFeature --> AbstractFeature : partOf [0..1]
-  Alignment --> AlignmentCurve : geometry [0..1]
-  Alignment <|-- Referanselinje
-  RoadElementN <|-- VegElement
-  Road <|-- Veg
-  Veg --> Referanselinje : referanselinje [0..*]
-  Veg --> VegElement : element [0..*]
-  PhysicalElement <|-- RoadElementN
-  VegElement <|-- VegdesignElement
-  VegdesignElement --> Overbygningselement_for_Vegdesign : overbygning [0..*]
-  VegdesignElement --> Underbygning : underbygning [0..*]
-  VegdesignElement --> Planum : planum [0..*]
-  VegkroppElement <|-- Planum
-  Planum --> YtreFlatekant : venstreSide [0..1]
-  Planum --> YtreFlatekant : høyreSide [0..1]
-  VegkroppElement <|-- Overbygning
-  Overbygning --> VegdesignElement : vegdesignElement [0..1]
-  VegElement <|-- VegkroppElement
-  VegkroppElement --> Volumobjekt : volum [0..1]
-  VegkroppElement --> ToppOverflate : toppOverflate [0..1]
-  VegkroppElement --> YtreFlatekant : ytterkant [0..1]
-  VegkroppElement <|-- Underbygning
-  VegkroppElement <|-- Sideomr_de
-  Sideomr_de --> VegdesignElement : vegdesignElement [0..1]
-  GenerelleEgenskaper <|-- Vegkropp
-  Vegkropp --> VegKroppElement : vegkroppElement [0..*]
-  GenerelleEgenskaper <|-- Veg_Prosjektreferanse
-  Veg_Prosjektreferanse --> Vegkropp : vegelementsamling [0..*]
-  Veg_Prosjektreferanse --> VegKroppElement : element [0..*]
-  Veg_Prosjektreferanse --> StringLineN : stringLine [0..*]
-  StringLineN <|-- StringLineN_Planum
-  StringLineN <|-- StringLineN_Referanselinje
-  StringLineN <|-- StringLineN_Underbygning
-  GenerelleEgenskaper <|-- StringLineN
-  StringLineN <|-- StringLineN_Sideomr_de
-  StringLineN <|-- StringLineN_Overbygning
-  GenerelleEgenskaper <|-- VegdesignElement_for_Vegkropp
-  VegKroppElement <|-- Planum
-  Planum --> YtreFlatekant : høyreSide [0..1]
-  Planum --> YtreFlatekant : venstreSide [0..1]
-  GenerelleEgenskaper <|-- VegKroppElement
-  VegKroppElement --> ToppOverflate : toppOverflate [0..1]
-  VegKroppElement --> YtreFlatekant : ytterkant [0..1]
-  VegKroppElement --> Volumobjekt : volum [0..1]
-  VegKroppElement <|-- Underbygning
-  VegKroppElement <|-- Overbygning
-  Overbygning --> VegdesignElement_for_Vegkropp : vegdesignElement [0..1]
-  VegKroppElement <|-- Sideomr_de
-  Sideomr_de --> VegdesignElement_for_Vegkropp : vegdesignElement [0..1]
-  GenerelleEgenskaper <|-- Terrengflate
-  AlignmentSet --> Alignment : alignment [1..*]
-  AlignmentSet --> Alignment : alignment [1..*]
-  Element --> FacilityPart
-  Railway --> Alignment : alignment [0..*]
-  SuperelevationEvent --> Alignment : locatedAlong [1]
-  TemplateLocation --> Alignment : locatedAlong [1]
+  ObjektId <|-- Kran
+  FellesegenskaperP_krevd <|-- HavneanleggGrense
+  ObjektId <|-- VAuttak
+  HavneanleggId <|-- Havneanlegg
+  Havneanlegg --> HavneanleggGrense : avgrensning [0..*]
+  HavneanleggId <|-- Flytedokk
+  Flytedokk --> FlytedokkGrense : avgrensning [0..*]
+  ObjektId <|-- Toalett
+  FellesegenskaperP_krevd <|-- FlytedokkGrense
+  ObjektId <|-- Fender
+  FellesegenskaperP_krevd <|-- Lastbegrensningsomr_deGrense
+  ObjektId <|-- Avfallspunkt
+  KaiId <|-- Kaiomr_de
+  Kaiomr_de --> Kaiomr_deGrense : avgrensning [0..*]
+  ObjektId <|-- Fort_yningsinnretning
+  HavneanleggId <|-- Havnegjerde
+  HavneanleggId <|-- T_rrdokk
+  T_rrdokk --> T_rrdokkGrense : avgrensning [0..*]
+  FellesegenskaperP_krevd <|-- Kaiomr_deGrense
+  HavneanleggId <|-- HavnegjerdeInngang
+  FellesegenskaperP_krevd <|-- Forvaltningsomr_deGrense
+  FellesegenskaperP_krevd <|-- SlippGrense
+  FellesegenskaperP_krevd <|-- T_rrdokkGrense
+  FellesegenskaperP_krevd <|-- Havneomr_deGrense
+  HavnId <|-- Havneomr_de
+  Havneomr_de --> Havneomr_deGrense : avgrensning [0..*]
+  HavnId <|-- Forvaltningsomr_de
+  Forvaltningsomr_de --> Forvaltningsomr_deGrense : avgrensning [0..*]
+  ObjektId <|-- Beredskapspunkt
+  ObjektId <|-- Kaifront
+  HavnId <|-- Havnesensor
+  KaiId <|-- Slipp
+  Slipp --> SlippGrense : avgrensning [0..*]
+  KaiId <|-- Lastbegrensningsomr_de
+  Lastbegrensningsomr_de --> Lastbegrensningsomr_deGrense : avgrensning [0..*]
+  HavnId <|-- Kamera
+  ObjektId <|-- Drivstofftilkobling
+  ObjektId <|-- T_mmestasjon
+  ObjektId <|-- ELkobling
+  HavnId <|-- HavneanleggId
+  FellesegenskaperP_krevd <|-- FellesegenskaperOpsjonell
+  FellesegenskaperOpsjonell <|-- HavnId
+  HavneanleggId <|-- KaiId
+  KaiId <|-- ObjektId
+  FellesegenskaperOpsjonell <|-- Forbudsomr_de
+  Forbudsomr_de --> Forbudsomr_deGrense : avgrensning [0..*]
+  FellesegenskaperOpsjonell <|-- Fartsrestriksjoner
+  Fartsrestriksjoner --> FartsrestriksjonerGrense : avgrensning [0..*]
+  FellesegenskaperP_krevd <|-- Forbudsomr_deGrense
+  FellesegenskaperP_krevd <|-- FartsrestriksjonerGrense
 
 @enduml
