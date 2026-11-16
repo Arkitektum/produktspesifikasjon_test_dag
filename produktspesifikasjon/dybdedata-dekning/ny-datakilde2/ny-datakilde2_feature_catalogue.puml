@@ -30,374 +30,422 @@ skinparam stereotypeCFontColor #2D201A
 
 package "Objekttyper" {
 
-  abstract class "SOSI_Objekt_Planområde_Rp" as SOSI_Objekt_Planomr_de_Rp <<featureType>> {
-    + førsteDigitaliseringsdato [0..1] : Date
-    + oppdateringsdato [0..1] : Date
-    + prosesshistorie [0..*] : CharacterString
-    + informasjon [0..*] : CharacterString
-    + link [0..*] : Link
-  }
-
-  abstract class SOSI_Objekt_Planlinjer_Rp <<featureType>> {
-    + førsteDigitaliseringsdato [0..1] : Date
-    + oppdateringsdato [0..1] : Date
-    + kvalitet [0..1] : Posisjonskvalitet
-  }
-
-  abstract class "SOSI_Objekt_Plandelområde_Rp" as SOSI_Objekt_Plandelomr_de_Rp <<featureType>> {
-    + førsteDigitaliseringsdato [0..1] : Date
-    + oppdateringsdato [0..1] : Date
-  }
-
-  class RpGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RpOmråde" as RpOmr_de <<featureType>> {
-    + område [1] : Flate
-    + arealplanId [1] : NasjonalArealplanId
-    + plantype [1] : RpPlantype
-    + planstatus [1] : Planstatus
-    + plannavn [1] : CharacterString
-    + planbestemmelse [1] : Planbestemmelse
-    + ikrafttredelsesdato [0..1] : Date
-    + vertikalnivå [1] : Vertikalnivå
-    + lovreferanse [1] : LovreferanseType
-    + lovreferanseBeskrivelse [0..1] : CharacterString
-    + gjennomføringsfrist [0..1] : Date
-    + forslagsstillerType [0..1] : ForslagsstillerType
-    + vedtakEndeligPlanDato [0..1] : Date
-    + kunngjøringsdato [0..1] : Date
-    + opprinneligplanid [0..1] : CharacterString
-    + opprinneligadministrativenhet [0..1] : CharacterString
-  }
-
-  class "RbFormålOmråde" as RbForm_lOmr_de <<featureType>> {
-    + område [1] : Flate
-    + reguleringsformål [1] : RegformBrukFormål
-    + reguleringsformålsutdyping [0..1] : CharacterString
-    + feltbetegnelse [0..1] : CharacterString
-    + utnytting [0..1] : Utnytting
-    + uteoppholdsareal [0..1] : Integer
-    + byggverkbestemmelse [0..1] : Byggverkbestemmelse
-    + avkjørselsbestemmelse [0..1] : Avkjørselsbestemmelse
-  }
-
-  class "RpFormålGrense" as RpForm_lGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RpArealformålOmråde" as RpArealform_lOmr_de <<featureType>> {
-    + område [1] : Flate
-    + arealformål [1] : RpArealformål
-    + eierform [1] : EierformType
-    + utnytting [0..1] : Utnytting
-    + beskrivelse [0..1] : CharacterString
-    + feltbetegnelse [0..1] : CharacterString
-    + uteoppholdsareal [0..1] : Integer
-    + byggverkbestemmelse [0..1] : Byggverkbestemmelse
-    + avkjørselsbestemmelse [0..1] : Avkjørselsbestemmelse
-  }
-
-  class RpAngittHensynGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RpBåndleggingGrense" as RpB_ndleggingGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RbFareOmråde" as RbFareOmr_de <<featureType>> {
-    + område [1] : Flate
-    + reguleringsformål [1] : RegformFare
-    + feltbetegnelse [0..1] : CharacterString
-    + reguleringsformålsutdyping [0..1] : CharacterString
-  }
-
-  class "RpStøySone" as RpSt_ySone <<featureType>> {
-    + område [1] : Flate
-    + støy [1] : RpStøySoneType
-    + hensynSonenavn [1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
-  }
-
-  class RpInfrastrukturGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RpBåndleggingSone" as RpB_ndleggingSone <<featureType>> {
-    + område [1] : Flate
-    + båndlegging [1] : RpBåndleggingSoneType
-    + båndlagtFremTil [0..1] : Date
-    + hensynSonenavn [1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
-  }
-
-  class "RpBestemmelseOmråde" as RpBestemmelseOmr_de <<featureType>> {
-    + område [1] : Flate
-    + bestemmelseOmrådeNavn [1] : CharacterString
-    + type [1] : RpBestemmelseHjemmel
-  }
-
-  class "RbRekkefølgeGrense" as RbRekkef_lgeGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class RpInfrastrukturSone <<featureType>> {
-    + område [1] : Flate
-    + infrastruktur [1] : RpInfrastrukturSoneType
-    + hensynSonenavn [1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
-  }
-
-  class RpDetaljeringGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RbBevaringOmråde" as RbBevaringOmr_de <<featureType>> {
-    + område [1] : Flate
-    + reguleringsformål [1] : RegformBevaring
-    + feltbetegnelse [0..1] : CharacterString
-  }
-
-  class RpBestemmelseGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RbFornyelseOmråde" as RbFornyelseOmr_de <<featureType>> {
-    + område [1] : Flate
-    + reguleringsformål [1] : RegformFornyelse
-    + feltbetegnelse [0..1] : CharacterString
-  }
-
-  class RbFornyelseGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class RpDetaljeringSone <<featureType>> {
-    + område [1] : Flate
-    + detaljering [1] : RpDetaljeringSoneType
-    + hensynSonenavn [1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
-  }
-
-  class RpSikringSone <<featureType>> {
-    + område [1] : Flate
-    + sikring [1] : RpSikringSoneType
-    + hensynSonenavn [1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
-  }
-
-  class RbBevaringGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class RpFareSone <<featureType>> {
-    + område [1] : Flate
-    + fare [1] : RpFareSoneType
-    + hensynSonenavn [1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
-  }
-
-  class RbRestriksjonGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RpGjennomføringSone" as RpGjennomf_ringSone <<featureType>> {
-    + område [1] : Flate
-    + gjennomføring [1] : RpGjennomføringSoneType
-    + hensynSonenavn [1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
-  }
-
-  class "RpGjennomføringGrense" as RpGjennomf_ringGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class RpAngittHensynSone <<featureType>> {
-    + område [1] : Flate
-    + angittHensyn [1] : RpAngittHensynSoneType
-    + hensynSonenavn [1] : CharacterString
-    + beskrivelse [0..1] : CharacterString
-  }
-
-  class RpSikringGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RbRekkefølgeOmråde" as RbRekkef_lgeOmr_de <<featureType>> {
-    + område [1] : Flate
-    + reguleringsformål [1] : RegformRekkefølge
-    + feltbetegnelse [0..1] : CharacterString
-  }
-
-  class RpFareGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RbRestriksjonOmråde" as RbRestriksjonOmr_de <<featureType>> {
-    + område [1] : Flate
-    + reguleringsformål [1] : RegformRestriksjon
-    + feltbetegnelse [0..1] : CharacterString
-  }
-
-  class "RpStøyGrense" as RpSt_yGrense <<featureType>> {
-    + grense [1] : Kurve
-  }
-
-  class "RpPåskrift" as RpP_skrift <<featureType>> {
+  class Kran <<featureType>> {
+    + energikilde [0..*] : Energikilde
+    + høydereferanse [1] : Høydereferanse
+    + kranspesifikasjon [0..1] : CharacterString
+    + krantype [1] : Krantype
+    + maksbelastning [0..1] : Integer
+    + maksbelastningRekkevidde [0..1] : Integer
+    + mobilitet [1] : Boolean
     + posisjon [1] : Punkt
-    + generellTekststreng [1] : CharacterString
-    + påskriftType [0..1] : PåskriftType
+    + rekkevidde [0..1] : Integer
+    + status [0..1] : Status
   }
 
-  class "RpRegulertHøyde" as RpRegulertH_yde <<featureType>> {
-    + senterlinje [1] : Kurve
-    + regulertHøyde (utgått) [1] : Real
-    + høydefraplanbestemmelse [1] : HøydeFraPlanbestemmelse
+  class HavneanleggGrense <<featureType>> {
+    + grense [1] : Kurve
   }
 
-  class RpJuridiskPunkt <<featureType>> {
+  class VAuttak <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + kapasitet [0..1] : Integer
+    + kumnummer [0..1] : Integer
     + posisjon [1] : Punkt
-    + juridiskpunkt [1] : RpJuridiskPunktType
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
+    + tilkoblingsdimensjon [0..1] : CharacterString
+    + VAuttakstype [1] : VAuttakstype
   }
 
-  class RpJuridiskLinje <<featureType>> {
+  class Havneanlegg <<featureType>> {
+    + eier [0..1] : CharacterString
+    + eierskap [1..*] : Eierskap
+    + forvaltesAv [0..1] : CharacterString
+    + ISPSHavneanlegg [0..1] : ISPSHavneanlegg
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+  }
+
+  class Flytedokk <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + løftekapasitet [0..1] : Integer
+    + maksFartøyBredde [0..1] : Real
+    + maksFartøyDyptgående [0..1] : Real
+    + maksFartøyLengde [0..1] : Integer
+    + navn [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+    + status [0..1] : Status
+  }
+
+  class Toalett <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+  }
+
+  class FlytedokkGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Fender <<featureType>> {
+    + antall [0..1] : Integer
+    + fendergruppering [0..1] : Kurve
+    + fenderorientering [1] : Fenderorientering
+    + fenderspesifikasjon [0..1] : CharacterString
+    + fendertype [1] : Fendertype
+    + høydereferanse [1] : Høydereferanse
+    + høydeSjøkartnull [1] : Real
+    + posisjon [0..1] : Punkt
+    + status [0..1] : Status
+  }
+
+  class "LastbegrensningsområdeGrense" as Lastbegrensningsomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class Avfallspunkt <<featureType>> {
+    + avfallsplan [0..1] : CharacterString
+    + avfallstype [0..*] : Avfallstype
+    + beholdertype [0..1] : Beholdertype
+    + høydereferanse [1] : Høydereferanse
+    + mobilitet [1] : Boolean
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
+  }
+
+  class "Kaiområde" as Kaiomr_de <<featureType>> {
+    + kaidekketype [0..1] : Kaidekketype
+    + kaitype [0..1] : Kaitype
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+  }
+
+  class "Fortøyningsinnretning" as Fort_yningsinnretning <<featureType>> {
+    + fortøyningstype [1] : Fortøyningstype
+    + høydereferanse [1] : Høydereferanse
+    + høydeSjøkartnull [1] : Real
+    + maksbelastning [0..1] : Integer
+    + posisjon [1] : Punkt
+    + sertifiseringsdato [0..1] : Date
+    + spesifikasjon [0..1] : CharacterString
+    + status [0..1] : Status
+    + tillattFortøyningsvinkelGrunnriss [0..1] : CharacterString
+    + tillattFortøyningsvinkelOppriss [0..1] : CharacterString
+  }
+
+  class Havnegjerde <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + periode [0..*] : Periode
     + senterlinje [1] : Kurve
-    + juridisklinje [1] : RpJuridiskLinjeType
+    + status [0..1] : Status
+  }
+
+  class "Tørrdokk" as T_rrdokk <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + løftekapasitet [0..1] : Integer
+    + maksFartøyBredde [0..1] : Real
+    + maksFartøyDyptgående [0..1] : Real
+    + maksFartøyLengde [0..1] : Integer
+    + navn [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+    + status [0..1] : Status
+  }
+
+  class "KaiområdeGrense" as Kaiomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class HavnegjerdeInngang <<featureType>> {
+    + avsperringstype [1] : Avsperringstype
+    + høydereferanse [1] : Høydereferanse
+    + periode [0..*] : Periode
+    + senterlinje [1] : Kurve
+    + status [0..1] : Status
+    + åpningstype [0..1] : Åpningstype
+  }
+
+  class "ForvaltningsområdeGrense" as Forvaltningsomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class SlippGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "TørrdokkGrense" as T_rrdokkGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "HavneområdeGrense" as Havneomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class "Havneområde" as Havneomr_de <<featureType>> {
+    + forvaltesAv [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+  }
+
+  class "Forvaltningsområde" as Forvaltningsomr_de <<featureType>> {
+    + forvaltesAv [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+  }
+
+  class Beredskapspunkt <<featureType>> {
+    + beredskapstype [1..*] : Beredskapstype
+    + høydereferanse [1] : Høydereferanse
+    + posisjon [1] : Punkt
+    + spesifikasjon [0..1] : CharacterString
+    + status [0..1] : Status
+  }
+
+  class Kaifront <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + høydeSjøkartnull [1] : Real
+    + kaifronttype [1] : Kaifronttype
+    + kaitype [1..*] : Kaitype
+    + lengde [1] : Real
+    + senterlinje [1] : Kurve
+    + status [0..1] : Status
+  }
+
+  class Havnesensor <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + objektLøpenummer [0..1] : CharacterString
+    + posisjon [1] : Punkt
+    + sensortype [0..1] : Sensortype
+    + status [0..1] : Status
+  }
+
+  class Slipp <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + høydeSjøkartnull [1] : Real
+    + kaidekketype [0..1] : Kaidekketype
+    + kranKapasitet [0..1] : Integer
+    + maksBreddeFartøy [0..1] : Real
+    + maksDyptgåendeFartøy [0..1] : Real
+    + maksLengdeFartøy [0..1] : Real
+    + navn [0..1] : CharacterString
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+    + slippKapasitet [0..1] : Integer
+    + spesifikasjon [0..1] : CharacterString
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
+  }
+
+  class "Lastbegrensningsområde" as Lastbegrensningsomr_de <<featureType>> {
+    + akseltrykk [0..1] : Real
+    + bruksklassetype [0..1] : Bruksklassetype
+    + kaidekketype [0..1] : Kaidekketype
+    + lastId [0..1] : CharacterString
+    + lastreferanse [0..1] : CharacterString
+    + minsteAvstandPunktlast [0..1] : Real
+    + område [1] : Flate
+    + posisjon [0..1] : Punkt
+    + punktlast [0..1] : Real
+    + vektbegrensning [0..1] : Real
+  }
+
+  class Kamera <<featureType>> {
+    + høydereferanse [1] : Høydereferanse
+    + objektLøpenummer [0..1] : CharacterString
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+  }
+
+  class Drivstofftilkobling <<featureType>> {
+    + drivstofftype [1..*] : Drivstofftype
+    + høydereferanse [1] : Høydereferanse
+    + kapasitet [0..1] : Integer
+    + mobilitet [1] : Boolean
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
+  }
+
+  class "Tømmestasjon" as T_mmestasjon <<featureType>> {
+    + avløpstype [1..*] : Avløpstype
+    + høydereferanse [1] : Høydereferanse
+    + kapasitet [0..1] : Integer
+    + kumnummer [0..1] : Integer
+    + mobilitet [1] : Boolean
+    + posisjon [1] : Punkt
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
+    + tilkoblingsdimensjon [0..1] : CharacterString
+  }
+
+  class ELkobling <<featureType>> {
+    + ELanleggstype [1..*] : ELanleggstype
+    + ELkoblinger [0..*] : ELkoblingEgenskaper
+    + høydereferanse [1] : Høydereferanse
+    + posisjon [1] : Punkt
+    + rekkeviddeLadeanlegg [0..1] : Integer
+    + status [0..1] : Status
+    + tilgangstype [0..*] : Tilgangstype
+  }
+
+  abstract class HavneanleggId <<featureType>> {
+    + havneanleggId [0..1] : CharacterString
+    + havneanleggNavn [0..1] : CharacterString
+    + ISPS [0..1] : Boolean
+  }
+
+  abstract class FellesegenskaperOpsjonell <<featureType>> {
+    + informasjon [0..1] : CharacterString
+    + link [0..1] : CharacterString
+    + oppdateringsdato [0..1] : Date
+  }
+
+  abstract class "FellesegenskaperPåkrevd" as FellesegenskaperP_krevd <<featureType>> {
+    + datafangstdato [1] : Date
+    + identifikasjon [1] : Identifikasjon
+    + kvalitet [1] : Posisjonskvalitet
+  }
+
+  abstract class HavnId <<featureType>> {
+    + havn [1] : CharacterString
+    + UNLOCODE [1] : CharacterString
+  }
+
+  abstract class KaiId <<featureType>> {
+    + kaiId [1] : CharacterString
+    + kaiIdIntern [0..1] : CharacterString
+    + kainavn [0..1] : CharacterString
+  }
+
+  abstract class ObjektId <<featureType>> {
+    + objektLøpenummer [1] : CharacterString
+  }
+
+  class "Forbudsområde" as Forbudsomr_de <<featureType>> {
+    + fastsattAv [0..1] : CharacterString
+    + forbudstype [1..*] : Forbudstype
+    + forskriftLenke [0..1] : CharacterString
+    + forskriftNavn [0..1] : CharacterString
+    + gjelderFor [0..1] : CharacterString
+    + gjelderForFartøytype [1..*] : Fartøytype
+    + lovhjemmel [0..1] : CharacterString
+    + område [1] : Flate
+    + periodeGyldigFra [0..1] : Date
+    + periodeGyldigTil [0..1] : Date
+    + posisjon [0..1] : Punkt
+  }
+
+  class Fartsrestriksjoner <<featureType>> {
+    + fastsattAv [0..1] : CharacterString
+    + forskriftLenke [0..1] : CharacterString
+    + forskriftNavn [1] : CharacterString
+    + gjelderFor [0..1] : CharacterString
+    + gjelderForFartøytype [1..*] : Fartøytype
+    + hastighet [1] : Integer
+    + lovhjemmel [0..1] : CharacterString
+    + område [1] : Flate
+    + periodeGyldigFra [0..1] : Date
+    + periodeGyldigTil [0..1] : Date
+    + posisjon [0..1] : Punkt
+  }
+
+  class "ForbudsområdeGrense" as Forbudsomr_deGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class FartsrestriksjonerGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  class ISPSHavneanlegg <<dataType>> {
+    + kontaktinformasjonPFSO [0..1] : CharacterString
+    + portFacilityNrIMO [0..1] : CharacterString
+    + sikkerhetsbarriere [0..1] : Boolean
+    + sikringstype [0..1] : Sikringstype
+    + statusGodkjenning [0..1] : CharacterString
+  }
+
+  class Periode <<dataType>> {
+    + mndFra [1] : Måned
+    + mndTil [1] : Måned
+  }
+
+  class ELkoblingEgenskaper <<dataType>> {
+    + effekt [0..1] : Integer
+    + faser [0..1] : CharacterString
+    + frekvens [0..1] : Frekvens
+    + kontaktId [0..1] : CharacterString
+    + sikringstørrelse [0..1] : Integer
+    + spenning [0..1] : Spenning
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [0..1] : CharacterString
   }
 
   class Posisjonskvalitet <<dataType>> {
-    + målemetode [1] : Målemetode
-    + nøyaktighet [0..1] : Integer
-  }
-
-  class NasjonalArealplanId <<dataType>> {
-    + administrativEnhet [1] : AdministrativEnhetskode
-    + planidentifikasjon [1] : CharacterString
-  }
-
-  class Utnytting <<dataType>> {
-    + utnyttingstype [1] : Utnyttingstype
-    + utnyttingstall [0..1] : Real
-    + utnyttingstall_minimum [0..1] : Real
-  }
-
-  class "HøydeFraPlanbestemmelse" as H_ydeFraPlanbestemmelse <<dataType>> {
-    + regulerthøyde [1] : Real
-    + høyderefansesystem [1] : Høydereferansesystem
+    + datafangstmetode [1] : Datafangstmetode
+    + datafangstmetodeHøyde [0..1] : Datafangstmetode
+    + nøyaktighet [1] : Integer
+    + nøyaktighetHøyde [0..1] : Integer
+    + synbarhet [0..1] : Synbarhet
   }
 }
 
-  SOSI_Objekt_Planlinjer_Rp <|-- RpGrense
-  RpGrense --> RpOmr_de : [1..2]
-  SOSI_Objekt_Planomr_de_Rp <|-- RpOmr_de
-  RpOmr_de --> RpGrense : planavgrensning [0..*]
-  RpOmr_de --> RpGjennomf_ringSone : gjennomføring [0..*]
-  RpOmr_de --> RpDetaljeringSone : detaljering [0..*]
-  RpOmr_de --> RbForm_lOmr_de : reguleringsformål [1..*]
-  RpOmr_de --> RpBestemmelseOmr_de : bestemmelse [0..*]
-  RpOmr_de --> RpRegulertH_yde : regulertHøyde [0..*]
-  RpOmr_de --> RpFareSone : fare [0..*]
-  RpOmr_de --> RbFornyelseOmr_de : fornyelse [0..*]
-  RpOmr_de --> RpSikringSone : sikring [0..*]
-  RpOmr_de --> RpJuridiskPunkt : juridiskPunkt [0..*]
-  RpOmr_de --> RbFareOmr_de : fare [0..*]
-  RpOmr_de --> RpP_skrift : påskrift [0..*]
-  RpOmr_de --> RpJuridiskLinje : juridiskLinje [0..*]
-  RpOmr_de --> RbRestriksjonOmr_de : restriksjon [0..*]
-  RpOmr_de --> RbBevaringOmr_de : bevaring [0..*]
-  RpOmr_de --> RpB_ndleggingSone : båndlegging [0..*]
-  RpOmr_de --> RbRekkef_lgeOmr_de : rekkefølge [0..*]
-  RpOmr_de --> RpAngittHensynSone : angittHensyn [0..*]
-  RpOmr_de --> RpSt_ySone : støy [0..*]
-  RpOmr_de --> RpArealform_lOmr_de : formålsområde [1..*]
-  RpOmr_de --> RpInfrastrukturSone : infrastruktur [0..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RbForm_lOmr_de
-  RbForm_lOmr_de --> RpOmr_de : [1]
-  RbForm_lOmr_de --> RpForm_lGrense : avgrensning [0..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpForm_lGrense
-  RpForm_lGrense --> RbForm_lOmr_de : [1..2]
-  RpForm_lGrense --> RpArealform_lOmr_de : [0..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpArealform_lOmr_de
-  RpArealform_lOmr_de --> RpOmr_de : [1]
-  RpArealform_lOmr_de --> RpForm_lGrense : avgrensning [1..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpAngittHensynGrense
-  RpAngittHensynGrense --> RpAngittHensynSone : [0..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpB_ndleggingGrense
-  RpB_ndleggingGrense --> RpB_ndleggingSone : [0..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RbFareOmr_de
-  RbFareOmr_de --> RpOmr_de : [1]
-  RbFareOmr_de --> RpFareGrense : avgrensning [0..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpSt_ySone
-  RpSt_ySone --> RpOmr_de : [1]
-  RpSt_ySone --> RpSt_yGrense : avgrensning [1..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpInfrastrukturGrense
-  RpInfrastrukturGrense --> RpInfrastrukturSone : [0..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpB_ndleggingSone
-  RpB_ndleggingSone --> RpOmr_de : [1]
-  RpB_ndleggingSone --> RpB_ndleggingGrense : avgrensning [1..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpBestemmelseOmr_de
-  RpBestemmelseOmr_de --> RpOmr_de : [1]
-  RpBestemmelseOmr_de --> RpBestemmelseGrense : avgrensning [1..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RbRekkef_lgeGrense
-  RbRekkef_lgeGrense --> RbRekkef_lgeOmr_de : [1..2]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpInfrastrukturSone
-  RpInfrastrukturSone --> RpOmr_de : [1]
-  RpInfrastrukturSone --> RpInfrastrukturGrense : avgrensning [1..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpDetaljeringGrense
-  RpDetaljeringGrense --> RpDetaljeringSone : [1..2]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RbBevaringOmr_de
-  RbBevaringOmr_de --> RpOmr_de : [1]
-  RbBevaringOmr_de --> RbBevaringGrense : avgrensning [0..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpBestemmelseGrense
-  RpBestemmelseGrense --> RpBestemmelseOmr_de : [0..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RbFornyelseOmr_de
-  RbFornyelseOmr_de --> RpOmr_de : [1]
-  RbFornyelseOmr_de --> RbFornyelseGrense : avgrensning [0..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RbFornyelseGrense
-  RbFornyelseGrense --> RbFornyelseOmr_de : [1..2]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpDetaljeringSone
-  RpDetaljeringSone --> RpOmr_de : [1]
-  RpDetaljeringSone --> RpDetaljeringGrense : avgrensning [1..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpSikringSone
-  RpSikringSone --> RpOmr_de : [1]
-  RpSikringSone --> RpSikringGrense : avgrensning [1..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RbBevaringGrense
-  RbBevaringGrense --> RbBevaringOmr_de : [1..2]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpFareSone
-  RpFareSone --> RpOmr_de : [1]
-  RpFareSone --> RpFareGrense : avgrensning [1..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RbRestriksjonGrense
-  RbRestriksjonGrense --> RbRestriksjonOmr_de : [1..2]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpGjennomf_ringSone
-  RpGjennomf_ringSone --> RpOmr_de : [1]
-  RpGjennomf_ringSone --> RpGjennomf_ringGrense : avgrensning [1..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpGjennomf_ringGrense
-  RpGjennomf_ringGrense --> RpGjennomf_ringSone : [0..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RpAngittHensynSone
-  RpAngittHensynSone --> RpOmr_de : [1]
-  RpAngittHensynSone --> RpAngittHensynGrense : avgrensning [1..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpSikringGrense
-  RpSikringGrense --> RpSikringSone : [1..2]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RbRekkef_lgeOmr_de
-  RbRekkef_lgeOmr_de --> RpOmr_de : [1]
-  RbRekkef_lgeOmr_de --> RbRekkef_lgeGrense : rekkefølgeAvgrensning [0..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpFareGrense
-  RpFareGrense --> RbFareOmr_de : [1..2]
-  RpFareGrense --> RpFareSone : [0..*]
-  SOSI_Objekt_Plandelomr_de_Rp <|-- RbRestriksjonOmr_de
-  RbRestriksjonOmr_de --> RpOmr_de : [1]
-  RbRestriksjonOmr_de --> RbRestriksjonGrense : avgrensning [0..*]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpSt_yGrense
-  RpSt_yGrense --> RpSt_ySone : [1]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpP_skrift
-  RpP_skrift --> RpOmr_de : [1]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpRegulertH_yde
-  RpRegulertH_yde --> RpOmr_de : [1]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpJuridiskPunkt
-  RpJuridiskPunkt --> RpOmr_de : [1]
-  SOSI_Objekt_Planlinjer_Rp <|-- RpJuridiskLinje
-  RpJuridiskLinje --> RpOmr_de : [1]
+  ObjektId <|-- Kran
+  FellesegenskaperP_krevd <|-- HavneanleggGrense
+  ObjektId <|-- VAuttak
+  HavneanleggId <|-- Havneanlegg
+  Havneanlegg --> HavneanleggGrense : avgrensning [0..*]
+  HavneanleggId <|-- Flytedokk
+  Flytedokk --> FlytedokkGrense : avgrensning [0..*]
+  ObjektId <|-- Toalett
+  FellesegenskaperP_krevd <|-- FlytedokkGrense
+  ObjektId <|-- Fender
+  FellesegenskaperP_krevd <|-- Lastbegrensningsomr_deGrense
+  ObjektId <|-- Avfallspunkt
+  KaiId <|-- Kaiomr_de
+  Kaiomr_de --> Kaiomr_deGrense : avgrensning [0..*]
+  ObjektId <|-- Fort_yningsinnretning
+  HavneanleggId <|-- Havnegjerde
+  HavneanleggId <|-- T_rrdokk
+  T_rrdokk --> T_rrdokkGrense : avgrensning [0..*]
+  FellesegenskaperP_krevd <|-- Kaiomr_deGrense
+  HavneanleggId <|-- HavnegjerdeInngang
+  FellesegenskaperP_krevd <|-- Forvaltningsomr_deGrense
+  FellesegenskaperP_krevd <|-- SlippGrense
+  FellesegenskaperP_krevd <|-- T_rrdokkGrense
+  FellesegenskaperP_krevd <|-- Havneomr_deGrense
+  HavnId <|-- Havneomr_de
+  Havneomr_de --> Havneomr_deGrense : avgrensning [0..*]
+  HavnId <|-- Forvaltningsomr_de
+  Forvaltningsomr_de --> Forvaltningsomr_deGrense : avgrensning [0..*]
+  ObjektId <|-- Beredskapspunkt
+  ObjektId <|-- Kaifront
+  HavnId <|-- Havnesensor
+  KaiId <|-- Slipp
+  Slipp --> SlippGrense : avgrensning [0..*]
+  KaiId <|-- Lastbegrensningsomr_de
+  Lastbegrensningsomr_de --> Lastbegrensningsomr_deGrense : avgrensning [0..*]
+  HavnId <|-- Kamera
+  ObjektId <|-- Drivstofftilkobling
+  ObjektId <|-- T_mmestasjon
+  ObjektId <|-- ELkobling
+  HavnId <|-- HavneanleggId
+  FellesegenskaperP_krevd <|-- FellesegenskaperOpsjonell
+  FellesegenskaperOpsjonell <|-- HavnId
+  HavneanleggId <|-- KaiId
+  KaiId <|-- ObjektId
+  FellesegenskaperOpsjonell <|-- Forbudsomr_de
+  Forbudsomr_de --> Forbudsomr_deGrense : avgrensning [0..*]
+  FellesegenskaperOpsjonell <|-- Fartsrestriksjoner
+  Fartsrestriksjoner --> FartsrestriksjonerGrense : avgrensning [0..*]
+  FellesegenskaperP_krevd <|-- Forbudsomr_deGrense
+  FellesegenskaperP_krevd <|-- FartsrestriksjonerGrense
 
 @enduml
