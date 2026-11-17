@@ -4,6 +4,8 @@ product_slug: dybdedata_dekning
 updated: '2026-10-22'
 scopes:
 - name: Ny datakilde2
-  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/FKB/Havnedata-2021.xml
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/FKB/FKB%20Veg.xml
   generator: xmi
   description: ''
+  package: EAPK_FA0E39A7_7C01_4cfb_8260_B4CDB0A20EF5
+  package_name: FKB Veg
