@@ -93,7 +93,7 @@ Datasettet kan også benyttes til kart, presentasjoner, ulike analyser eller som
 
 
 
-<a href="ny-datakilde2/ny-datakilde2_feature_catalogue.png" title="Klikk for stor visning"><img src="ny-datakilde2/ny-datakilde2_feature_catalogue.png" alt="Datamodell Ny datakilde2" style="max-width: 100%; height: auto;" /></a>
+<a href="ny-datakilde2/ny-datakilde2_feature_catalogue_overview.png" title="Klikk for stor visning"><img src="ny-datakilde2/ny-datakilde2_feature_catalogue_overview.png" alt="Datamodell Ny datakilde2" style="max-width: 100%; height: auto;" /></a>
 
 
 
