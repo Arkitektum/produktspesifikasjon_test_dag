@@ -4,8 +4,6 @@ product_slug: dybdedata_dekning
 updated: '2026-10-22'
 scopes:
 - name: Ny datakilde2
-  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/FKB/Havnedata.xml
-  generator: xmi
+  url: inputs/dybdedata-dekning/ny-datakilde2.feature_types.json
+  generator: custom
   description: ''
-  package: EAPK_EB3473DC_184F_44d5_944D_C86C4C843AE0
-  package_name: Havnedata
