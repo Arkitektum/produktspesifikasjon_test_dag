@@ -5,13 +5,13 @@
     "attributes": [
       {
         "name": "område",
-        "type": "Flate",
+        "type": "GM_Surface",
         "description": "Polygon som viser geografisk utstrekning",
         "cardinality": "1"
       },
       {
         "name": "posisjon",
-        "type": "Punkt",
+        "type": "GM_Point",
         "description": "Opsjonelt representasjonspunkt.",
         "cardinality": "0..1"
       },
@@ -23,6 +23,20 @@
         "taggedValues": {
           "SOSI_navn": "FORVALTESAV"
         }
+      },
+      {
+        "name": "havnetype",
+        "type": "Havnetype",
+        "cardinality": "0..1",
+        "description": "havnetype",
+        "attributes": [
+          {
+            "name": "lokalid",
+            "type": "CharacterString",
+            "cardinality": "0..1",
+            "description": "lokal id"
+          }
+        ]
       }
     ],
     "abstract": false,
